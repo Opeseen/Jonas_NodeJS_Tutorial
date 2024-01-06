@@ -53,7 +53,6 @@ const getTour = (req, res) => {
 };
 
 const createTour = (req, res) => {
-
   const newId = tours[tours.length - 1].id + 1;
   const newTour = Object.assign({ id: newId }, req.body);
 
@@ -89,7 +88,6 @@ const deleteTour = (req, res) => {
   });
 };
 
-
 module.exports = {
   checkBody,
   checkID,
@@ -97,5 +95,5 @@ module.exports = {
   getTour,
   createTour,
   updateTour,
-  deleteTour  
+  deleteTour
 };
