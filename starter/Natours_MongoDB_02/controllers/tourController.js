@@ -2,7 +2,7 @@ const { tourService } =  require('../services');
 
 const getAllTours = async (req, res) => {
   try {
-    const tours = await tourService.getAllTours();
+    const tours = await tourService.getAllTours(req.query);
     
     res.status(200).json({
       status: 'Success',
@@ -11,6 +11,7 @@ const getAllTours = async (req, res) => {
     });
 
   } catch (error) {
+    console.log(error)
     res.status(404).json({
       status: 'Failed',
       message: error

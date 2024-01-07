@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const toJson = require('@meanie/mongoose-to-json');
 
 const tourSchema = new mongoose.Schema(
   {
@@ -64,6 +65,8 @@ const tourSchema = new mongoose.Schema(
   },
   
 );
+
+tourSchema.plugin(toJson);
 
 const Tour = mongoose.model('Tour', tourSchema);
 
