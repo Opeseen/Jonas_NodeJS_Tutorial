@@ -1,4 +1,4 @@
-const Tour = require('../models');
+const {Tour} = require('../models');
 
 const getAllTours = async () => {
   const tours = await Tour.find();
@@ -11,8 +11,8 @@ const getTour = async (tourID) => {
 };
 
 const createTour = async (tourDetails) => {
-  await Tour.create(tourDetails);
-
+  const tour = await Tour.create(tourDetails);
+  return tour;
 };
 
 const updateTour = async (id, tourBody) => {

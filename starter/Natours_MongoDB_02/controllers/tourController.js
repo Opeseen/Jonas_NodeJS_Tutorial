@@ -35,45 +35,53 @@ const getTour = async(req, res) => {
   }
 };
 
-const createTour = (req, res) => {
-  const newId = tours[tours.length - 1].id + 1;
-  const newTour = Object.assign({ id: newId }, req.body);
-
-  tours.push(newTour);
-
-  fs.writeFile(
-    `${__dirname}/dev-data/data/tours-simple.json`,
-    JSON.stringify(tours),
-    () => {
-      res.status(201).json({
-        status: 'success',
-        data: {
-          tour: newTour
-        }
-      });
-    }
-  );
+const createTour = async(req, res) => {
+  try {
+    const newTour = await tourService.createTour(req.body);
+    res.status(201).json({
+      status: 'Success',
+      data: {tour: newTour}
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: 'Failed',
+      message: error
+    });
+  }
 };
 
-const updateTour = (req, res) => {
-  res.status(200).json({
-    status: 'success',
-    data: {
-      tour: '<Updated tour here...>'
-    }
-  });
+const updateTour = async(req, res) => {
+  const id = req.params.id;
+  try {
+    const updatedTour = await tourService.updateTour(id,req.body);
+    res.status(200).json({
+      status: 'Success',
+      updatedTour
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: 'Failed',
+      message: error
+    });
+  }
 };
 
-const deleteTour = (req, res) => {
-  res.status(204).json({
-    status: 'success',
-    data: null
-  });
+const deleteTour = async(req, res) => {
+  const id = req.params.id;
+  try {
+    await tourService.deleteTour(id);
+    res.status(204).json({
+      status: 'Success',
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: 'Failed',
+      message: error
+    });
+  }
 };
 
 module.exports = {
-  checkBody,
-  checkID,
   getAllTours,
   getTour,
   createTour,
