@@ -16,8 +16,17 @@ const getAllTours = async (queryObject) => {
 
   // 2) SORTING...
   if(queryObject.sort){
-    queryData = queryData.sort(queryObject.sort)
-  };
+    const sortBy = queryObject.sort.split(',').join(' ');
+    queryData = queryData.sort(sortBy);
+  }else(
+    queryData = queryData.sort('maxGroupSize')
+  );
+
+  // FIELDS LIMITING...
+  if(queryObject.fields){
+    const fields = queryObject.fields.split(',').join(' ');
+    queryData = queryData.select(fields);
+  }
 
   // EXECUTE QUERY...
   const tours = await queryData;
