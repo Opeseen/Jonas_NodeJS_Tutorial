@@ -22,11 +22,17 @@ const getAllTours = async (queryObject) => {
     queryData = queryData.sort('maxGroupSize')
   );
 
-  // FIELDS LIMITING...
+  // 3) FIELDS LIMITING...
   if(queryObject.fields){
     const fields = queryObject.fields.split(',').join(' ');
     queryData = queryData.select(fields);
   }
+
+  // 4) PAGINATION...
+  const page = queryObject.page * 1 || 1;
+  const limit = queryObject.limit * 1 || 10;
+  const  skip = (page - 1) * limit;
+  queryData = queryData.skip(skip).limit(limit);
 
   // EXECUTE QUERY...
   const tours = await queryData;
