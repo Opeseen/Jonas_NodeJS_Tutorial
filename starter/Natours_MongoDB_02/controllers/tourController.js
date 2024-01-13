@@ -88,6 +88,21 @@ const deleteTour = async(req, res) => {
   }
 };
 
+const getTourStats = async(req, res) => {
+  try {
+    const stats = await tourService.getTourStats();
+    res.status(200).json({
+      status: 'Success',
+      stats
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: 'Failed',
+      message: error
+    });
+  }
+}
+
 module.exports = {
   getAllTours,
   getTour,
@@ -95,4 +110,5 @@ module.exports = {
   updateTour,
   deleteTour,
   aliasTopTours,
+  getTourStats
 };
