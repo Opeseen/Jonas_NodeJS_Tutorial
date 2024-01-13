@@ -1,41 +1,17 @@
 const {Tour} = require('../models');
+const APIFeatures = require('../utils/apiFeatures');
 
 const getAllTours = async (queryObject) => {
-
-  // BUILDING QUERY...
-
-  // 1A) FILTERING
-  const query = {...queryObject};
-  const excludedFields = ['page','sort','limit','fields'];
-  excludedFields.forEach(element => delete query[element]);
-
-  // 1B) ADVANCE FILTERING..
-  let queryString = JSON.stringify(query);
-  queryString = queryString.replace(/\b(gte|gt|lte|lt)\b/g, match => `$${match}`);
-  let queryData = Tour.find(JSON.parse(queryString));
-
-  // 2) SORTING...
-  if(queryObject.sort){
-    const sortBy = queryObject.sort.split(',').join(' ');
-    queryData = queryData.sort(sortBy);
-  }else(
-    queryData = queryData.sort('maxGroupSize')
-  );
-
-  // 3) FIELDS LIMITING...
-  if(queryObject.fields){
-    const fields = queryObject.fields.split(',').join(' ');
-    queryData = queryData.select(fields);
-  }
-
-  // 4) PAGINATION...
-  const page = queryObject.page * 1 || 1;
-  const limit = queryObject.limit * 1 || 10;
-  const  skip = (page - 1) * limit;
-  queryData = queryData.skip(skip).limit(limit);
+const requestQuery = {...queryObject};
 
   // EXECUTE QUERY...
-  const tours = await queryData;
+  const features = new APIFeatures(Tour.find(),requestQuery)
+    .filter()
+    .sort()
+    .limitFields()
+    .paginate();
+
+  const tours = await features.query;
   return tours;
 };
 
