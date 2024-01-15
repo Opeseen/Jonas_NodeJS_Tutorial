@@ -103,6 +103,23 @@ const getTourStats = async(req, res) => {
   }
 }
 
+const getMonthlyPlan = async(req, res) => {
+  year = req.params.year * 1;
+  try {
+    const plan = await tourService.getMonthlyPlan(year);
+    res.status(200).json({
+      status: 'Success',
+      results: plan.length,
+      plan
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: 'Failed',
+      message: error
+    });
+  }
+}
+
 module.exports = {
   getAllTours,
   getTour,
@@ -110,5 +127,6 @@ module.exports = {
   updateTour,
   deleteTour,
   aliasTopTours,
-  getTourStats
+  getTourStats,
+  getMonthlyPlan
 };
