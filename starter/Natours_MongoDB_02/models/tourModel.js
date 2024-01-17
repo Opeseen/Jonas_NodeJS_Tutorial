@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const toJson = require('@meanie/mongoose-to-json');
+const slugify = require('slugify');
 
 const tourSchema = new mongoose.Schema(
   {
@@ -63,12 +64,45 @@ const tourSchema = new mongoose.Schema(
       private: true
     },
     startDates: [Date],
+    secretTour: {
+      type: Boolean,
+      default: false
+    }
   },
   
+  {
+    toJSON: {virtuals: true},
+    toObject: {virtuals: true}
+  }
+
 );
 
 tourSchema.plugin(toJson);
 
+tourSchema.virtual('durationWeeks')
+  .get(function() {
+    return this.duration / 7;
+  });
+
+// DOCUMENT MIDDLEWARE
+
+// THIS RUNS BEFORE THE SAVE() AND CREATE() COMMAND
+tourSchema.pre('save', function(next){
+  this.slug = slugify(this.name, {lower: true});
+  next();
+});
+
+// QUERY MIDDLEWARE
+tourSchema.pre(/^find/, function(next) {
+  this.find({secretTour: {$ne: true}});
+  next();
+})
+
+// AGGREGATION MIDDLEWARE
+tourSchema.pre('aggregate', function(next) {
+  this.pipeline().unshift({$match: {secretTour: {$ne: true}}})
+  next();
+})
 const Tour = mongoose.model('Tour', tourSchema);
 
 module.exports = Tour;
