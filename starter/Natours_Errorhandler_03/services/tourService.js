@@ -31,7 +31,8 @@ const updateTour = async (id, tourBody) => {
 };
 
 const deleteTour = async (tourID) => {
-  await Tour.findByIdAndDelete(tourID);
+  const tour = await Tour.findByIdAndDelete(tourID);
+  return tour;
 };
 
 
