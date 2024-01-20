@@ -1,0 +1,1 @@
+module.exports.Tour = require('./tourModel');
