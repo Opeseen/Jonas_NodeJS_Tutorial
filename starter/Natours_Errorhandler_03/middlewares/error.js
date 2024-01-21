@@ -4,12 +4,18 @@ const httpStatus = require('http-status');
 
 const errorConverter = (err, req, res, next) => {
   let error = err;
+  let message;
+
   if(!(error instanceof ApiError)){
     const statusCode = error.statusCode || error instanceof mongoose.Error ? httpStatus.BAD_REQUEST : httpStatus.INTERNAL_SERVER_ERROR;
-    const message = error.message || httpStatus[statusCode];
-    error = new ApiError(message, statusCode);
-  };
 
+    if(error.name === 'CastError') {message = `Invalid ${error.path} : ${error.value} provided`};
+    if(error.code === 11000) {message = `Duplicate Field: The tour name "${error.keyValue.name}" already exists`};
+    if(error.name === 'ValidationError') [message = Object.values(error.errors).map(element => element.message).join('. ')];
+    
+    error = new ApiError(message || httpStatus[statusCode], statusCode);
+
+  };
   next(error);
 };
 
