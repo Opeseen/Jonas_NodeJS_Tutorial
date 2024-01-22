@@ -5,3 +5,15 @@
  GET /api/ 404 0.762 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:26:41 GMT - error-message: The requested url /api/ is Not Found
  GET /api/ 404 3.480 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:27:11 GMT - error-message: The requested url /api/ is Not Found
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 42.596 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:27:14 GMT
+ POST /api/v1/users/signup 201 71.968 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:39:53 GMT
+ POST /api/v1/users/signup 500 26.502 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:41:02 GMT - error-message: Duplicate Field: The tour name "undefined" already exists
+ POST /api/v1/users/signup 500 38.230 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:43:11 GMT - error-message: Duplicate Field: "undefined" already exists
+ POST /api/v1/users/signup 500 37.017 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:44:21 GMT - error-message: Duplicate Field: "undefined" already exists
+ POST /api/v1/users/signup 500 64.512 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:44:41 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
+ POST /api/v1/users/signup 500 29.088 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:45:29 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
+ POST /api/v1/users/signup 500 29.615 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:49:26 GMT - error-message: Duplicate Field: "[object Object]" already exists
+ POST /api/v1/users/signup 500 30.144 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:53:43 GMT - error-message: Cannot read properties of undefined (reading 'values')
+ POST /api/v1/users/signup 500 30.688 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:55:28 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
+ POST /api/v1/users/signup 500 30.484 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:55:59 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
+ POST /api/v1/tours/ 500 54.833 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:56:12 GMT - error-message: Duplicate Field: "The Forest Model" already exists
+ POST /api/v1/users/signup 500 31.601 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:58:54 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
