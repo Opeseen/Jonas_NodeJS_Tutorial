@@ -1,5 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
+const http = require('http');
 const logger = require('./config/logger');
 
 mongoose
@@ -13,7 +14,36 @@ mongoose
 
 const app = require('./app');
 
+const httpServer = http.createServer(app); 
+
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`App running on port ${port}...`);
+
+const server = httpServer.listen(port, () => {
+  logger.info(`Server is listening on port ${port}`);
+});
+
+const exitHandler = () => {
+  if(server){
+    server.close(() => {
+      logger.info("Server Closed!");
+      process.exit(1);
+    });
+  }else{
+    process.exit(1);
+  }
+};
+
+const unExpectedErrorHandler = (error) => {
+  logger.error(error);
+  exitHandler();
+};
+
+
+process.on("uncaughtException", unExpectedErrorHandler);
+process.on("unhandledRejection", unExpectedErrorHandler);
+process.on("SIGTERM", () => {
+  logger.info("SIGTERM received");
+  if(server){
+    server.close();
+  }
 });

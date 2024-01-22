@@ -1,0 +1,7 @@
+ POST /api/v1/tours/ 500 62.344 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:25:24 GMT - error-message: Duplicate Field: The tour name "The Forest Model" already exists
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 24.021 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:25:46 GMT
+ POST /api/v1/tours/ 400 6.651 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:26:10 GMT - error-message: A tour must have a difficulty. A tour must have a group size. A tour must have a duration. A tour must have a name
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 500 5.323 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:26:36 GMT - error-message: tourServices is not defined
+ GET /api/ 404 0.762 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:26:41 GMT - error-message: The requested url /api/ is Not Found
+ GET /api/ 404 3.480 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:27:11 GMT - error-message: The requested url /api/ is Not Found
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 42.596 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:27:14 GMT

@@ -13,7 +13,7 @@ const errorConverter = (err, req, res, next) => {
     if(error.code === 11000) {message = `Duplicate Field: The tour name "${error.keyValue.name}" already exists`};
     if(error.name === 'ValidationError') {message = Object.values(error.errors).map(element => element.message).join('. ')};
     
-    error = new ApiError(message || httpStatus[statusCode], statusCode);
+    error = new ApiError(message || error.message, statusCode);
 
   };
   next(error);
