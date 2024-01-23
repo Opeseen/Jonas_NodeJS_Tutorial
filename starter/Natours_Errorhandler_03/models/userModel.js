@@ -1,6 +1,8 @@
 const crypto = require('crypto');
 const mongoose = require('mongoose');
 const validator = require('validator');
+const bcrypt = require('bcryptjs');
+const toJson = require('@meanie/mongoose-to-json');
 
 
 const userSchema = new mongoose.Schema({
@@ -25,7 +27,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please provide a password'],
     minlength: 8,
-    select: false
+    private: true
   },
   passwordConfirm: {
     type: String,
@@ -41,6 +43,21 @@ const userSchema = new mongoose.Schema({
 
 });
 
+userSchema.pre('save', async function(next){
+  const user = this
+  if(!user.isModified('password')) return next(); // ONLY RUN IF PASSWORD WAS MODIFIED
+
+  user.password = await bcrypt.hash(user.password, 12);
+  user.passwordConfirm = undefined;
+  next();
+});
+
+userSchema.methods.isPasswordMatch = async function (password) {
+  const user = this;
+  return await bcrypt.compare(password, user.password);
+};
+
+userSchema.plugin(toJson);
 
 const User = mongoose.model('User', userSchema);
 

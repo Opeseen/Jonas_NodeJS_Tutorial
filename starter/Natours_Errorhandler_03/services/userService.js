@@ -1,7 +1,8 @@
 const {User} = require('../models');
 
 const signUpUser = async (userDetails) => {
-  const newUser = await User.create(userDetails);
+  const {name, email, password, passwordConfirm} = userDetails;
+  const newUser = await User.create({name, email, password, passwordConfirm});
   return newUser;
 };
 
@@ -11,6 +12,11 @@ const getAllUsers = (req, res) => {
     message: 'This route is not yet defined!'
   });
 };
+
+const getUserByEmail = async(email) => {
+  return await User.findOne({email}).select('+password');
+};
+
 const getUser = (req, res) => {
   res.status(500).json({
     status: 'error',
@@ -37,4 +43,5 @@ module.exports = {
   getUser,
   updateUser,
   deleteUser,
+  getUserByEmail
 };
