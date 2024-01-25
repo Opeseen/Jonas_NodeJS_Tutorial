@@ -2,7 +2,6 @@ const catchAsyncError = require('../utils/catchAsyncError');
 const { userService, tokenService, authService } =  require('../services');
 const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
-const { User } = require('../models');
 
 const signUpUser = catchAsyncError(async (req, res) => {
   // CREATE A NEW USER
@@ -27,7 +26,7 @@ const login = catchAsyncError(async(req, res, next) => {
   // CHECK LOGIN CREDENTIALS
   const user = await authService.login(email, password);
   // GENERATE TOKEN FOR USER
-  const token = tokenService.generateToken(User.id, process.env.JWT_EXPIRATION, process.env.JWT_SECRET)
+  const token = tokenService.generateToken(user.id, process.env.JWT_EXPIRATION, process.env.JWT_SECRET)
   
   res.status(httpStatus.OK).json({user,token});
 

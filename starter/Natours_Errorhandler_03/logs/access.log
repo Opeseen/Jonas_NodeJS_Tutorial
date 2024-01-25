@@ -1,51 +1,9 @@
- POST /api/v1/tours/ 500 62.344 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:25:24 GMT - error-message: Duplicate Field: The tour name "The Forest Model" already exists
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 24.021 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:25:46 GMT
- POST /api/v1/tours/ 400 6.651 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:26:10 GMT - error-message: A tour must have a difficulty. A tour must have a group size. A tour must have a duration. A tour must have a name
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 500 5.323 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:26:36 GMT - error-message: tourServices is not defined
- GET /api/ 404 0.762 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:26:41 GMT - error-message: The requested url /api/ is Not Found
- GET /api/ 404 3.480 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:27:11 GMT - error-message: The requested url /api/ is Not Found
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 42.596 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 15:27:14 GMT
- POST /api/v1/users/signup 201 71.968 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:39:53 GMT
- POST /api/v1/users/signup 500 26.502 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:41:02 GMT - error-message: Duplicate Field: The tour name "undefined" already exists
- POST /api/v1/users/signup 500 38.230 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:43:11 GMT - error-message: Duplicate Field: "undefined" already exists
- POST /api/v1/users/signup 500 37.017 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:44:21 GMT - error-message: Duplicate Field: "undefined" already exists
- POST /api/v1/users/signup 500 64.512 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:44:41 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 500 29.088 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:45:29 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 500 29.615 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:49:26 GMT - error-message: Duplicate Field: "[object Object]" already exists
- POST /api/v1/users/signup 500 30.144 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:53:43 GMT - error-message: Cannot read properties of undefined (reading 'values')
- POST /api/v1/users/signup 500 30.688 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:55:28 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 500 30.484 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:55:59 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/tours/ 500 54.833 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:56:12 GMT - error-message: Duplicate Field: "The Forest Model" already exists
- POST /api/v1/users/signup 500 31.601 ms PostmanRuntime/7.36.1 Mon, 22 Jan 2024 17:58:54 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 205.115 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 09:17:33 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 43.653 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 09:18:02 GMT
- GET /api/v1/tours/top-5-cheap 200 28.867 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 09:18:12 GMT
- POST /api/v1/users/signup 500 317.926 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 09:18:24 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 500 7.282 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 09:18:34 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 400 2.881 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 09:18:40 GMT - error-message: Please provide a valid email
- POST /api/v1/users/signup 400 1.925 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 09:18:57 GMT - error-message: Passwords are not the same!
- POST /api/v1/users/signup 500 5.823 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 09:19:40 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 500 246.744 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:14:26 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 400 9.402 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:14:44 GMT - error-message: Passwords are not the same!
- POST /api/v1/users/signup 500 7.177 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:15:18 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 201 837.164 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:36:18 GMT
- POST /api/v1/users/signup 201 981.992 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:37:36 GMT
- POST /api/v1/users/signup 500 951.145 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:40:22 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 500 748.394 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:51:48 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 201 689.085 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:51:58 GMT
- POST /api/v1/users/signup 500 696.379 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:56:06 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
- POST /api/v1/users/signup 201 680.120 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 15:56:15 GMT
- POST /api/v1/users/signup 201 808.865 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 16:30:14 GMT
- POST /api/v1/users/login 200 887.396 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 17:58:49 GMT
- POST /api/v1/users/login 401 643.564 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 17:59:05 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 400 1.100 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 17:59:48 GMT - error-message: Please provide email and password
- POST /api/v1/users/login 400 0.794 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:00:28 GMT - error-message: Please provide email and password
- POST /api/v1/users/login 400 1.070 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:00:39 GMT - error-message: Please provide email and password
- POST /api/v1/users/login 401 845.995 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:00:46 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 637.498 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:00:55 GMT
- POST /api/v1/users/login 401 5.016 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:01:00 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 628.693 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:01:16 GMT
- POST /api/v1/users/login 400 0.701 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:02:37 GMT - error-message: Please provide email and password
- POST /api/v1/users/login 401 637.581 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:02:47 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 822.628 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:03:01 GMT
- POST /api/v1/users/signup 500 644.519 ms PostmanRuntime/7.36.1 Tue, 23 Jan 2024 18:03:18 GMT - error-message: Duplicate Field: "opeyemi5055@yahoo.com" already exists
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 10.273 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 18:55:52 GMT - error-message: Your Token has expired - Please login again
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b23 404 6.454 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 18:56:20 GMT - error-message: -
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b23 500 8.256 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 18:56:49 GMT - error-message: tourServices is not defined
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b23 400 15.248 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 18:57:08 GMT - error-message: Invalid _id : 65ac46ef288f0b2b0856e5b23 provided
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 500 13.388 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 18:59:07 GMT - error-message: Class constructor ApiError cannot be invoked without 'new'
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 11.510 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 19:00:37 GMT - error-message: Your Token has expired - Please login again
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 15.256 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 19:02:35 GMT - error-message: Your Token has expired - Please login again
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 7.029 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 19:02:41 GMT - error-message: Invalid token. Please login again
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 4.183 ms PostmanRuntime/7.36.1 Thu, 25 Jan 2024 19:02:48 GMT - error-message: Your Token has expired - Please login again
