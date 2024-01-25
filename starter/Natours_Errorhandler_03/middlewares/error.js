@@ -4,16 +4,16 @@ const httpStatus = require('http-status');
 
 const errorConverter = (err, req, res, next) => {
   let error = err;
-  console.error(error.name)
+  // console.error(error.name)
   // console.log(error)
   let message;
 
   if(!(error instanceof ApiError)){
     const statusCode = error.statusCode || error instanceof mongoose.Error ? httpStatus.BAD_REQUEST : httpStatus.INTERNAL_SERVER_ERROR;
 
-    if(error.name === 'CastError') {message = `Invalid ${error.path} : ${error.value} provided`};
-    if(error.code === 11000) {message = `Duplicate Field: "${Object.values(error.keyValue)[0]}" already exists`};
-    if(error.name === 'ValidationError') {message = Object.values(error.errors).map(element => element.message).join('. ')};
+    if(error.name === 'CastError') { message = `Invalid ${error.path} : ${error.value} provided` };
+    if(error.code === 11000) { message = `Duplicate Field: "${Object.values(error.keyValue)[0]}" already exists` };
+    if(error.name === 'ValidationError') { message = Object.values(error.errors).map(element => element.message).join('. ') };
     if(error.name === 'JsonWebTokenError') { return next(new ApiError('Invalid token. Please login again', httpStatus.UNAUTHORIZED)) };
     if(error.name === 'TokenExpiredError') { return next(new ApiError('Your Token has expired - Please login again', httpStatus.UNAUTHORIZED)) };
     

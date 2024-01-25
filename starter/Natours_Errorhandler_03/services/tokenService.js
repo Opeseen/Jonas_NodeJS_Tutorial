@@ -5,7 +5,7 @@ const dayjs = require('dayjs');
 const generateToken = (userId, expires, secrets) => {
   const payload = {
     sub: userId,
-    exp: dayjs().add(expires,'second').unix(),
+    exp: dayjs().add(expires,'days').unix(),
   };
 
   return jwt.sign(payload,secrets);

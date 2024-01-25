@@ -1,8 +1,8 @@
 const {User} = require('../models');
 
 const signUpUser = async (userDetails) => {
-  const {name, email, password, passwordConfirm} = userDetails;
-  const newUser = await User.create({name, email, password, passwordConfirm});
+  const {name, email, password, passwordConfirm, passwordChangedAt} = userDetails;
+  const newUser = await User.create({name, email, password, passwordConfirm, passwordChangedAt});
   return newUser;
 };
 
