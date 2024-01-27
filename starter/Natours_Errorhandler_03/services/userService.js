@@ -1,8 +1,8 @@
 const {User} = require('../models');
 
 const signUpUser = async (userDetails) => {
-  const {name, email, password, passwordConfirm, passwordChangedAt} = userDetails;
-  const newUser = await User.create({name, email, password, passwordConfirm, passwordChangedAt});
+  const {name, email, password, role, passwordConfirm, passwordChangedAt} = userDetails;
+  const newUser = await User.create({name, email, password, role, passwordConfirm, passwordChangedAt});
   return newUser;
 };
 
@@ -15,6 +15,11 @@ const getAllUsers = (req, res) => {
 
 const getUserByEmail = async(email) => {
   return await User.findOne({email}).select('+password');
+};
+
+const getuserByID = async(id) => {
+  const user = await User.findById(id);
+  return user;
 };
 
 const getUser = (req, res) => {
@@ -40,6 +45,7 @@ const deleteUser = (req, res) => {
 module.exports = {
   signUpUser,
   getAllUsers,
+  getuserByID,
   getUser,
   updateUser,
   deleteUser,

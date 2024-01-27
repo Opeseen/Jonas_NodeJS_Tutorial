@@ -3,7 +3,7 @@ const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
 const jwt = require('jsonwebtoken');
 const {promisify} = require('util');
-const {User} = require('../models');
+const {userService} = require('../services');
 
 
 const  loginAuth = catchAsyncError(async(req, res, next) => {
@@ -19,7 +19,7 @@ const  loginAuth = catchAsyncError(async(req, res, next) => {
   const verifiedToken = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
 // CHECK IF THE USERR STILL EXISTS
-  const currentUser = await User.findById(verifiedToken.sub);
+  const currentUser = await userService.getuserByID(verifiedToken.sub);
   if(!currentUser) {return next(new ApiError('Oops!: The user no longer exists', httpStatus.UNAUTHORIZED))};
 
   // CHECK IF USER CHANGE PASSWORD AFTER THE TOKEN WAS ISSUED
@@ -31,7 +31,20 @@ const  loginAuth = catchAsyncError(async(req, res, next) => {
 });
 
 
+const userRoleAuth = (...roles) => {
+  return (req, res, next) => {
+    if(!roles.includes(req.user.role)){
+      return next(new ApiError('You do not have permission to perform this activity', httpStatus.FORBIDDEN));
+    };
+
+    next();
+  };
+
+};
+
+
 
 module.exports = {
-  loginAuth
-}
+  loginAuth,
+  userRoleAuth
+};

@@ -1,6 +1,6 @@
 const express = require('express');
 const { tourController } = require('../controllers');
-const {loginAuth} = require('../middlewares/auth');
+const {loginAuth, userRoleAuth} = require('../middlewares/auth');
 
 const router = express.Router();
 
@@ -22,6 +22,6 @@ router
   .route('/:id')
   .get(tourController.getTour)
   .patch(tourController.updateTour)
-  .delete(tourController.deleteTour);
+  .delete(loginAuth, userRoleAuth('admin', 'lead-guide'), tourController.deleteTour);
 
 module.exports = router;
