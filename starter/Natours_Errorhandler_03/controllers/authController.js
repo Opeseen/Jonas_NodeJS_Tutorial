@@ -33,7 +33,26 @@ const login = catchAsyncError(async(req, res, next) => {
 });
 
 
+const forgotPassword = catchAsyncError(async(req, res, next) =>{
+  // GET USER BASED ON POSTED EMAIL
+  const user = await userService.getUserByEmail(req.body.email);
+  if(!user) {return next(new ApiError("No such user with the Email address on our records", httpStatus.NOT_FOUND))};
+
+  // GENERATE RANDOM RESET TOKEN
+  const resetToken = user.createPasswordresetToken();
+  await user.save({validateBeforeSave: false});
+  res.status(httpStatus.OK).send('Success')
+  // SENT THE RENDOM REST TOKEN AS AN EMAIL TO THE USER
+});
+
+
+const resetPassword = (req, res, next) => {
+
+};
+
+
 module.exports = {
   signUpUser,
-  login
+  login,
+  forgotPassword
 };

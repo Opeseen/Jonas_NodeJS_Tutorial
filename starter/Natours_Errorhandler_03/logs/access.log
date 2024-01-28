@@ -89,3 +89,23 @@
  DELETE /api/v1/tours/65ac46ee288f0b2b0856e5ac 404 36.134 ms PostmanRuntime/7.36.1 Sat, 27 Jan 2024 22:08:30 GMT - error-message: No Tour Found to Delete
  POST /api/v1/users/login 200 903.916 ms PostmanRuntime/7.36.1 Sat, 27 Jan 2024 22:08:51 GMT
  DELETE /api/v1/tours/65ac46ee288f0b2b0856e5ac 403 9.604 ms PostmanRuntime/7.36.1 Sat, 27 Jan 2024 22:08:57 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 288.556 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:13:36 GMT
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b0 200 142.368 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:13:52 GMT
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b08 400 6.010 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:13:57 GMT - error-message: Invalid _id : 65ac46ef288f0b2b0856e5b08 provided
+ GET /api/v1/tours/65ac46ef288f0b2b0856f5b0 404 3.737 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:14:11 GMT - error-message: No Tour Found
+ GET /api/v1/tours/65ac46ef288f0b2b08565b0 400 1.585 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:14:17 GMT - error-message: Invalid _id : 65ac46ef288f0b2b08565b0 provided
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b0 200 4.103 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:14:22 GMT
+ DELETE /api/v1/tours/65ac46ee288f0b2b0856e5ac 403 6.630 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:14:37 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/users/login 200 858.037 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:14:59 GMT
+ POST /api/v1/users/login 401 691.470 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:15:21 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 835.007 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:15:41 GMT
+ POST /api/v1/users/forgotPasswd 400 305.090 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:55:08 GMT - error-message: Please confirm your password
+ POST /api/v1/users/forgotPasswd 400 17.251 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:56:46 GMT - error-message: Please confirm your password
+ POST /api/v1/users/forgotPasswd 400 13.674 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:56:58 GMT - error-message: Please confirm your password
+ POST /api/v1/users/forgotPasswd 400 7.488 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:57:10 GMT - error-message: Please confirm your password
+ POST /api/v1/users/forgotPasswd - - ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:58:46 GMT
+ POST /api/v1/users/forgotPasswd - - ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 15:59:36 GMT
+ POST /api/v1/users/forgotPasswd 200 68.676 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 16:00:20 GMT
+ POST /api/v1/users/forgotPasswd 200 17.631 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 16:00:28 GMT
+ POST /api/v1/users/forgotPasswd 200 55.636 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 16:02:13 GMT
+ POST /api/v1/users/forgotPasswd 200 28.324 ms PostmanRuntime/7.36.1 Sun, 28 Jan 2024 16:04:33 GMT
