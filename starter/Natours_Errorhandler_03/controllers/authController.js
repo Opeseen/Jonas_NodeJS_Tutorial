@@ -2,6 +2,7 @@ const catchAsyncError = require('../utils/catchAsyncError');
 const { userService, tokenService, authService } =  require('../services');
 const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
+const {sendEmail} = require('../utils/email');
 
 const signUpUser = catchAsyncError(async (req, res) => {
   // CREATE A NEW USER
@@ -41,8 +42,33 @@ const forgotPassword = catchAsyncError(async(req, res, next) =>{
   // GENERATE RANDOM RESET TOKEN
   const resetToken = user.createPasswordresetToken();
   await user.save({validateBeforeSave: false});
-  res.status(httpStatus.OK).send('Success')
-  // SENT THE RENDOM REST TOKEN AS AN EMAIL TO THE USER
+
+  // SENd THE RESET TOKEN TO USER EMAIL
+  const resetUrl = `${req.protocol}://${req.get('host')}/api/v1/users/resetPassword/${resetToken}`;
+
+  const message = `Forgot your password\n Submit a PATCH request with your new password and password confirm to: ${resetUrl}\n
+  If you didnt forgot your password - Please ignore this email.`
+
+  try {
+    await sendEmail({
+      email: user.email,
+      subject: "Your password reset token is valid for 10mins",
+      message
+    });
+
+    res.status(200).json({
+      status: "Success",
+      message: "Token sent to email address provided"
+    })
+  } catch (error) {
+    console.log(error)
+    user.passwordResetToken = undefined;
+    user.passwordResetTokenExpires = undefined;
+    await user.save({validateBeforeSave: false});
+
+    return next(new ApiError("There was an error sending the email to the user. Please try again later",httpStatus.INTERNAL_SERVER_ERROR));
+  };
+
 });
 
 

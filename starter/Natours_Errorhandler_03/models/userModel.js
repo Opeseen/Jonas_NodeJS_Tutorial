@@ -69,11 +69,11 @@ userSchema.methods.changedPasswordAfter = function(JWTtimestamp){
   return false; // FALSE MEANS PASSWORD HAS NOT BEEN CHANGED
 };
 
+// GENERATE PASSWORD RESET TOKEN FOR USER
 userSchema.methods.createPasswordresetToken = function(){
   const resetToken = crypto.randomBytes(32).toString('hex');
   this.passwordResetToken = crypto.createHash('sha256').update(resetToken).digest('hex');
   this.passwordResetTokenExpires = Date.now() + 10 * 60 * 1000;
-  console.log({resetToken}, this.passwordResetToken);
   return resetToken;
 };
 
