@@ -3,6 +3,8 @@ const { userService, tokenService, authService } =  require('../services');
 const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
 const {sendEmail} = require('../utils/email');
+const crypto = require('crypto');
+const {User} = require('../models');
 
 const signUpUser = catchAsyncError(async (req, res) => {
   // CREATE A NEW USER
@@ -26,7 +28,7 @@ const login = catchAsyncError(async(req, res, next) => {
   
   // CHECK LOGIN CREDENTIALS
   const user = await authService.login(email, password);
-  // GENERATE TOKEN FOR USER
+  // GENERATE TOKEN FOR USER WHEN LOGIN
   const token = tokenService.generateToken(user.id, process.env.JWT_EXPIRATION, process.env.JWT_SECRET)
   
   res.status(httpStatus.OK).json({user,token});
@@ -34,6 +36,7 @@ const login = catchAsyncError(async(req, res, next) => {
 });
 
 
+// HANDLER TO SEND PASSWORD RESET TOKEN TO USER EMAIL ADDRESS
 const forgotPassword = catchAsyncError(async(req, res, next) =>{
   // GET USER BASED ON POSTED EMAIL
   const user = await userService.getUserByEmail(req.body.email);
@@ -64,6 +67,7 @@ const forgotPassword = catchAsyncError(async(req, res, next) =>{
     console.log(error)
     user.passwordResetToken = undefined;
     user.passwordResetTokenExpires = undefined;
+    // IF ERROR - THEN MAKE THE TOKEN UNDEFINED AND DISABLE VALIDATION
     await user.save({validateBeforeSave: false});
 
     return next(new ApiError("There was an error sending the email to the user. Please try again later",httpStatus.INTERNAL_SERVER_ERROR));
@@ -71,8 +75,21 @@ const forgotPassword = catchAsyncError(async(req, res, next) =>{
 
 });
 
+// HANDLER TO FINALLY RESET THE USER PASSWORD
+const resetPassword = async(req, res, next) => {
+// 1) get the user based on the token
+const hashedToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
+const user = await User.findOne({
+  passwordResetToken: hashedToken, 
+  passwordResetTokenExpires: {$gt: Date.now() }
+});
+console.log(user)
 
-const resetPassword = (req, res, next) => {
+// 2) If the token has not expired, and there is a user, then set th new user password
+
+// 3) Update the passwordChangedAt property for the user
+
+// 4) Log the user in, send JWT
 
 };
 
@@ -80,5 +97,6 @@ const resetPassword = (req, res, next) => {
 module.exports = {
   signUpUser,
   login,
-  forgotPassword
+  forgotPassword,
+  resetPassword
 };

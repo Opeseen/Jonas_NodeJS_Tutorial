@@ -40,7 +40,7 @@ const userSchema = new mongoose.Schema({
       message: 'Passwords are not the same!'
     }
   },
-  passwordChangedAt: Date,
+  passwordChangedAt: Date, // THIS IS WRITTEN MANUALLY ALONG WITH THE BODY WHEN SIGNING UP USER
   passwordResetToken: String,
   passwordResetTokenExpires: Date
 

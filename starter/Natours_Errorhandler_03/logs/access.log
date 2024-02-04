@@ -5,3 +5,10 @@
  POST /api/v1/users/forgotPassword 200 3896.370 ms PostmanRuntime/7.36.1 Wed, 31 Jan 2024 18:51:12 GMT
  POST /api/v1/users/forgotPassword 200 3229.745 ms PostmanRuntime/7.36.1 Wed, 31 Jan 2024 18:52:15 GMT
  POST /api/v1/users/forgotPassword 500 45.992 ms PostmanRuntime/7.36.1 Wed, 31 Jan 2024 18:53:16 GMT - error-message: There was an error sending the email to the user. Please try again later
+ POST /api/v1/users/forgotPassword 200 4716.269 ms PostmanRuntime/7.36.1 Sun, 04 Feb 2024 21:07:22 GMT
+ DELETE /api/v1/tours/65ac46ee288f0b2b0856e5ac 401 5.165 ms PostmanRuntime/7.36.1 Sun, 04 Feb 2024 21:09:25 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 200 517.233 ms PostmanRuntime/7.36.1 Sun, 04 Feb 2024 21:09:31 GMT
+ DELETE /api/v1/tours/65ac46ee288f0b2b0856e5ac 403 20.166 ms PostmanRuntime/7.36.1 Sun, 04 Feb 2024 21:09:54 GMT - error-message: You do not have permission to perform this activity
+ PATCH /api/v1/users/resetPassword/ac0d16b3b1304bc20e51be978d4b5772784939480a72e181a17d6c917f9f5d34 - - ms PostmanRuntime/7.36.1 Sun, 04 Feb 2024 21:57:09 GMT
+ PATCH /api/v1/users/resetPassword/90bb7d603592607a012df034f3d464380454541d8cd640319de2f4a4819f6295 - - ms PostmanRuntime/7.36.1 Sun, 04 Feb 2024 22:00:40 GMT
+ PATCH /api/v1/users/resetPassword/90bb7d603592607a012df034f3d464380454541d8cd640319de2f4a4819f6295 - - ms PostmanRuntime/7.36.1 Sun, 04 Feb 2024 22:03:18 GMT
