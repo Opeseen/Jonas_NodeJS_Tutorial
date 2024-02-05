@@ -6,13 +6,6 @@ const signUpUser = async (userDetails) => {
   return newUser;
 };
 
-const getAllUsers = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
-  });
-};
-
 const getUserByEmail = async(email) => {
   return await User.findOne({email}).select('+password');
 };
@@ -20,6 +13,22 @@ const getUserByEmail = async(email) => {
 const getuserByID = async(id) => {
   const user = await User.findById(id);
   return user;
+};
+
+const confirmUserHashedTokenAndExpiration = async(hashedToken) => {
+  const user = await User.findOne({
+    passwordResetToken: hashedToken, 
+    passwordResetTokenExpires: { $gt: Date.now() }
+  });
+
+  return user;
+};
+
+const getAllUsers = (req, res) => {
+  res.status(500).json({
+    status: 'error',
+    message: 'This route is not yet defined!'
+  });
 };
 
 const getUser = (req, res) => {
@@ -46,6 +55,7 @@ module.exports = {
   signUpUser,
   getAllUsers,
   getuserByID,
+  confirmUserHashedTokenAndExpiration,
   getUser,
   updateUser,
   deleteUser,

@@ -4,7 +4,6 @@ const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
 const {sendEmail} = require('../utils/email');
 const crypto = require('crypto');
-const {User} = require('../models');
 
 const signUpUser = catchAsyncError(async (req, res) => {
   // CREATE A NEW USER
@@ -76,27 +75,44 @@ const forgotPassword = catchAsyncError(async(req, res, next) =>{
 });
 
 // HANDLER TO FINALLY RESET THE USER PASSWORD
-const resetPassword = async(req, res, next) => {
+const resetPassword = catchAsyncError(async(req, res, next) => {
 // 1) get the user based on the token
 const hashedToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
-const user = await User.findOne({
-  passwordResetToken: hashedToken, 
-  passwordResetTokenExpires: {$gt: Date.now() }
-});
-console.log(user)
+const user = await userService.confirmUserHashedTokenAndExpiration(hashedToken);
 
 // 2) If the token has not expired, and there is a user, then set th new user password
+if(!user) { return next(new ApiError('Token is Invalid or Expired', httpStatus.BAD_REQUEST)) };
 
-// 3) Update the passwordChangedAt property for the user
+user.password = req.body.password;
+user.passwordConfirm = req.body.passwordConfirm;
+user.passwordResetToken = undefined; // DELETE THE PASSWORD RESET TOKEN
+user.passwordResetTokenExpires = undefined; // DELETE THE PASSWORD RESET TOKEN EXPIRES
 
-// 4) Log the user in, send JWT
+await user.save(); // SAVE THE USER NEW LOGIN DETAILS
+const token = tokenService.generateToken(user.id, process.env.JWT_EXPIRATION, process.env.JWT_SECRET)
+  
+// 3) Log the user in, send JWT
+res.status(httpStatus.OK).json({user,token});
 
-};
+});
+
+const updatePassword = catchAsyncError (async(req, res) => {
+  console.log("Haaaaa")
+
+  res.status(httpStatus.OK).send('😀');
+
+  // 2) Check if the posted current password is correct
+
+  // 3) If So, update password
+
+  // 4) Log the user in, ans send JWT
+});
 
 
 module.exports = {
   signUpUser,
   login,
   forgotPassword,
-  resetPassword
+  resetPassword,
+  updatePassword
 };

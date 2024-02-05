@@ -48,10 +48,18 @@ const userSchema = new mongoose.Schema({
 
 userSchema.pre('save', async function(next){
   const user = this
-  if(!user.isModified('password')) return next(); // ONLY RUN IF PASSWORD WAS MODIFIED
+  if(!user.isModified('password')) return next(); // ONLY RUN IF PASSWORD WAS NOT MODIFIED
 
   user.password = await bcrypt.hash(user.password, 12);
   user.passwordConfirm = undefined;
+  next();
+});
+
+userSchema.pre('save', async function(next){
+  const user = this
+  if(!user.isModified('password') || user.isNew) return next(); // ONLY RUN IF PASSWORD WAS NOT MODIFIED OR PASSWORD CREATION IS NEW NEW
+
+  user.passwordChangedAt = Date.now() - 1000;
   next();
 });
 
