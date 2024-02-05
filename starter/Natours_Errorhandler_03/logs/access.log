@@ -116,3 +116,8 @@
  GET /api/v1/users/updatePassword 401 4.038 ms PostmanRuntime/7.36.1 Mon, 05 Feb 2024 17:09:52 GMT - error-message: You are not login. Please login to get authorized
  GET /api/v1/users/updatePassword 200 7.037 ms PostmanRuntime/7.36.1 Mon, 05 Feb 2024 17:10:22 GMT
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 47.554 ms PostmanRuntime/7.36.1 Mon, 05 Feb 2024 17:10:34 GMT
+ GET /api/v1/users/updatePassword 200 108.619 ms PostmanRuntime/7.36.1 Mon, 05 Feb 2024 18:59:01 GMT
+ GET /api/v1/users/updatePassword 200 38.753 ms PostmanRuntime/7.36.1 Mon, 05 Feb 2024 18:59:47 GMT
+ GET /api/v1/users/updatePassword 200 49.274 ms PostmanRuntime/7.36.1 Mon, 05 Feb 2024 19:00:20 GMT
+ GET /api/v1/users/updatePassword 200 22.223 ms PostmanRuntime/7.36.1 Mon, 05 Feb 2024 19:01:39 GMT
+ GET /api/v1/users/updatePassword 200 54.303 ms PostmanRuntime/7.36.1 Mon, 05 Feb 2024 19:09:36 GMT

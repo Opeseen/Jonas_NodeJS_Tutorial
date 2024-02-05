@@ -96,8 +96,7 @@ res.status(httpStatus.OK).json({user,token});
 
 });
 
-const updatePassword = catchAsyncError (async(req, res) => {
-  console.log("Haaaaa")
+const updatePassword = catchAsyncError (async(req, res, next) => {
 
   res.status(httpStatus.OK).send('😀');
 
