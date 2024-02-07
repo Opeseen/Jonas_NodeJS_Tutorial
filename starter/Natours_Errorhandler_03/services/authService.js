@@ -2,7 +2,7 @@ const userService = require('./userService');
 const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
 
-const login = async (email, password) => {
+const loginAuthSvc = async (email, password) => {
   const user = await userService.getUserByEmail(email);
   if (!user || !(await user.isPasswordMatch(password))) {
     throw new ApiError('Incorrect email or password', httpStatus.UNAUTHORIZED);
@@ -11,5 +11,5 @@ const login = async (email, password) => {
 };
 
 module.exports = {
-  login,
+  loginAuthSvc,
 };

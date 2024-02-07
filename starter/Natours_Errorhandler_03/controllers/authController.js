@@ -5,33 +5,35 @@ const ApiError = require('../utils/ApiError');
 const {sendEmail} = require('../utils/email');
 const crypto = require('crypto');
 
+// Function to send user a Token
+const sendUserDetailsAndToken = (user, statusCode, res) => {
+  // GENERATE TOKEN FOR THE USER
+  const token = tokenService.generateToken(user.id,process.env.JWT_EXPIRATION,process.env.JWT_SECRET);
+  res.status(statusCode).json({
+    status: 'Success',
+    user,
+    token
+  });
+};
+
 const signUpUser = catchAsyncError(async (req, res) => {
   // CREATE A NEW USER
   const newUser = await userService.signUpUser(req.body);
-  // GENERATE TOKEN FOR USER
-  const token = tokenService.generateToken(newUser.id,process.env.JWT_EXPIRATION,process.env.JWT_SECRET)
-
-  res.status(httpStatus.CREATED).json({
-    status: 'Success',
-    user: {newUser},
-    token
-  });
+  // SEND TOKEN AND USER DETAILS
+  sendUserDetailsAndToken(newUser, httpStatus.CREATED, res);
 });
 
 
-const login = catchAsyncError(async(req, res, next) => {
+const loginUser = catchAsyncError(async(req, res, next) => {
   const {email, password} = req.body;
 
   // CHECK IF EMAIL AND PASSWORD IS PROVIDED
   if(!email || !password) {return next(new ApiError('Please provide email and password',httpStatus.BAD_REQUEST))};
   
   // CHECK LOGIN CREDENTIALS
-  const user = await authService.login(email, password);
-  // GENERATE TOKEN FOR USER WHEN LOGIN
-  const token = tokenService.generateToken(user.id, process.env.JWT_EXPIRATION, process.env.JWT_SECRET)
-  
-  res.status(httpStatus.OK).json({user,token});
-
+  const user = await authService.loginAuthSvc(email, password);
+  // SEND USER DETAILS AND TOKEN
+  sendUserDetailsAndToken(user, httpStatus.OK, res);
 });
 
 
@@ -61,7 +63,7 @@ const forgotPassword = catchAsyncError(async(req, res, next) =>{
     res.status(200).json({
       status: "Success",
       message: "Token sent to email address provided"
-    })
+    });
   } catch (error) {
     console.log(error)
     user.passwordResetToken = undefined;
@@ -71,47 +73,48 @@ const forgotPassword = catchAsyncError(async(req, res, next) =>{
 
     return next(new ApiError("There was an error sending the email to the user. Please try again later",httpStatus.INTERNAL_SERVER_ERROR));
   };
-
 });
 
 // HANDLER TO FINALLY RESET THE USER PASSWORD
 const resetPassword = catchAsyncError(async(req, res, next) => {
-// 1) get the user based on the token
-const hashedToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
-const user = await userService.confirmUserHashedTokenAndExpiration(hashedToken);
+  // 1) get the user based on the token
+  const hashedToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
+  const user = await userService.confirmUserHashedTokenAndExpiration(hashedToken);
 
-// 2) If the token has not expired, and there is a user, then set th new user password
-if(!user) { return next(new ApiError('Token is Invalid or Expired', httpStatus.BAD_REQUEST)) };
+  // 2) If the token has not expired, and there is a user, then set th new user password
+  if(!user) { return next(new ApiError('Token is Invalid or Expired', httpStatus.BAD_REQUEST)) };
 
-user.password = req.body.password;
-user.passwordConfirm = req.body.passwordConfirm;
-user.passwordResetToken = undefined; // DELETE THE PASSWORD RESET TOKEN
-user.passwordResetTokenExpires = undefined; // DELETE THE PASSWORD RESET TOKEN EXPIRES
+  user.password = req.body.password;
+  user.passwordConfirm = req.body.passwordConfirm;
+  user.passwordResetToken = undefined; // DELETE THE PASSWORD RESET TOKEN
+  user.passwordResetTokenExpires = undefined; // DELETE THE PASSWORD RESET TOKEN EXPIRES
 
-await user.save(); // SAVE THE USER NEW LOGIN DETAILS
-const token = tokenService.generateToken(user.id, process.env.JWT_EXPIRATION, process.env.JWT_SECRET)
-  
-// 3) Log the user in, send JWT
-res.status(httpStatus.OK).json({user,token});
-
+  await user.save(); // SAVE THE USER NEW LOGIN DETAILS
+  // LOGIN THE USER,SEND USER DETAILS AND TOKEN
+  sendUserDetailsAndToken(user, httpStatus.OK, res);
 });
 
-const updatePassword = catchAsyncError (async(req, res, next) => {
-
-  res.status(httpStatus.OK).send('😀');
+const updateMyPassword = catchAsyncError (async(req, res, next) => {
+  // Get the user from the collection
+  const user = await userService.getUserByEmail(req.user.email);
 
   // 2) Check if the posted current password is correct
+  if(!(await user.isPasswordMatch(req.body.currentPassword))) { return next(new ApiError('Your current password is wrong',httpStatus.UNAUTHORIZED)); };
 
   // 3) If So, update password
+  user.password = req.body.password;
+  user.passwordConfirm = req.body.passwordConfirm;
+  await user.save();
 
-  // 4) Log the user in, ans send JWT
+  // 4) Log the user in, anD send JWT
+  sendUserDetailsAndToken(user, httpStatus.OK, res);
 });
 
 
 module.exports = {
   signUpUser,
-  login,
+  loginUser,
   forgotPassword,
   resetPassword,
-  updatePassword
+  updateMyPassword
 };

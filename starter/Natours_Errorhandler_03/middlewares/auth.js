@@ -18,7 +18,7 @@ const  loginAuth = catchAsyncError(async(req, res, next) => {
   // VERIFY TOKEN
   const verifiedToken = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
-// CHECK IF THE USERR STILL EXISTS
+// CHECK IF THE USERR STILL EXISTS USING THE JWT SUBJECT
   const currentUser = await userService.getuserByID(verifiedToken.sub);
   if(!currentUser) {return next(new ApiError('Oops!: The user no longer exists', httpStatus.UNAUTHORIZED))};
 
