@@ -42,7 +42,12 @@ const userSchema = new mongoose.Schema({
   },
   passwordChangedAt: Date, // THIS IS WRITTEN MANUALLY ALONG WITH THE BODY WHEN SIGNING UP USER
   passwordResetToken: String,
-  passwordResetTokenExpires: Date
+  passwordResetTokenExpires: Date,
+  active: {
+    type: Boolean,
+    default: true,
+    private: true
+  }
 
 });
 

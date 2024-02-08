@@ -24,40 +24,34 @@ const confirmUserHashedTokenAndExpiration = async(hashedToken) => {
   return user;
 };
 
-const getAllUsers = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
+const updateCurrentUserData = async (updatedUserDetails, userId) => {
+
+  const {email, name} = updatedUserDetails;
+  const updatedUser = await User.findByIdAndUpdate(userId, {email, name}, {
+    new: true,
+    runValidators: true
   });
+
+  return updatedUser;
 };
 
-const getUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
-  });
+const deleteMyUserData = async(userId) => {
+  await User.findByIdAndUpdate(userId, {active: false});
 };
-const updateUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
-  });
+
+const getAllUsers = async() => {
+  const allUser = await User.find();
+  return allUser;
 };
-const deleteUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'This route is not yet defined!'
-  });
-};
+
 
 
 module.exports = {
   signUpUser,
-  getAllUsers,
+  getUserByEmail,
   getuserByID,
   confirmUserHashedTokenAndExpiration,
-  getUser,
-  updateUser,
-  deleteUser,
-  getUserByEmail
+  updateCurrentUserData,
+  deleteMyUserData,
+  getAllUsers,
 };

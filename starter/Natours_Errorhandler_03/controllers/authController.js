@@ -65,7 +65,6 @@ const forgotPassword = catchAsyncError(async(req, res, next) =>{
       message: "Token sent to email address provided"
     });
   } catch (error) {
-    console.log(error)
     user.passwordResetToken = undefined;
     user.passwordResetTokenExpires = undefined;
     // IF ERROR - THEN MAKE THE TOKEN UNDEFINED AND DISABLE VALIDATION
@@ -98,7 +97,7 @@ const updateMyPassword = catchAsyncError (async(req, res, next) => {
   // Get the user from the collection
   const user = await userService.getUserByEmail(req.user.email);
 
-  // 2) Check if the posted current password is correct
+  // 2) Check if the posted current password match the database password
   if(!(await user.isPasswordMatch(req.body.currentPassword))) { return next(new ApiError('Your current password is wrong',httpStatus.UNAUTHORIZED)); };
 
   // 3) If So, update password

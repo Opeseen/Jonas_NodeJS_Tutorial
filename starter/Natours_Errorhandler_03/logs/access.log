@@ -42,3 +42,70 @@
  PATCH /api/v1/users/updatePassword 200 1486.701 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:11:09 GMT
  POST /api/v1/users/login 200 752.128 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:12:10 GMT
  PATCH /api/v1/users/updatePassword 200 1366.175 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:13:10 GMT
+ PATCH /api/v1/users/updatePassword 401 6024.753 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:54:47 GMT - error-message: Your current password is wrong
+ PATCH /api/v1/users/updatePassword 401 2.597 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:55:36 GMT - error-message: Invalid token. Please login again
+ PATCH /api/v1/users/updatePassword 401 1.592 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:56:26 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 401 608.909 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:56:38 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 889.718 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:56:49 GMT
+ PATCH /api/v1/users/updatePassword 400 686.350 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:56:57 GMT - error-message: Passwords are not the same!
+ PATCH /api/v1/users/updatePassword 401 1.777 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:57:22 GMT - error-message: Invalid token. Please login again
+ PATCH /api/v1/users/updatePassword 401 1.409 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:28 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 200 655.390 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:32 GMT
+ PATCH /api/v1/users/updatePassword 400 685.025 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:38 GMT - error-message: Passwords are not the same!
+ PATCH /api/v1/users/updatePassword 400 690.743 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:41 GMT - error-message: Passwords are not the same!
+ PATCH /api/v1/users/updatePassword 400 633.367 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:47 GMT - error-message: Passwords are not the same!
+ PATCH /api/v1/users/updatePassword 400 666.233 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:54 GMT - error-message: Passwords are not the same!
+ PATCH /api/v1/users/updatePassword 200 1667.758 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:59:05 GMT
+ PATCH /api/v1/users/updatePassword 401 5.765 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:59:36 GMT - error-message: Oops!: User recently changed his password - Please login again
+ PATCH /api/v1/users/updatePassword 401 4.682 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:00:47 GMT - error-message: Oops!: User recently changed his password - Please login again
+ PATCH /api/v1/users/updatePassword 401 4.910 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:00:49 GMT - error-message: Oops!: User recently changed his password - Please login again
+ PATCH /api/v1/users/updatePassword 401 4.247 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:00:51 GMT - error-message: Oops!: User recently changed his password - Please login again
+ POST /api/v1/users/login 200 651.598 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:00:55 GMT
+ PATCH /api/v1/users/updatePassword 200 1407.137 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:01:01 GMT
+ PATCH /api/v1/users/updatePassword 401 5.841 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:01:03 GMT - error-message: Oops!: User recently changed his password - Please login again
+ POST /api/v1/users/login 200 637.656 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:01:34 GMT
+ PATCH /api/v1/users/updatePassword 200 1272.894 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:03:35 GMT
+ PATCH /api/v1/users/updatePassword 401 4.617 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:03:46 GMT - error-message: Oops!: User recently changed his password - Please login again
+ PATCH /api/v1/users/updatePassword 401 4.014 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:03:49 GMT - error-message: Oops!: User recently changed his password - Please login again
+ PATCH /api/v1/users/updateSelfPassword 401 32.744 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:32:02 GMT - error-message: Oops!: User recently changed his password - Please login again
+ POST /api/v1/users/login 200 681.295 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:32:47 GMT
+ PATCH /api/v1/users/updateSelfPassword 500 7.120 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:32:53 GMT - error-message: Class constructor ApiError cannot be invoked without 'new'
+ PATCH /api/v1/users/updateSelfPassword 400 29.535 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:36:51 GMT - error-message: This route is not for password update. Please use the /updatePassword
+ PATCH /api/v1/users/updateSelfPassword 200 9.264 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:37:59 GMT
+ PATCH /api/v1/users/updateSelfPassword 400 7.086 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:38:07 GMT - error-message: This route is not for password update. Please use the /updatePassword
+ PATCH /api/v1/users/updateCurrentUserData 400 35.262 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:01:32 GMT - error-message: This route is not for password update. Please use the /updatePassword
+ PATCH /api/v1/users/updateCurrentUserData 400 8.147 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:03:54 GMT - error-message: This route is not for password update. Please use the /updatePassword
+ PATCH /api/v1/users/updateCurrentUserData 200 6.568 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:04:33 GMT
+ PATCH /api/v1/users/updateCurrentUserData 400 5.541 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:04:38 GMT - error-message: This route is not for password update. Please use the /updatePassword
+ PATCH /api/v1/users/updateCurrentUserData 400 74.695 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:43:10 GMT - error-message: This route is not for password update. Please use the /updatePassword
+ PATCH /api/v1/users/updateCurrentUserData 401 1.946 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:43:31 GMT - error-message: You are not login. Please login to get authorized
+ PATCH /api/v1/users/updateCurrentUserData 400 48.720 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:43:41 GMT - error-message: This route is not for password update. Please use the /updatePassword
+ PATCH /api/v1/users/updateCurrentUserData 200 144.209 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:44:55 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 10.694 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:45:37 GMT
+ POST /api/v1/users/login 401 4.172 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:46:03 GMT - error-message: Incorrect email or password
+ PATCH /api/v1/users/updateCurrentUserData 401 1.933 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:46:13 GMT - error-message: Invalid token. Please login again
+ PATCH /api/v1/users/updateCurrentUserData 401 1.087 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:46:36 GMT - error-message: Invalid token. Please login again
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 2.298 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:48:37 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 401 717.614 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:49:05 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 671.124 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:49:10 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 8.119 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:49:21 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 8.163 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:49:38 GMT
+ PATCH /api/v1/users/updateCurrentUserData 400 7.364 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:50:54 GMT - error-message: Please provide your email
+ PATCH /api/v1/users/updateCurrentUserData 400 10.050 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:51:04 GMT - error-message: Please provide your email
+ PATCH /api/v1/users/updateCurrentUserData 200 9.234 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:51:40 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 6.726 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:51:58 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 6.993 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:52:07 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 239.649 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 14:33:40 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 75.673 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:01:02 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 7.759 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:03:26 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 9.189 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:03:35 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 10.525 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:03:42 GMT
+ PATCH /api/v1/users/updatePassword 200 1399.231 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:04:05 GMT
+ PATCH /api/v1/users/updateCurrentUserData 401 6.315 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:04:28 GMT - error-message: Oops!: User recently changed his password - Please login again
+ PATCH /api/v1/users/updateCurrentUserData 401 4.596 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:04:32 GMT - error-message: Oops!: User recently changed his password - Please login again
+ POST /api/v1/users/login 200 646.078 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:05:27 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 7.076 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:05:30 GMT
+ POST /api/v1/users/login 200 962.029 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:31:47 GMT
+ DELETE /api/v1/users/deleteMyUserData 204 42.372 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:32:04 GMT
+ GET /api/v1/users 200 60.645 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 16:07:10 GMT
+ GET /api/v1/users 200 37.711 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 16:08:06 GMT
