@@ -109,3 +109,58 @@
  DELETE /api/v1/users/deleteMyUserData 204 42.372 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:32:04 GMT
  GET /api/v1/users 200 60.645 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 16:07:10 GMT
  GET /api/v1/users 200 37.711 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 16:08:06 GMT
+ GET /api/v1/users 200 66.433 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:01 GMT
+ GET /api/v1/users 200 4.818 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:19 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 221.619 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:25 GMT
+ GET /api/v1/users 200 4.234 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:32 GMT
+ DELETE /api/v1/users/deleteMyUserData 204 318.560 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:36 GMT
+ DELETE /api/v1/users/deleteMyUserData 204 7.958 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:36:02 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 180.616 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:37:20 GMT
+ POST /api/v1/users/login 401 533.801 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:38:05 GMT - error-message: Incorrect email or password
+ PATCH /api/v1/users/updatePassword 401 92.619 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:38:58 GMT - error-message: Invalid token. Please login again
+ PATCH /api/v1/users/updatePassword 401 0.916 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:39:02 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 401 311.757 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:39:11 GMT - error-message: Incorrect email or password
+ PATCH /api/v1/users/updateCurrentUserData 401 0.566 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:39:43 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 401 311.938 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:40:09 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 324.398 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:40:19 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 7.709 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:40:46 GMT
+ PATCH /api/v1/users/updatePassword 401 310.306 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:40:55 GMT - error-message: Your current password is wrong
+ PATCH /api/v1/users/updatePassword 200 642.018 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:07 GMT
+ PATCH /api/v1/users/updateCurrentUserData 401 11.661 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:16 GMT - error-message: Oops!: User recently changed his password - Please login again
+ PATCH /api/v1/users/updateCurrentUserData 401 5.202 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:22 GMT - error-message: Oops!: User recently changed his password - Please login again
+ POST /api/v1/users/login 401 312.416 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:32 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 314.879 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:42 GMT
+ PATCH /api/v1/users/updateCurrentUserData 200 5.964 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:48 GMT
+ DELETE /api/v1/users/deleteMyUserData 204 6.186 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:42:06 GMT
+ DELETE /api/v1/tours/65ac46ee288f0b2b0856e5ac 403 4.286 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:42:21 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/users 200 3.521 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:42:42 GMT
+ GET /api/v1/users 200 3.105 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:43:16 GMT
+ GET /api/v1/users 200 2.110 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:44:35 GMT
+ GET /api/v1/users 200 14.258 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:51:20 GMT
+ GET /api/v1/users 200 4.077 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:51:35 GMT
+ POST /api/v1/users/login 401 75.327 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:53:29 GMT - error-message: Incorrect email or password
+ PATCH /api/v1/users/updatePassword 401 2.345 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:53:50 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 401 35.514 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:54:10 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 401 3.214 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:54:41 GMT - error-message: Incorrect email or password
+ PATCH /api/v1/users/updateCurrentUserData 401 0.792 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:55:21 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/forgotPassword 404 3.171 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:55:38 GMT - error-message: No such user with the Email address on our records
+ POST /api/v1/users/forgotPassword 404 3.858 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:56:50 GMT - error-message: No such user with the Email address on our records
+ DELETE /api/v1/users/deleteMyUserData 401 1.413 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:58:25 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/signup 500 805.683 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:58:45 GMT - error-message: Duplicate Field: "mike@solutions.com" already exists
+ POST /api/v1/users/signup 500 346.188 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:59:22 GMT - error-message: Duplicate Field: "mike@solutions.com" already exists
+ POST /api/v1/users/signup 500 439.213 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:04:49 GMT - error-message: Duplicate Field: "mike@solutions.com" already exists
+ POST /api/v1/users/signup 500 363.594 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:04:58 GMT - error-message: Duplicate Field: "mike@solutions.com" already exists
+ PATCH /api/v1/users/updateCurrentUserData 401 2.314 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:05:33 GMT - error-message: Invalid token. Please login again
+ DELETE /api/v1/users/deleteMyUserData 401 1.088 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:05:38 GMT - error-message: Invalid token. Please login again
+ PATCH /api/v1/users/resetPassword/d16bbddd401bb3977816f331b00686f89feaab6b798527a99701d94ec1244ca5 400 12.133 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:05:57 GMT - error-message: Token is Invalid or Expired
+ POST /api/v1/users/forgotPassword 404 3.424 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:06:06 GMT - error-message: No such user with the Email address on our records
+ POST /api/v1/users/forgotPassword 404 11.810 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:07:09 GMT - error-message: No such user with the Email address on our records
+ POST /api/v1/users/signup 400 56.531 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:11:36 GMT - error-message: `guides` is not a valid enum value for path `role`.
+ POST /api/v1/users/signup 500 770.002 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:11:45 GMT - error-message: option expires is invalid
+ POST /api/v1/users/signup 500 494.509 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:17:02 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
+ POST /api/v1/users/signup 500 432.565 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:17:32 GMT - error-message: option expires is invalid
+ POST /api/v1/users/signup 201 354.940 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:19:36 GMT
+ POST /api/v1/users/signup 201 473.862 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:34:17 GMT
+ POST /api/v1/users/signup 500 425.809 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:34:28 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
+ POST /api/v1/users/signup 500 380.315 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:35:07 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
+ POST /api/v1/users/signup 201 345.846 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:35:53 GMT

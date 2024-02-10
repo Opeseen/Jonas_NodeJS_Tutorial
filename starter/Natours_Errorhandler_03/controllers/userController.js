@@ -9,7 +9,7 @@ const updateCurrentUserData = catchAsyncError(async(req, res, next) => {
   if(req.body.password || req.body.passwordConfirm) { 
     return next(new ApiError('This route is not for password update. Please use the /updatePassword', httpStatus.BAD_REQUEST)); 
   };
-
+  // Let the user to update his personal details
   const updatedUserDetails = await userService.updateCurrentUserData(req.body, req.user.id);
 
   return res.status(httpStatus.OK).json({
@@ -31,6 +31,7 @@ const deleteMyUserData = catchAsyncError(async(req, res) => {
 
 
 const getAllUsers = catchAsyncError(async(req, res) => {
+  // return all users from collection
   const allUsers = await userService.getAllUsers();
   res.status(httpStatus.OK).json({
     status: 'Success',

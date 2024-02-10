@@ -68,6 +68,12 @@ userSchema.pre('save', async function(next){
   next();
 });
 
+userSchema.pre(/^find/, function(next) { // This middleware only return active users on any find user request.
+  const user = this;
+  user.find({active: {$ne: false}});
+  next();
+});
+
 // Comparing the user password with the database password
 userSchema.methods.isPasswordMatch = async function (password) {
   const user = this;

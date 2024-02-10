@@ -4,11 +4,21 @@ const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
 const {sendEmail} = require('../utils/email');
 const crypto = require('crypto');
+const dayjs = require('dayjs');
 
 // Function to send user a Token
 const sendUserDetailsAndToken = (user, statusCode, res) => {
   // GENERATE TOKEN FOR THE USER
   const token = tokenService.generateToken(user.id,process.env.JWT_EXPIRATION,process.env.JWT_SECRET);
+  // COOKIES HANDLER
+  const cookieOption = {
+    expires: dayjs().add(process.env.JWT_EXPIRATION, 'days').toDate(),
+    httpOnly: true
+  };
+  if(process.env.NODE_ENV === 'production') {cookieOption.secure =  true;}
+
+  res.cookie('jwt', token, cookieOption); // Send the cookie at every response
+
   res.status(statusCode).json({
     status: 'Success',
     user,
