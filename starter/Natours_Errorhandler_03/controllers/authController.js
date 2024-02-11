@@ -90,7 +90,7 @@ const resetPassword = catchAsyncError(async(req, res, next) => {
   const hashedToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
   const user = await userService.confirmUserHashedTokenAndExpiration(hashedToken);
 
-  // 2) If the token has not expired, and there is a user, then set th new user password
+  // 2) If the token has not expired, and there is a user, then set the new user password
   if(!user) { return next(new ApiError('Token is Invalid or Expired', httpStatus.BAD_REQUEST)) };
 
   user.password = req.body.password;
