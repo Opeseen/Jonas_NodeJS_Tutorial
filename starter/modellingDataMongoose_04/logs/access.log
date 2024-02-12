@@ -1,0 +1,38 @@
+ POST /api/v1/users/login 400 1.388 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:09 GMT - error-message: Invalid email : [object Object] provided
+ POST /api/v1/users/login 200 682.506 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:30 GMT
+ POST /api/v1/users/login 401 3.089 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:34 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 708.112 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:53 GMT
+ GET /api/v1/tours?duration[gte]=5&fields=name,duration,difficulty,price,ratingsAverage 200 23.366 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:58 GMT
+ POST /api/v1/users/login 200 633.482 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:13:05 GMT
+ POST /api/v1/users/signup 500 983.248 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:14:42 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
+ POST /api/v1/users/signup 201 838.014 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:14:57 GMT
+ POST /api/v1/users/signup 500 889.231 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:15:03 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.comss" already exists
+ POST /api/v1/users/signup 201 844.039 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:16:09 GMT
+ POST /api/v1/users/signup 500 917.478 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:17:45 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 401 3.057 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:17 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 200 681.295 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:25 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 22.588 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:29 GMT
+ GET /api/v1/tours?sort=duration,price 200 17.468 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:39 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 22.724 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:47 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 10.957 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:50 GMT
+ GET /api/v1/tours?sort=duration,price&sort=price&fields=name,duration,difficulty,price,ratingsAverage 500 7.090 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:35:15 GMT - error-message: this.queryString.sort.split is not a function
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 13.165 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:35:29 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 64.311 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:36:15 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage&sort=duration 200 47.764 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:42:26 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage&sort=durationdd 200 28.131 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:42:40 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 11.196 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:42:56 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage&sort= 200 12.030 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:43:22 GMT
+ GET /api/v1/tours?sort=duration,price 200 18.112 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:43:30 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 10.703 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:45:53 GMT
+ GET /api/v1/tours?duration[gte]=5&fields=name,duration,difficulty,price,ratingsAverage 200 42.200 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:59:23 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5 200 9.927 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:00:22 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 10.862 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:00:28 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5,14 400 58.623 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:00:39 GMT - error-message: Invalid duration : 5,14 provided
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5,14 400 71.539 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:01:40 GMT - error-message: Invalid duration : 5,14 provided
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 86.374 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:02:03 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 49.097 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:02:15 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 38.395 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:12:50 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 10.090 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:13:13 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 10.754 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:14:51 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 10.180 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:17:57 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 50.133 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:22:31 GMT
