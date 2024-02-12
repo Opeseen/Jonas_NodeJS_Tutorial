@@ -1,166 +1,38 @@
- PATCH /api/v1/users/resetPassword/06c56a730246273e050091e633f23f5e267f333e4c5c98b299b69941732a727c 400 3.950 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:30:35 GMT - error-message: Token is Invalid or Expired
- POST /api/v1/users/forgotPassword 200 10891.163 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:30:59 GMT
- PATCH /api/v1/users/resetPassword/06c56a730246273e050091e633f23f5e267f333e4c5c98b299b69941732a727c 400 4.823 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:31:22 GMT - error-message: Token is Invalid or Expired
- PATCH /api/v1/users/resetPassword/42fb5798186db4413d8d0b57e3f67e628ccc95d0da938b3bd50a9dee3214e208 500 455.247 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:31:30 GMT - error-message: newUser is not defined
- PATCH /api/v1/users/resetPassword/42fb5798186db4413d8d0b57e3f67e628ccc95d0da938b3bd50a9dee3214e208 400 2.847 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:34:02 GMT - error-message: Token is Invalid or Expired
- POST /api/v1/users/forgotPassword 200 4611.510 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:36:10 GMT
- PATCH /api/v1/users/resetPassword/42fb5798186db4413d8d0b57e3f67e628ccc95d0da938b3bd50a9dee3214e208 400 9.873 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:36:14 GMT - error-message: Token is Invalid or Expired
- PATCH /api/v1/users/resetPassword/d16bbddd401bb3977816f331b00686f89feaab6b798527a99701d94ec1244ca5 200 926.847 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:36:55 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 30.775 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:37:18 GMT
- POST /api/v1/users/login 200 653.679 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:37:25 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 132.356 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:37:29 GMT
- PATCH /api/v1/users/updatePassword 500 103.326 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:41:20 GMT - error-message: userService.getuserByID(...).select is not a function
- PATCH /api/v1/users/updatePassword 500 28.727 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:48:12 GMT - error-message: userService.getuserByID(...).select is not a function
- POST /api/v1/users/login 200 392.070 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:49:37 GMT
- POST /api/v1/users/login 500 58.736 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:50:55 GMT - error-message: Illegal arguments: string, undefined
- PATCH /api/v1/users/updatePassword 401 11.225 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:55:16 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 200 1048.374 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:55:29 GMT
- PATCH /api/v1/users/updatePassword 400 17.354 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:55:34 GMT - error-message: Invalid _id : opeyemi5055@yahoo.com provided
- PATCH /api/v1/users/updatePassword 400 503.569 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:57:24 GMT - error-message: Passwords are not the same!
- PATCH /api/v1/users/updatePassword 400 817.594 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 22:59:57 GMT - error-message: Passwords are not the same!
- PATCH /api/v1/users/updatePassword 401 537.361 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:02:27 GMT - error-message: Your current password is wrong
- PATCH /api/v1/users/updatePassword 401 932.733 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:02:43 GMT - error-message: Your current password is wrong
- PATCH /api/v1/users/updatePassword 401 829.111 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:04:19 GMT - error-message: Your current password is wrong
- PATCH /api/v1/users/updatePassword 400 1053.468 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:04:36 GMT - error-message: Passwords are not the same!
- PATCH /api/v1/users/updatePassword 200 1767.653 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:05:09 GMT
- POST /api/v1/users/login 401 327.918 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:05:24 GMT - error-message: Incorrect email or password
- PATCH /api/v1/users/updatePassword 401 1.545 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:05:32 GMT - error-message: Invalid token. Please login again
- PATCH /api/v1/users/updatePassword 401 1.503 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:05:39 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 401 663.589 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:05:54 GMT - error-message: Incorrect email or password
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 1.216 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:05:57 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 401 690.931 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:06:05 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 767.693 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:06:16 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 22.308 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:06:37 GMT
- PATCH /api/v1/users/updatePassword 401 706.333 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:06:51 GMT - error-message: Your current password is wrong
- PATCH /api/v1/users/updatePassword 401 363.794 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:07:23 GMT - error-message: Your current password is wrong
- PATCH /api/v1/users/updatePassword 200 1395.736 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:08:38 GMT
- PATCH /api/v1/users/updatePassword 401 6.303 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:09:32 GMT - error-message: Oops!: User recently changed his password - Please login again
- PATCH /api/v1/users/updatePassword 401 1.893 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:09:50 GMT - error-message: Invalid token. Please login again
- PATCH /api/v1/users/updatePassword 401 1.157 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:10:03 GMT - error-message: Invalid token. Please login again
- PATCH /api/v1/users/updatePassword 401 0.735 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:10:09 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 200 339.788 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:10:57 GMT
- PATCH /api/v1/users/updatePassword 200 1486.701 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:11:09 GMT
- POST /api/v1/users/login 200 752.128 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:12:10 GMT
- PATCH /api/v1/users/updatePassword 200 1366.175 ms PostmanRuntime/7.36.1 Wed, 07 Feb 2024 23:13:10 GMT
- PATCH /api/v1/users/updatePassword 401 6024.753 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:54:47 GMT - error-message: Your current password is wrong
- PATCH /api/v1/users/updatePassword 401 2.597 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:55:36 GMT - error-message: Invalid token. Please login again
- PATCH /api/v1/users/updatePassword 401 1.592 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:56:26 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 401 608.909 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:56:38 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 889.718 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:56:49 GMT
- PATCH /api/v1/users/updatePassword 400 686.350 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:56:57 GMT - error-message: Passwords are not the same!
- PATCH /api/v1/users/updatePassword 401 1.777 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:57:22 GMT - error-message: Invalid token. Please login again
- PATCH /api/v1/users/updatePassword 401 1.409 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:28 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 200 655.390 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:32 GMT
- PATCH /api/v1/users/updatePassword 400 685.025 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:38 GMT - error-message: Passwords are not the same!
- PATCH /api/v1/users/updatePassword 400 690.743 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:41 GMT - error-message: Passwords are not the same!
- PATCH /api/v1/users/updatePassword 400 633.367 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:47 GMT - error-message: Passwords are not the same!
- PATCH /api/v1/users/updatePassword 400 666.233 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:58:54 GMT - error-message: Passwords are not the same!
- PATCH /api/v1/users/updatePassword 200 1667.758 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:59:05 GMT
- PATCH /api/v1/users/updatePassword 401 5.765 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 11:59:36 GMT - error-message: Oops!: User recently changed his password - Please login again
- PATCH /api/v1/users/updatePassword 401 4.682 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:00:47 GMT - error-message: Oops!: User recently changed his password - Please login again
- PATCH /api/v1/users/updatePassword 401 4.910 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:00:49 GMT - error-message: Oops!: User recently changed his password - Please login again
- PATCH /api/v1/users/updatePassword 401 4.247 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:00:51 GMT - error-message: Oops!: User recently changed his password - Please login again
- POST /api/v1/users/login 200 651.598 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:00:55 GMT
- PATCH /api/v1/users/updatePassword 200 1407.137 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:01:01 GMT
- PATCH /api/v1/users/updatePassword 401 5.841 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:01:03 GMT - error-message: Oops!: User recently changed his password - Please login again
- POST /api/v1/users/login 200 637.656 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:01:34 GMT
- PATCH /api/v1/users/updatePassword 200 1272.894 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:03:35 GMT
- PATCH /api/v1/users/updatePassword 401 4.617 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:03:46 GMT - error-message: Oops!: User recently changed his password - Please login again
- PATCH /api/v1/users/updatePassword 401 4.014 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:03:49 GMT - error-message: Oops!: User recently changed his password - Please login again
- PATCH /api/v1/users/updateSelfPassword 401 32.744 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:32:02 GMT - error-message: Oops!: User recently changed his password - Please login again
- POST /api/v1/users/login 200 681.295 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:32:47 GMT
- PATCH /api/v1/users/updateSelfPassword 500 7.120 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:32:53 GMT - error-message: Class constructor ApiError cannot be invoked without 'new'
- PATCH /api/v1/users/updateSelfPassword 400 29.535 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:36:51 GMT - error-message: This route is not for password update. Please use the /updatePassword
- PATCH /api/v1/users/updateSelfPassword 200 9.264 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:37:59 GMT
- PATCH /api/v1/users/updateSelfPassword 400 7.086 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 12:38:07 GMT - error-message: This route is not for password update. Please use the /updatePassword
- PATCH /api/v1/users/updateCurrentUserData 400 35.262 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:01:32 GMT - error-message: This route is not for password update. Please use the /updatePassword
- PATCH /api/v1/users/updateCurrentUserData 400 8.147 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:03:54 GMT - error-message: This route is not for password update. Please use the /updatePassword
- PATCH /api/v1/users/updateCurrentUserData 200 6.568 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:04:33 GMT
- PATCH /api/v1/users/updateCurrentUserData 400 5.541 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:04:38 GMT - error-message: This route is not for password update. Please use the /updatePassword
- PATCH /api/v1/users/updateCurrentUserData 400 74.695 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:43:10 GMT - error-message: This route is not for password update. Please use the /updatePassword
- PATCH /api/v1/users/updateCurrentUserData 401 1.946 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:43:31 GMT - error-message: You are not login. Please login to get authorized
- PATCH /api/v1/users/updateCurrentUserData 400 48.720 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:43:41 GMT - error-message: This route is not for password update. Please use the /updatePassword
- PATCH /api/v1/users/updateCurrentUserData 200 144.209 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:44:55 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 10.694 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:45:37 GMT
- POST /api/v1/users/login 401 4.172 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:46:03 GMT - error-message: Incorrect email or password
- PATCH /api/v1/users/updateCurrentUserData 401 1.933 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:46:13 GMT - error-message: Invalid token. Please login again
- PATCH /api/v1/users/updateCurrentUserData 401 1.087 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:46:36 GMT - error-message: Invalid token. Please login again
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 2.298 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:48:37 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 401 717.614 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:49:05 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 671.124 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:49:10 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 8.119 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:49:21 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 8.163 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:49:38 GMT
- PATCH /api/v1/users/updateCurrentUserData 400 7.364 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:50:54 GMT - error-message: Please provide your email
- PATCH /api/v1/users/updateCurrentUserData 400 10.050 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:51:04 GMT - error-message: Please provide your email
- PATCH /api/v1/users/updateCurrentUserData 200 9.234 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:51:40 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 6.726 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:51:58 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 6.993 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 13:52:07 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 239.649 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 14:33:40 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 75.673 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:01:02 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 7.759 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:03:26 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 9.189 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:03:35 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 10.525 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:03:42 GMT
- PATCH /api/v1/users/updatePassword 200 1399.231 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:04:05 GMT
- PATCH /api/v1/users/updateCurrentUserData 401 6.315 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:04:28 GMT - error-message: Oops!: User recently changed his password - Please login again
- PATCH /api/v1/users/updateCurrentUserData 401 4.596 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:04:32 GMT - error-message: Oops!: User recently changed his password - Please login again
- POST /api/v1/users/login 200 646.078 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:05:27 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 7.076 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:05:30 GMT
- POST /api/v1/users/login 200 962.029 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:31:47 GMT
- DELETE /api/v1/users/deleteMyUserData 204 42.372 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 15:32:04 GMT
- GET /api/v1/users 200 60.645 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 16:07:10 GMT
- GET /api/v1/users 200 37.711 ms PostmanRuntime/7.36.1 Thu, 08 Feb 2024 16:08:06 GMT
- GET /api/v1/users 200 66.433 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:01 GMT
- GET /api/v1/users 200 4.818 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:19 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 221.619 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:25 GMT
- GET /api/v1/users 200 4.234 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:32 GMT
- DELETE /api/v1/users/deleteMyUserData 204 318.560 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:35:36 GMT
- DELETE /api/v1/users/deleteMyUserData 204 7.958 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:36:02 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 180.616 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:37:20 GMT
- POST /api/v1/users/login 401 533.801 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:38:05 GMT - error-message: Incorrect email or password
- PATCH /api/v1/users/updatePassword 401 92.619 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:38:58 GMT - error-message: Invalid token. Please login again
- PATCH /api/v1/users/updatePassword 401 0.916 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:39:02 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 401 311.757 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:39:11 GMT - error-message: Incorrect email or password
- PATCH /api/v1/users/updateCurrentUserData 401 0.566 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:39:43 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 401 311.938 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:40:09 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 324.398 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:40:19 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 7.709 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:40:46 GMT
- PATCH /api/v1/users/updatePassword 401 310.306 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:40:55 GMT - error-message: Your current password is wrong
- PATCH /api/v1/users/updatePassword 200 642.018 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:07 GMT
- PATCH /api/v1/users/updateCurrentUserData 401 11.661 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:16 GMT - error-message: Oops!: User recently changed his password - Please login again
- PATCH /api/v1/users/updateCurrentUserData 401 5.202 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:22 GMT - error-message: Oops!: User recently changed his password - Please login again
- POST /api/v1/users/login 401 312.416 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:32 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 314.879 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:42 GMT
- PATCH /api/v1/users/updateCurrentUserData 200 5.964 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:41:48 GMT
- DELETE /api/v1/users/deleteMyUserData 204 6.186 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:42:06 GMT
- DELETE /api/v1/tours/65ac46ee288f0b2b0856e5ac 403 4.286 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:42:21 GMT - error-message: You do not have permission to perform this activity
- GET /api/v1/users 200 3.521 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:42:42 GMT
- GET /api/v1/users 200 3.105 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:43:16 GMT
- GET /api/v1/users 200 2.110 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:44:35 GMT
- GET /api/v1/users 200 14.258 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:51:20 GMT
- GET /api/v1/users 200 4.077 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:51:35 GMT
- POST /api/v1/users/login 401 75.327 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:53:29 GMT - error-message: Incorrect email or password
- PATCH /api/v1/users/updatePassword 401 2.345 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:53:50 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 401 35.514 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:54:10 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 401 3.214 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:54:41 GMT - error-message: Incorrect email or password
- PATCH /api/v1/users/updateCurrentUserData 401 0.792 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:55:21 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/forgotPassword 404 3.171 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:55:38 GMT - error-message: No such user with the Email address on our records
- POST /api/v1/users/forgotPassword 404 3.858 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:56:50 GMT - error-message: No such user with the Email address on our records
- DELETE /api/v1/users/deleteMyUserData 401 1.413 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:58:25 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/signup 500 805.683 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:58:45 GMT - error-message: Duplicate Field: "mike@solutions.com" already exists
- POST /api/v1/users/signup 500 346.188 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 04:59:22 GMT - error-message: Duplicate Field: "mike@solutions.com" already exists
- POST /api/v1/users/signup 500 439.213 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:04:49 GMT - error-message: Duplicate Field: "mike@solutions.com" already exists
- POST /api/v1/users/signup 500 363.594 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:04:58 GMT - error-message: Duplicate Field: "mike@solutions.com" already exists
- PATCH /api/v1/users/updateCurrentUserData 401 2.314 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:05:33 GMT - error-message: Invalid token. Please login again
- DELETE /api/v1/users/deleteMyUserData 401 1.088 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:05:38 GMT - error-message: Invalid token. Please login again
- PATCH /api/v1/users/resetPassword/d16bbddd401bb3977816f331b00686f89feaab6b798527a99701d94ec1244ca5 400 12.133 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:05:57 GMT - error-message: Token is Invalid or Expired
- POST /api/v1/users/forgotPassword 404 3.424 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:06:06 GMT - error-message: No such user with the Email address on our records
- POST /api/v1/users/forgotPassword 404 11.810 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 05:07:09 GMT - error-message: No such user with the Email address on our records
- POST /api/v1/users/signup 400 56.531 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:11:36 GMT - error-message: `guides` is not a valid enum value for path `role`.
- POST /api/v1/users/signup 500 770.002 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:11:45 GMT - error-message: option expires is invalid
- POST /api/v1/users/signup 500 494.509 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:17:02 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
- POST /api/v1/users/signup 500 432.565 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:17:32 GMT - error-message: option expires is invalid
- POST /api/v1/users/signup 201 354.940 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:19:36 GMT
- POST /api/v1/users/signup 201 473.862 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:34:17 GMT
- POST /api/v1/users/signup 500 425.809 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:34:28 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
- POST /api/v1/users/signup 500 380.315 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:35:07 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
- POST /api/v1/users/signup 201 345.846 ms PostmanRuntime/7.36.1 Sat, 10 Feb 2024 06:35:53 GMT
+ POST /api/v1/users/login 400 1.388 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:09 GMT - error-message: Invalid email : [object Object] provided
+ POST /api/v1/users/login 200 682.506 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:30 GMT
+ POST /api/v1/users/login 401 3.089 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:34 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 708.112 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:53 GMT
+ GET /api/v1/tours?duration[gte]=5&fields=name,duration,difficulty,price,ratingsAverage 200 23.366 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:10:58 GMT
+ POST /api/v1/users/login 200 633.482 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:13:05 GMT
+ POST /api/v1/users/signup 500 983.248 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:14:42 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
+ POST /api/v1/users/signup 201 838.014 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:14:57 GMT
+ POST /api/v1/users/signup 500 889.231 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:15:03 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.comss" already exists
+ POST /api/v1/users/signup 201 844.039 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:16:09 GMT
+ POST /api/v1/users/signup 500 917.478 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:17:45 GMT - error-message: Duplicate Field: "opeyemidevops@gmail.com" already exists
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 401 3.057 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:17 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 200 681.295 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:25 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 22.588 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:29 GMT
+ GET /api/v1/tours?sort=duration,price 200 17.468 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:39 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 22.724 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:47 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 10.957 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:32:50 GMT
+ GET /api/v1/tours?sort=duration,price&sort=price&fields=name,duration,difficulty,price,ratingsAverage 500 7.090 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:35:15 GMT - error-message: this.queryString.sort.split is not a function
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 13.165 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:35:29 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 64.311 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:36:15 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage&sort=duration 200 47.764 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:42:26 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage&sort=durationdd 200 28.131 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:42:40 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 11.196 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:42:56 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage&sort= 200 12.030 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:43:22 GMT
+ GET /api/v1/tours?sort=duration,price 200 18.112 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:43:30 GMT
+ GET /api/v1/tours?sort=duration,price&fields=name,duration,difficulty,price,ratingsAverage 200 10.703 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:45:53 GMT
+ GET /api/v1/tours?duration[gte]=5&fields=name,duration,difficulty,price,ratingsAverage 200 42.200 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 13:59:23 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5 200 9.927 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:00:22 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 10.862 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:00:28 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5,14 400 58.623 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:00:39 GMT - error-message: Invalid duration : 5,14 provided
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5,14 400 71.539 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:01:40 GMT - error-message: Invalid duration : 5,14 provided
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 86.374 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:02:03 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 49.097 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:02:15 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 38.395 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:12:50 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 10.090 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:13:13 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 10.754 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:14:51 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 10.180 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:17:57 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 50.133 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:22:31 GMT
