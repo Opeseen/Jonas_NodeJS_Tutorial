@@ -72,7 +72,37 @@ const tourSchema = new mongoose.Schema(
     secretTour: {
       type: Boolean,
       default: false
-    }
+    },
+    startLocation: {
+      // GeoJSON
+      type: {
+        type: String,
+        default: 'Point',
+        enum: ['Point']
+      },
+      coordinates: [Number],
+      address: String,
+      description: String
+    },
+    locations: [
+      {
+        type: {
+          type: String,
+          default: 'Point',
+          enum: ['Point']
+        },
+        coordinates: [Number],
+        address: String,
+        description: String,
+        day: Number
+      }
+    ],
+    guides: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: 'User'
+      }
+    ]
   },
   
   {
@@ -97,11 +127,12 @@ tourSchema.pre('save', function(next){
   next();
 });
 
+
 // QUERY MIDDLEWARE TO IGNORE THE SECRET TOUR IN ANY FIND REQUEST
 tourSchema.pre(/^find/, function(next) {
   this.find({secretTour: {$ne: true}});
   next();
-})
+});
 
 // AGGREGATION MIDDLEWARE TO IGNORE THE SECRET TOUR IN THE REQUEST
 tourSchema.pre('aggregate', function(next) {

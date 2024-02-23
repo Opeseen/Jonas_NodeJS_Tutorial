@@ -36,3 +36,51 @@
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 10.754 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:14:51 GMT
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 10.180 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:17:57 GMT
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage&duration=5&duration=14 200 50.133 ms PostmanRuntime/7.36.1 Mon, 12 Feb 2024 14:22:31 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 401 119.185 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 16:37:45 GMT - error-message: Your Token has expired - Please login again
+ POST /api/v1/users/login 200 892.168 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 16:38:55 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 128.561 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 16:39:03 GMT
+ GET /api/v1/tours 200 73.277 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 16:40:01 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 17.694 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 16:45:11 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage 200 12.581 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 16:47:47 GMT
+ GET /api/v1/tours 200 86.555 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 16:47:59 GMT
+ GET /api/v1/users 200 4.210 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 16:48:59 GMT
+ GET /api/v1/tours 200 68.965 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:15:01 GMT
+ POST /api/v1/tours/ 400 19.725 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:18:12 GMT - error-message: A tour must have a cover image
+ POST /api/v1/tours/ 500 38.463 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:20:02 GMT - error-message: Cannot read properties of undefined (reading 'findById')
+ POST /api/v1/tours/ 500 27.538 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:25:26 GMT - error-message: Cannot read properties of undefined (reading 'findById')
+ POST /api/v1/tours/ 500 35.105 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:37:51 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ GET /api/v1/users 200 18.499 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:41:59 GMT
+ GET /api/v1/tours 200 45.574 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:42:07 GMT
+ GET /api/v1/tours 200 55.010 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:42:18 GMT
+ POST /api/v1/tours/ 500 5.336 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:42:27 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ POST /api/v1/tours/ 500 37.808 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:44:13 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b0 404 22.029 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:47:40 GMT - error-message: No Tour Found
+ POST /api/v1/tours/ 500 6.054 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:49:59 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ GET /api/v1/users 200 25.946 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:53:32 GMT
+ POST /api/v1/tours/ 500 48.792 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:53:36 GMT - error-message: res is not defined
+ POST /api/v1/tours/ 500 48.991 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:54:01 GMT - error-message: Cannot read properties of undefined (reading 'findById')
+ POST /api/v1/tours/ 500 26.397 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:55:26 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ POST /api/v1/tours/ 500 27.248 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:55:56 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ POST /api/v1/tours/ 500 50.246 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 17:57:01 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ POST /api/v1/tours/ 201 283.930 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:00:47 GMT
+ POST /api/v1/tours/ 500 211.347 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:02:32 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ POST /api/v1/tours/ 500 34.929 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:02:50 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ POST /api/v1/tours/ 500 42.197 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:03:44 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ POST /api/v1/tours/ 500 13.811 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:03:47 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ POST /api/v1/tours/ 500 11.750 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:05:00 GMT - error-message: Cannot read properties of undefined (reading 'find')
+ POST /api/v1/tours/ 500 109.500 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:05:19 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ POST /api/v1/tours/ 500 74.864 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:08:28 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ POST /api/v1/tours/ 201 69.877 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:09:02 GMT
+ POST /api/v1/tours/ 500 38.985 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:09:07 GMT - error-message: Duplicate Field: "The Test Models" already exists
+ POST /api/v1/tours/ 500 28.695 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:21:06 GMT - error-message: User is not defined
+ POST /api/v1/tours/ 201 37.258 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:22:27 GMT
+ POST /api/v1/tours/ 500 71.341 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:23:18 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ POST /api/v1/tours/ 500 36.014 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:24:29 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ POST /api/v1/tours/ 500 34.723 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:25:53 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ POST /api/v1/tours/ 400 57.189 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:27:04 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ POST /api/v1/tours/ 400 11.524 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:27:20 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b0rht 400 7.167 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:28:23 GMT - error-message: Invalid _id : 65ac46ef288f0b2b0856e5b0rht provided
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b0 404 9.441 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:28:35 GMT - error-message: No Tour Found
+ POST /api/v1/tours/ 400 6.472 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:29:11 GMT - error-message: Duplicate Field: "The Test Model" already exists
+ POST /api/v1/tours/ 201 10.579 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:29:19 GMT
+ POST /api/v1/tours/ 400 29.330 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:29:22 GMT - error-message: Duplicate Field: "The Test Models" already exists
