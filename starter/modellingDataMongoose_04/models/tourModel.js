@@ -134,6 +134,13 @@ tourSchema.pre(/^find/, function(next) {
   next();
 });
 
+// QUERY MIDDLEWARE TO POPULATE GUIDES DATA
+tourSchema.pre(/^find/, function(next) {
+  this.populate({path: 'guides'});
+  next();
+});
+
+
 // AGGREGATION MIDDLEWARE TO IGNORE THE SECRET TOUR IN THE REQUEST
 tourSchema.pre('aggregate', function(next) {
   this.pipeline().unshift({$match: {secretTour: {$ne: true}}});

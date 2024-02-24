@@ -1,0 +1,22 @@
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b0 500 30.396 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:12:25 GMT - error-message: tourService.getTour(...).populate is not a function
+ GET /api/v1/tours/65ac46ef288f0b2b0856e5b0 404 15.915 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:13:10 GMT - error-message: No Tour Found
+ GET /api/v1/tours/5c88fa8cf4afda39709c2974 200 30.854 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:13:17 GMT
+ GET /api/v1/users 200 13.971 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:14:01 GMT
+ POST /api/v1/tours/ 201 157.371 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:14:40 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 7.287 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:14:59 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 5.928 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:17:00 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 215.364 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:17:56 GMT
+ GET /api/v1/users 200 6.707 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:18:37 GMT
+ GET /api/v1/users 200 3.263 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:18:43 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 35.458 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:18:54 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 64.550 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:25:29 GMT
+ POST /api/v1/users/login 200 831.049 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:25:52 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 68.489 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:26:03 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 10.160 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:26:17 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 31.500 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:27:52 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 18.891 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:29:04 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 31.796 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:29:51 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 34.779 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:31:56 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 141.714 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:32:03 GMT
+ PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 200 140.952 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:34:15 GMT
+ PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 200 29.182 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:35:50 GMT
