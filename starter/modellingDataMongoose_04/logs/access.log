@@ -84,3 +84,12 @@
  POST /api/v1/tours/ 400 6.472 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:29:11 GMT - error-message: Duplicate Field: "The Test Model" already exists
  POST /api/v1/tours/ 201 10.579 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:29:19 GMT
  POST /api/v1/tours/ 400 29.330 ms PostmanRuntime/7.36.3 Fri, 23 Feb 2024 18:29:22 GMT - error-message: Duplicate Field: "The Test Models" already exists
+ GET /api/v1/tours 401 58.872 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 20:56:19 GMT - error-message: Your Token has expired - Please login again
+ POST /api/v1/users/login 200 1403.722 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 20:59:40 GMT
+ GET /api/v1/tours 200 302.611 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:00:06 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 22.926 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:01:18 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 51.921 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:02:05 GMT
+ GET /api/v1/tours 200 32.913 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:02:12 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 17.060 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:04:01 GMT
+ GET /api/v1/tours?page=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 7.254 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:04:27 GMT
+ GET /api/v1/tours?page=2&limit=4&fields=name,duration,difficulty,price,ratingsAverage,guides 200 56.560 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:04:44 GMT
