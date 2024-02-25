@@ -20,3 +20,23 @@
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 141.714 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:32:03 GMT
  PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 200 140.952 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:34:15 GMT
  PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 200 29.182 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:35:50 GMT
+ GET /api/v1/users 200 69.445 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:28:14 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 304.218 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:31:05 GMT
+ POST /api/v1/reviews 201 751.518 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:32:23 GMT
+ POST /api/v1/reviews 400 7.061 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:33:06 GMT - error-message: Path `rating` (7) is more than maximum allowed value (5).
+ POST /api/v1/reviews 400 214.590 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:34:11 GMT - error-message: Cast to Number failed for value "yy" (type string) at path "rating"
+ GET /api/v1/reviews 401 1.051 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:35:59 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/reviews 403 6.528 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:36:11 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/reviews 403 5.710 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:36:27 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/users/signup 201 1235.086 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:37:37 GMT
+ GET /api/v1/reviews 200 9.753 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:38:19 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 24.795 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:38:58 GMT
+ POST /api/v1/reviews 201 6.376 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:40:11 GMT
+ POST /api/v1/reviews 201 44.712 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:42:54 GMT
+ POST /api/v1/reviews 201 5.484 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:43:44 GMT
+ GET /api/v1/reviews 200 46.262 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:44:07 GMT
+ GET /api/v1/reviews 200 34.300 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:48:46 GMT
+ POST /api/v1/users/login 200 838.132 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:48:59 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 36.468 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:09 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 22.439 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:14 GMT
+ GET /api/v1/reviews 403 11.315 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:20 GMT - error-message: You do not have permission to perform this activity
