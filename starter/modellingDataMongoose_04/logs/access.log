@@ -40,3 +40,43 @@
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 36.468 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:09 GMT
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 22.439 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:14 GMT
  GET /api/v1/reviews 403 11.315 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:20 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/reviews 403 206.942 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:39:09 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/users/login 200 979.281 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:40:28 GMT
+ GET /api/v1/reviews 200 22.298 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:40:33 GMT
+ POST /api/v1/reviews 201 668.339 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:42:00 GMT
+ GET /api/v1/reviews 200 8.749 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:42:14 GMT
+ GET /api/v1/reviews 200 89.371 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:44:05 GMT
+ GET /api/v1/reviews 200 50.223 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:44:34 GMT
+ GET /api/v1/reviews 200 47.916 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:49:15 GMT
+ GET /api/v1/reviews 200 20.189 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:56:25 GMT
+ GET /api/v1/reviews 200 15.756 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:56:40 GMT
+ GET /api/v1/reviews 200 15.911 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:57:09 GMT
+ GET /api/v1/reviews 200 12.271 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:57:13 GMT
+ POST /api/v1/reviews 201 15.176 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:04:46 GMT
+ GET /api/v1/reviews 200 15.092 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:04:52 GMT
+ GET /api/v1/reviews 200 17.160 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:24:30 GMT
+ GET /api/v1/reviews 200 35.612 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:25:25 GMT
+ GET /api/v1/reviews 200 60.666 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:27:37 GMT
+ GET /api/v1/reviews 200 63.447 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:11:10 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 404 53.577 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:11:26 GMT - error-message: No Tour Found
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 27.873 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:11:32 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 43.806 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:13:08 GMT
+ GET /api/v1/reviews 200 158.962 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:48:33 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 59.902 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:51:02 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 54.467 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:51:49 GMT
+ POST /api/v1/reviews 201 21.989 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:52:41 GMT
+ GET /api/v1/reviews 200 38.066 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:52:52 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 12.231 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:52:59 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 8.924 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:53:18 GMT
+ POST /api/v1/reviews 201 5.307 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:54:56 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c296c 200 6.847 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:55:25 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c296c 200 61.368 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:58:45 GMT
+ POST /api/v1/reviews 201 14.207 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:59:33 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c296c 200 21.883 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:59:39 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 17.263 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:00:53 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 83.705 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:01:36 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 53.765 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:01:58 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 76.967 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:02:24 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 57.481 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:04:12 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 64.304 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:09:53 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 19.779 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:11:01 GMT

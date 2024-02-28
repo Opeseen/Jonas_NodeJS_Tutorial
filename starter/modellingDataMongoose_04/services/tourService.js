@@ -16,7 +16,7 @@ const requestQuery = {...queryObject};
 };
 
 const getTour = async (tourID) => {
-  const tour = await Tour.findById(tourID);
+  const tour = await Tour.findById(tourID).populate('reviews');
   return tour;
 };
 
