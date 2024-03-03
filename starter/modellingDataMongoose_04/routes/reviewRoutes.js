@@ -3,12 +3,12 @@ const { reviewController } = require('../controllers');
 const {loginAuth, userRoleAuth} = require('../middlewares/auth');
 
 
-const router = express.Router();
+const router = express.Router({mergeParams: true});
 
 router
   .route('/')
-  .get(loginAuth, userRoleAuth('user'),reviewController.getAllReviews)
-  .post(reviewController.createReview);
+  .get(reviewController.getAllReviews)
+  .post(loginAuth, userRoleAuth('user'),reviewController.createReview);
 
 
 module.exports = router;

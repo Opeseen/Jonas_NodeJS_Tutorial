@@ -1,7 +1,7 @@
 const {Review} = require('../models');
 
-const getAllReviews = async() => {
-  const reviews = await Review.find(); // Get all reviews
+const getAllReviews = async(filter) => {
+  const reviews = await Review.find(filter); // Get all reviews
 
   return reviews;
 };

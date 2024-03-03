@@ -80,3 +80,48 @@
  GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 57.481 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:04:12 GMT
  GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 64.304 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:09:53 GMT
  GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 19.779 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:11:01 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides - - ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:11 GMT
+ GET /api/v1/reviews 403 2264.793 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:13 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/reviews 403 4019.880 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:13 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 4959.536 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:16 GMT
+ GET /api/v1/reviews 403 4.888 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:22 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 430.758 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:31 GMT
+ GET /api/v1/reviews 403 69.337 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:44 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/users 200 4.013 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:06:10 GMT
+ POST /api/v1/users/login 401 636.992 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:06:45 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 2868.557 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:06:56 GMT
+ GET /api/v1/reviews 200 10.293 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:07:08 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 1525.737 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:25:31 GMT
+ POST //api/v1/tours/65da5c407039b90804650043/reviews 404 26.409 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:28:09 GMT - error-message: The requested url //api/v1/tours/65da5c407039b90804650043/reviews is Not Found
+ POST /api/v1/tours/65da5c407039b90804650043/reviews 401 2.097 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:28:42 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/tours/65da5c407039b90804650043/reviews 401 0.576 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:28:45 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/tours/65da5c407039b90804650043/reviews 400 11.183 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:28:52 GMT - error-message: Review cannot be empty
+ POST /api/v1/tours/65da5c407039b90804650043/reviews 201 98.892 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:29:56 GMT
+ GET /api/v1/reviews 200 15.607 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:32:27 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 11.594 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:33:21 GMT
+ GET /api/v1/tours/65da5c407039b90804650043 200 35.049 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:33:55 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 69.933 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:52:58 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 201 19.565 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:53:57 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 8.676 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:54:07 GMT
+ PUT /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 404 1.175 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:54:54 GMT - error-message: The requested url /api/v1/tours/5c88fa8cf4afda39709c2970/reviews is Not Found
+ GET /api/v1/reviews 200 6.102 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:55:21 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 32.566 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:02:21 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 400 17.626 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:02:37 GMT - error-message: Review must belong to a tour
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 400 7.440 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:02:50 GMT - error-message: Review must belong to a tour
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 201 32.874 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:03:25 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 29.843 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:03:38 GMT
+ GET /api/v1/reviews 200 10.630 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:04:35 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 16.194 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:05:38 GMT
+ GET /api/v1/reviews 200 37.690 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:15:56 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 9.128 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:16:36 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 400 17.672 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:17:04 GMT - error-message: Review cannot be empty
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 7.469 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:17:09 GMT
+ GET /api/v1/tours/65da5c407039b90804650043/reviews 200 6.840 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:17:27 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c296c/reviews 200 6.910 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:18:48 GMT
+ GET /api/v1/tours/65da5c407039b90804650043/reviews 200 6.774 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:18:57 GMT
+ GET /api/v1/reviews 200 42.390 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:42:09 GMT
+ GET /api/v1/reviews 200 11.740 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:42:24 GMT
+ POST /api/v1/users/forgotPassword 404 10.750 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:50:47 GMT - error-message: No such user with the Email address on our records
+ POST /api/v1/users/forgotPassword 404 2.358 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:50:56 GMT - error-message: No such user with the Email address on our records
+ GET /api/v1/users 200 4.395 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:51:13 GMT
+ POST /api/v1/users/forgotPassword 200 7677.991 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:51:57 GMT
