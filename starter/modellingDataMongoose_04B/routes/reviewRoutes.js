@@ -8,7 +8,11 @@ const router = express.Router({mergeParams: true});
 router
   .route('/')
   .get(reviewController.getAllReviews)
-  .post(loginAuth, userRoleAuth('user'),reviewController.createReview);
+  .post(loginAuth, userRoleAuth('user'),reviewController.createReview)
+
+router
+  .route('/:id')
+  .delete(loginAuth, userRoleAuth('user'), reviewController.deleteReview);
 
 
 module.exports = router;

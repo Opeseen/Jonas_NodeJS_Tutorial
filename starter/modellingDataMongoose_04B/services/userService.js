@@ -36,6 +36,7 @@ const updateCurrentUserData = async (updatedUserDetails, userId) => {
 };
 
 const deleteMyUserData = async(userId) => {
+  // Let the user delete his personal data
   await User.findByIdAndUpdate(userId, {active: false});
 };
 

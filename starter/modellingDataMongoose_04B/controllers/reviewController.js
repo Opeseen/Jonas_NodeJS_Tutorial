@@ -1,6 +1,7 @@
 const {reviewService} = require('../services');
 const catchAsyncError = require('../utils/catchAsyncError');
 const httpStatus = require('http-status');
+const {deleteHandler} = require('./factoryHandler');
 
 const getAllReviews = catchAsyncError(async(req, res) => {
   let filter = {};
@@ -28,8 +29,11 @@ const createReview = catchAsyncError(async(req, res) => {
   });
 });
 
+const deleteReview = deleteHandler(reviewService)
+
 
 module.exports = {
   getAllReviews,
-  createReview
+  createReview,
+  deleteReview
 };

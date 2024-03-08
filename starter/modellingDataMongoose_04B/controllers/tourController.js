@@ -1,7 +1,8 @@
-const { tourService } =  require('../services');
-const catchAsyncError = require('../utils/catchAsyncError');
 const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
+const { tourService } =  require('../services');
+const catchAsyncError = require('../utils/catchAsyncError');
+const {deleteHandler} = require('./factoryHandler');
 
 const aliasTopTours = (req, res, next) => {
   req.query.limit = '5';
@@ -51,14 +52,8 @@ const updateTour = catchAsyncError(async(req, res, next) => {
   });
 });
 
-const deleteTour = catchAsyncError(async(req, res, next) => {
-  const id = req.params.id;
-  const tour = await tourService.deleteTour(id);
-  if(!tour){
-    return next(new ApiError("No Tour Found to Delete", httpStatus.NOT_FOUND));
-  };
-  res.status(httpStatus.NO_CONTENT).json({status: 'Success'});
-});
+
+const deleteTour = deleteHandler(tourService)
 
 const getTourStats = catchAsyncError(async(req, res) => {
   const stats = await tourService.getTourStats();
