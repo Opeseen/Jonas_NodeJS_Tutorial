@@ -1,8 +1,8 @@
 const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
-const { tourService } =  require('../services');
 const catchAsyncError = require('../utils/catchAsyncError');
-const {deleteHandler} = require('./factoryHandler');
+const { tourService,handlerService } =  require('../services');
+const { Tour } = require('../models');
 
 const aliasTopTours = (req, res, next) => {
   req.query.limit = '5';
@@ -32,28 +32,11 @@ const getTour = catchAsyncError(async(req, res, next) => {
   });
 });
 
-const createTour = catchAsyncError(async(req, res) => {
-  const newTour = await tourService.createTour(req.body);
-  res.status(httpStatus.CREATED).json({
-    status: 'Success',
-    data: {tour: newTour}
-  });
-});
 
-const updateTour = catchAsyncError(async(req, res, next) => {
-  const id = req.params.id;
-  const updatedTour = await tourService.updateTour(id,req.body);
-  if(!updatedTour){
-    return next(new ApiError("No Tour Found to Update", httpStatus.NOT_FOUND));
-  };
-  res.status(httpStatus.OK).json({
-    status: 'Success',
-    updatedTour
-  });
-});
+const createTour = handlerService.createOneHandler(Tour);
+const  updateTour = handlerService.updateOneHandler(Tour);
+const deleteTour = handlerService.deleteOneHandler(Tour);
 
-
-const deleteTour = deleteHandler(tourService)
 
 const getTourStats = catchAsyncError(async(req, res) => {
   const stats = await tourService.getTourStats();

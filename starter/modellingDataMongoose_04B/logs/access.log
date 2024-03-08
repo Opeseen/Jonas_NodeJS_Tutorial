@@ -168,3 +168,58 @@
  GET /api/v1/reviews 200 6.779 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:01:06 GMT
  DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 401 0.590 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:01:31 GMT - error-message: You are not login. Please login to get authorized
  DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 500 7.886 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:01:43 GMT - error-message: modelService.deleteTour is not a function
+ GET /api/v1/reviews 200 157.220 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:52:31 GMT
+ DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 401 23.202 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:53:00 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 401 516.180 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:54:00 GMT - error-message: Incorrect email or password
+ GET /api/v1/users 200 4.990 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:54:27 GMT
+ POST /api/v1/users/login 200 2500.614 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:54:53 GMT
+ DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 404 259.438 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:55:05 GMT - error-message: No resources Found to Delete
+ DELETE /api/v1/tours/65eb5981c9c42f4f88f344c1 403 9.652 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:55:24 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/users 200 7.245 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:55:43 GMT
+ POST /api/v1/users/login 200 706.603 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:56:04 GMT
+ DELETE /api/v1/tours/65eb5981c9c42f4f88f344c1 404 9.302 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:56:10 GMT - error-message: No resources Found to Delete
+ POST /api/v1/users/login 200 882.650 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:56:28 GMT
+ DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 404 15.400 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:57:16 GMT - error-message: No resources Found to Delete
+ GET /api/v1/tours/65da5c407039b90804650043/reviews 200 39.019 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:57:35 GMT
+ GET /api/v1/tours/65da5c407039b908046500fff43/reviews 400 6.829 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:57:45 GMT - error-message: Invalid tour : 65da5c407039b908046500fff43 provided
+ GET /api/v1/tours/65eb5981c9c42f4f88f344c1 404 32.572 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:58:01 GMT - error-message: No Tour Found
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 8.472 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:58:34 GMT
+ GET /api/v1/users 200 18.485 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:08:47 GMT
+ GET /api/v1/users 200 44.568 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:10:09 GMT
+ DELETE /api/v1/users/deleteUser 403 12.014 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:13:19 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/users/login 200 354.003 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:13:51 GMT
+ DELETE /api/v1/users/deleteUser 404 107.456 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:13:58 GMT - error-message: No resources Found to Delete
+ DELETE /api/v1/users/deleteUser 400 47.450 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:18:07 GMT - error-message: Invalid _id : deleteUser provided
+ POST /api/v1/users/signup 404 2.934 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:19:05 GMT - error-message: The requested url /api/v1/users/signup is Not Found
+ POST /api/v1/users 400 1107.036 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:19:17 GMT - error-message: Duplicate Field: "testuser@gmail.com" already exists
+ POST /api/v1/users 400 5.185 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:13 GMT - error-message: `jdjd` is not a valid enum value for path `role`.
+ POST /api/v1/users 201 707.235 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:22 GMT
+ DELETE /api/v1/users/65eb8f25deb36f22eccfbb02 204 9.923 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:35 GMT
+ GET /api/v1/users 200 13.929 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:39 GMT
+ POST /api/v1/users 201 759.899 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:43 GMT
+ GET /api/v1/users 200 7.099 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:50 GMT
+ DELETE /api/v1/users/65eb8f25deb36f22eccfbb02 404 2.926 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:55 GMT - error-message: No resources Found to Delete
+ DELETE /api/v1/users/65eb8f3adeb36f22eccfbb06 204 5.242 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:21:01 GMT
+ PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 500 285.079 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:37:19 GMT - error-message: updatedTour is not defined
+ PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 200 103.895 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:37:58 GMT
+ GET /api/v1/reviews 200 75.236 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:45:59 GMT
+ PATCH /api/v1/reviews/5c88fa8cf4afda39709c2951 401 16.683 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:48:02 GMT - error-message: Oops!: The user no longer exists
+ POST /api/v1/reviews 401 8.808 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:48:24 GMT - error-message: Oops!: The user no longer exists
+ POST /api/v1/users/login 200 782.998 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:48:35 GMT
+ PATCH /api/v1/reviews/5c88fa8cf4afda39709c2951 403 5.866 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:48:47 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/users/login 200 726.909 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:49:36 GMT
+ PATCH /api/v1/reviews/5c88fa8cf4afda39709c2951 404 23.247 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:49:49 GMT - error-message: No resources Found to Update
+ GET /api/v1/reviews 200 12.925 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:50:11 GMT
+ PATCH /api/v1/reviews/65e4cfb301607d1c142c8aa5 200 44.808 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:50:39 GMT
+ GET /api/v1/reviews 200 16.361 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:50:46 GMT
+ POST /api/v1/tours/ 400 337.055 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:02:05 GMT - error-message: Duplicate Field: "The Test Models" already exists
+ POST /api/v1/tours/ 200 15.001 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:02:13 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 83.147 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:11:12 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 23.173 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:11:20 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 13.912 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:11:48 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 36.341 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:16:15 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 46.294 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:17:29 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 14.458 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:17:39 GMT
+ DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 404 11.912 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:18:06 GMT - error-message: No resources Found to Delete
+ DELETE /api/v1/reviews/65eb9b0ff472f84d60d115d4 204 12.178 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:18:37 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 14.824 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:18:42 GMT

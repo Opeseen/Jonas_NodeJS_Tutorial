@@ -20,22 +20,6 @@ const getTour = async (tourID) => {
   return tour;
 };
 
-const createTour = async (tourDetails) => {
-  const tour = await Tour.create(tourDetails);
-  return tour;
-};
-
-const updateTour = async (id, tourBody) => {
-  const tour = await Tour.findByIdAndUpdate(id, tourBody, {new: true, runValidators: true});
-  return tour;
-};
-
-const deleteTour = async (tourID) => {
-  const tour = await Tour.findByIdAndDelete(tourID);
-  return tour;
-};
-
-
 const getTourStats = async () => {
   const stats = await Tour.aggregate([
     {
@@ -101,9 +85,6 @@ const getMonthlyPlan = async (year) => {
 module.exports = {
   getAllTours,
   getTour,
-  createTour,
-  updateTour,
-  deleteTour,
   getTourStats,
   getMonthlyPlan
 };
