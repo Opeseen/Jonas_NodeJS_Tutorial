@@ -35,10 +35,6 @@ const deleteMyUserData = async(userId) => {
   await User.findByIdAndUpdate(userId, {active: false});
 };
 
-const getAllUsers = async() => {
-  const allUser = await User.find();
-  return allUser;
-};
 
 
 
@@ -48,5 +44,4 @@ module.exports = {
   confirmUserHashedTokenAndExpiration,
   updateCurrentUserData,
   deleteMyUserData,
-  getAllUsers,
 };
