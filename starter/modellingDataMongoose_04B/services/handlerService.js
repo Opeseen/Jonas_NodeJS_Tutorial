@@ -1,6 +1,7 @@
 const catchAsyncError = require('../utils/catchAsyncError');
 const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
+const APIFeatures = require('../utils/apiFeatures');
 
 
 // CREATING A HANDLER FOR DELETE ONE ITEMS
@@ -32,9 +33,45 @@ const createOneHandler = Model => catchAsyncError(async(req, res, next) => {
   res.status(httpStatus.OK).json({status: 'Success',resources});
 });
 
+// CREATING HANDLER FOR GET ONE ITEMS
+const getOneHandler = (Model, PopulateOptions) => catchAsyncError(async(req, res,next) => {
+  const tourID = req.params.id;
+  let query = await Model.findById(tourID);
+  if(PopulateOptions) {query = query.populate(PopulateOptions)};
+  const resources = await query;
+
+  if(!resources) { return next(new ApiError("No resources Found", httpStatus.NOT_FOUND)) };
+  res.status(httpStatus.OK).json({status: 'Success',resources});
+});
+
+
+// CREATING A HANDLER FPR GET ALL ITEMS
+const getAllHandler = Model => catchAsyncError(async(req, res, next) => {
+  let filter = {}; //To allow for nested get revews on tour
+  if(req.params.tourId) filter = {tour: req.params.tourId};
+  const requestQuery = req.query;
+
+  // EXECUTE QUERY...
+  const features = new APIFeatures(Model.find(filter),requestQuery)
+    .filter()
+    .sort()
+    .limitFields()
+    .paginate();
+
+  const resources = await features.query;
+  res.status(httpStatus.OK).json({
+    status: 'Success',
+    results: resources.length,
+    data: {resources}
+  });
+});
+
+
 
 module.exports = {
   deleteOneHandler,
   updateOneHandler,
-  createOneHandler
+  createOneHandler,
+  getOneHandler,
+  getAllHandler
 };

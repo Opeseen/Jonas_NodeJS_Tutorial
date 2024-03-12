@@ -12,6 +12,7 @@ router
 
 router
   .route('/:id')
+  .get(reviewController.getReview)
   .delete(loginAuth, userRoleAuth('user'), reviewController.deleteReview)
   .patch(loginAuth, userRoleAuth('user'), reviewController.updateReview);
 

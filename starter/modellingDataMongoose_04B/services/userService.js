@@ -10,11 +10,6 @@ const getUserByEmail = async(email) => {
   return await User.findOne({email}).select('+password');
 };
 
-const getuserByID = async(id) => {
-  const user = await User.findById(id);
-  return user;
-};
-
 const confirmUserHashedTokenAndExpiration = async(hashedToken) => {
   const user = await User.findOne({
     passwordResetToken: hashedToken, 
@@ -50,7 +45,6 @@ const getAllUsers = async() => {
 module.exports = {
   signUpUser,
   getUserByEmail,
-  getuserByID,
   confirmUserHashedTokenAndExpiration,
   updateCurrentUserData,
   deleteMyUserData,

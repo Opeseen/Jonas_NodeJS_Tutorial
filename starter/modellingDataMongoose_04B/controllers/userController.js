@@ -30,24 +30,16 @@ const deleteMyUserData = catchAsyncError(async(req, res) => {
   });
 });
 
-const getAllUsers = catchAsyncError(async(req, res) => {
-  // return all users from collection
-  const allUsers = await userService.getAllUsers();
-  res.status(httpStatus.OK).json({
-    status: 'Success',
-    result: allUsers.length,
-    allUsers
-  });
-});
 
-
-const deleteUser = handlerService.deleteOneHandler(User)
-
+const deleteUser = handlerService.deleteOneHandler(User);
+const getUser = handlerService.getOneHandler(User);
+const getAllUsers = handlerService.getAllHandler(User);
 
 
 module.exports = {
   updateCurrentUserData,
   deleteMyUserData,
-  getAllUsers,
-  deleteUser
+  deleteUser,
+  getUser,
+  getAllUsers
 };

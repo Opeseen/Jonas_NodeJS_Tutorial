@@ -11,6 +11,7 @@ router
 
 router
   .route('/:id')
+  .get(userController.getUser)
   .delete(userController.deleteUser);
 
 router.post('/login', authController.loginUser);

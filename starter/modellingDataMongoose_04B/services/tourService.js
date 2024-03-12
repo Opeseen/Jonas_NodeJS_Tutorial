@@ -1,24 +1,4 @@
 const {Tour} = require('../models');
-const APIFeatures = require('../utils/apiFeatures');
-
-const getAllTours = async (queryObject) => {
-const requestQuery = {...queryObject};
-
-  // EXECUTE QUERY...
-  const features = new APIFeatures(Tour.find(),requestQuery)
-    .filter()
-    .sort()
-    .limitFields()
-    .paginate();
-
-  const tours = await features.query;
-  return tours;
-};
-
-const getTour = async (tourID) => {
-  const tour = await Tour.findById(tourID).populate('reviews');
-  return tour;
-};
 
 const getTourStats = async () => {
   const stats = await Tour.aggregate([
@@ -83,8 +63,6 @@ const getMonthlyPlan = async (year) => {
 
 
 module.exports = {
-  getAllTours,
-  getTour,
   getTourStats,
   getMonthlyPlan
 };

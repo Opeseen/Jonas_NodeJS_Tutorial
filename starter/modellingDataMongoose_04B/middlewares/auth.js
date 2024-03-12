@@ -3,7 +3,7 @@ const httpStatus = require('http-status');
 const ApiError = require('../utils/ApiError');
 const jwt = require('jsonwebtoken');
 const {promisify} = require('util');
-const {userService} = require('../services');
+const {User} = require('../models');
 
 
 const  loginAuth = catchAsyncError(async(req, res, next) => {
@@ -19,7 +19,7 @@ const  loginAuth = catchAsyncError(async(req, res, next) => {
   const verifiedToken = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
 // CHECK IF THE USERR STILL EXISTS USING THE JWT SUBJECT
-  const currentUser = await userService.getuserByID(verifiedToken.sub);
+  const currentUser = await User.findById(verifiedToken.sub);
   if(!currentUser) {return next(new ApiError('Oops!: The user no longer exists', httpStatus.UNAUTHORIZED))};
 
   // CHECK IF USER CHANGE PASSWORD AFTER THE TOKEN WAS ISSUED

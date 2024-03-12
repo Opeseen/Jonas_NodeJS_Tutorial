@@ -1,8 +1,14 @@
 const httpStatus = require('http-status');
-const ApiError = require('../utils/ApiError');
 const catchAsyncError = require('../utils/catchAsyncError');
 const { tourService,handlerService } =  require('../services');
 const { Tour } = require('../models');
+
+
+const getAllTours = handlerService.getAllHandler(Tour);
+const getTour = handlerService.getOneHandler(Tour, {path: 'reviews'});
+const createTour = handlerService.createOneHandler(Tour);
+const  updateTour = handlerService.updateOneHandler(Tour);
+const deleteTour = handlerService.deleteOneHandler(Tour);
 
 const aliasTopTours = (req, res, next) => {
   req.query.limit = '5';
@@ -10,33 +16,6 @@ const aliasTopTours = (req, res, next) => {
   req.query.fields = 'name,price,ratingsAverage,summary,difficulty';
   next();
 };
-
-const getAllTours = catchAsyncError(async (req, res) => {
-  const tours = await tourService.getAllTours(req.query);    
-  res.status(httpStatus.OK).json({
-    status: 'Success',
-    results: tours.length,
-    data: {tours}
-  });
-});
-
-const getTour = catchAsyncError(async(req, res, next) => {
-  const id = req.params.id;
-  const tour = await tourService.getTour(id);
-  if(!tour){
-    return next(new ApiError("No Tour Found", httpStatus.NOT_FOUND));
-  };
-  res.status(httpStatus.OK).json({
-    status: 'Success',
-    data: {tour}
-  });
-});
-
-
-const createTour = handlerService.createOneHandler(Tour);
-const  updateTour = handlerService.updateOneHandler(Tour);
-const deleteTour = handlerService.deleteOneHandler(Tour);
-
 
 const getTourStats = catchAsyncError(async(req, res) => {
   const stats = await tourService.getTourStats();
