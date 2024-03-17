@@ -17,17 +17,17 @@ router
 
 router
   .route('/monthly-plan/:year')
-  .get(tourController.getMonthlyPlan)
+  .get(loginAuth, userRoleAuth('admin', 'lead-guide', 'guide'),tourController.getMonthlyPlan)
 
 router
   .route('/')
-  .get(loginAuth, tourController.getAllTours)
-  .post(tourController.createTour);
+  .get(tourController.getAllTours)
+  .post(loginAuth, userRoleAuth('admin', 'lead-guide'),tourController.createTour);
 
 router
   .route('/:id')
   .get(tourController.getTour)
-  .patch(tourController.updateTour)
+  .patch(loginAuth, userRoleAuth('admin', 'lead-guide'),tourController.updateTour)
   .delete(loginAuth, userRoleAuth('admin', 'lead-guide'), tourController.deleteTour);
 
 

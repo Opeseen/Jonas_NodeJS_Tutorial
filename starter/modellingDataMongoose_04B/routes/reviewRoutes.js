@@ -5,16 +5,18 @@ const {loginAuth, userRoleAuth} = require('../middlewares/auth');
 
 const router = express.Router({mergeParams: true});
 
+router.use(loginAuth) // User needs to be authenticated n=before accessing the below routes.
+
 router
   .route('/')
   .get(reviewController.getAllReviews)
-  .post(loginAuth, userRoleAuth('user'),reviewController.setTourAndUserId,reviewController.createReview)
+  .post(userRoleAuth('user'),reviewController.setTourAndUserId,reviewController.createReview)
 
 router
   .route('/:id')
   .get(reviewController.getReview)
-  .delete(loginAuth, userRoleAuth('user'), reviewController.deleteReview)
-  .patch(loginAuth, userRoleAuth('user'), reviewController.updateReview);
+  .delete(userRoleAuth('user','admin'), reviewController.deleteReview)
+  .patch(userRoleAuth('user','admin'), reviewController.updateReview);
 
 
 module.exports = router;

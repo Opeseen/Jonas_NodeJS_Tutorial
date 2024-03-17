@@ -4,6 +4,11 @@ const catchAsyncError = require('../utils/catchAsyncError');
 const { userService,handlerService } =  require('../services');
 const { User } = require('../models');
 
+// Middleware handler to out the current user ID into the request parameter
+const getMe = (req,res,next) => {
+  req.params.id = req.user.id;
+  next()
+};
 
 const updateCurrentUserData = catchAsyncError(async(req, res, next) => {
   // Throw an error if user tries to update a password with this handler.
@@ -37,6 +42,7 @@ const getAllUsers = handlerService.getAllHandler(User);
 
 
 module.exports = {
+  getMe,
   updateCurrentUserData,
   deleteMyUserData,
   deleteUser,

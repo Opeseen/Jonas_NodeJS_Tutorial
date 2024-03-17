@@ -1,284 +1,69 @@
- GET /api/v1/tours/65ac46ef288f0b2b0856e5b0 500 30.396 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:12:25 GMT - error-message: tourService.getTour(...).populate is not a function
- GET /api/v1/tours/65ac46ef288f0b2b0856e5b0 404 15.915 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:13:10 GMT - error-message: No Tour Found
- GET /api/v1/tours/5c88fa8cf4afda39709c2974 200 30.854 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:13:17 GMT
- GET /api/v1/users 200 13.971 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:14:01 GMT
- POST /api/v1/tours/ 201 157.371 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:14:40 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 7.287 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:14:59 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 5.928 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:17:00 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 215.364 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:17:56 GMT
- GET /api/v1/users 200 6.707 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:18:37 GMT
- GET /api/v1/users 200 3.263 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:18:43 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 35.458 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:18:54 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 64.550 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:25:29 GMT
- POST /api/v1/users/login 200 831.049 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:25:52 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 68.489 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:26:03 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 10.160 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:26:17 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 31.500 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:27:52 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 18.891 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:29:04 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 31.796 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:29:51 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 34.779 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:31:56 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 141.714 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:32:03 GMT
- PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 200 140.952 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:34:15 GMT
- PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 200 29.182 ms PostmanRuntime/7.36.3 Sat, 24 Feb 2024 21:35:50 GMT
- GET /api/v1/users 200 69.445 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:28:14 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 304.218 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:31:05 GMT
- POST /api/v1/reviews 201 751.518 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:32:23 GMT
- POST /api/v1/reviews 400 7.061 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:33:06 GMT - error-message: Path `rating` (7) is more than maximum allowed value (5).
- POST /api/v1/reviews 400 214.590 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:34:11 GMT - error-message: Cast to Number failed for value "yy" (type string) at path "rating"
- GET /api/v1/reviews 401 1.051 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:35:59 GMT - error-message: You are not login. Please login to get authorized
- GET /api/v1/reviews 403 6.528 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:36:11 GMT - error-message: You do not have permission to perform this activity
- GET /api/v1/reviews 403 5.710 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:36:27 GMT - error-message: You do not have permission to perform this activity
- POST /api/v1/users/signup 201 1235.086 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:37:37 GMT
- GET /api/v1/reviews 200 9.753 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:38:19 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 24.795 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:38:58 GMT
- POST /api/v1/reviews 201 6.376 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:40:11 GMT
- POST /api/v1/reviews 201 44.712 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:42:54 GMT
- POST /api/v1/reviews 201 5.484 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:43:44 GMT
- GET /api/v1/reviews 200 46.262 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:44:07 GMT
- GET /api/v1/reviews 200 34.300 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:48:46 GMT
- POST /api/v1/users/login 200 838.132 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:48:59 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 36.468 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:09 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 22.439 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:14 GMT
- GET /api/v1/reviews 403 11.315 ms PostmanRuntime/7.36.3 Sun, 25 Feb 2024 22:49:20 GMT - error-message: You do not have permission to perform this activity
- GET /api/v1/reviews 403 206.942 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:39:09 GMT - error-message: You do not have permission to perform this activity
- POST /api/v1/users/login 200 979.281 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:40:28 GMT
- GET /api/v1/reviews 200 22.298 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:40:33 GMT
- POST /api/v1/reviews 201 668.339 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:42:00 GMT
- GET /api/v1/reviews 200 8.749 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:42:14 GMT
- GET /api/v1/reviews 200 89.371 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:44:05 GMT
- GET /api/v1/reviews 200 50.223 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:44:34 GMT
- GET /api/v1/reviews 200 47.916 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:49:15 GMT
- GET /api/v1/reviews 200 20.189 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:56:25 GMT
- GET /api/v1/reviews 200 15.756 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:56:40 GMT
- GET /api/v1/reviews 200 15.911 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:57:09 GMT
- GET /api/v1/reviews 200 12.271 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 13:57:13 GMT
- POST /api/v1/reviews 201 15.176 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:04:46 GMT
- GET /api/v1/reviews 200 15.092 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:04:52 GMT
- GET /api/v1/reviews 200 17.160 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:24:30 GMT
- GET /api/v1/reviews 200 35.612 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:25:25 GMT
- GET /api/v1/reviews 200 60.666 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 14:27:37 GMT
- GET /api/v1/reviews 200 63.447 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:11:10 GMT
- GET /api/v1/tours/65da5c407039b90804650043 404 53.577 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:11:26 GMT - error-message: No Tour Found
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 27.873 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:11:32 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 43.806 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:13:08 GMT
- GET /api/v1/reviews 200 158.962 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:48:33 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 59.902 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:51:02 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 54.467 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:51:49 GMT
- POST /api/v1/reviews 201 21.989 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:52:41 GMT
- GET /api/v1/reviews 200 38.066 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:52:52 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 12.231 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:52:59 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 8.924 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:53:18 GMT
- POST /api/v1/reviews 201 5.307 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:54:56 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c296c 200 6.847 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:55:25 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c296c 200 61.368 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:58:45 GMT
- POST /api/v1/reviews 201 14.207 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:59:33 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c296c 200 21.883 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 15:59:39 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 17.263 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:00:53 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 83.705 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:01:36 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 53.765 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:01:58 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 76.967 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:02:24 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 57.481 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:04:12 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 64.304 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:09:53 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 19.779 ms PostmanRuntime/7.36.3 Wed, 28 Feb 2024 16:11:01 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides - - ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:11 GMT
- GET /api/v1/reviews 403 2264.793 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:13 GMT - error-message: You do not have permission to perform this activity
- GET /api/v1/reviews 403 4019.880 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:13 GMT - error-message: You do not have permission to perform this activity
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 4959.536 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:16 GMT
- GET /api/v1/reviews 403 4.888 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:22 GMT - error-message: You do not have permission to perform this activity
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 430.758 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:31 GMT
- GET /api/v1/reviews 403 69.337 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:05:44 GMT - error-message: You do not have permission to perform this activity
- GET /api/v1/users 200 4.013 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:06:10 GMT
- POST /api/v1/users/login 401 636.992 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:06:45 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 2868.557 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:06:56 GMT
- GET /api/v1/reviews 200 10.293 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:07:08 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 1525.737 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:25:31 GMT
- POST //api/v1/tours/65da5c407039b90804650043/reviews 404 26.409 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:28:09 GMT - error-message: The requested url //api/v1/tours/65da5c407039b90804650043/reviews is Not Found
- POST /api/v1/tours/65da5c407039b90804650043/reviews 401 2.097 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:28:42 GMT - error-message: You are not login. Please login to get authorized
- POST /api/v1/tours/65da5c407039b90804650043/reviews 401 0.576 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:28:45 GMT - error-message: You are not login. Please login to get authorized
- POST /api/v1/tours/65da5c407039b90804650043/reviews 400 11.183 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:28:52 GMT - error-message: Review cannot be empty
- POST /api/v1/tours/65da5c407039b90804650043/reviews 201 98.892 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:29:56 GMT
- GET /api/v1/reviews 200 15.607 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:32:27 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c295d 200 11.594 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:33:21 GMT
- GET /api/v1/tours/65da5c407039b90804650043 200 35.049 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:33:55 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 69.933 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:52:58 GMT
- POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 201 19.565 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:53:57 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 8.676 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:54:07 GMT
- PUT /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 404 1.175 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:54:54 GMT - error-message: The requested url /api/v1/tours/5c88fa8cf4afda39709c2970/reviews is Not Found
- GET /api/v1/reviews 200 6.102 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 19:55:21 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 32.566 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:02:21 GMT
- POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 400 17.626 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:02:37 GMT - error-message: Review must belong to a tour
- POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 400 7.440 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:02:50 GMT - error-message: Review must belong to a tour
- POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 201 32.874 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:03:25 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 29.843 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:03:38 GMT
- GET /api/v1/reviews 200 10.630 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:04:35 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 16.194 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:05:38 GMT
- GET /api/v1/reviews 200 37.690 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:15:56 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 9.128 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:16:36 GMT
- POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 400 17.672 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:17:04 GMT - error-message: Review cannot be empty
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 7.469 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:17:09 GMT
- GET /api/v1/tours/65da5c407039b90804650043/reviews 200 6.840 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:17:27 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c296c/reviews 200 6.910 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:18:48 GMT
- GET /api/v1/tours/65da5c407039b90804650043/reviews 200 6.774 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:18:57 GMT
- GET /api/v1/reviews 200 42.390 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:42:09 GMT
- GET /api/v1/reviews 200 11.740 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:42:24 GMT
- POST /api/v1/users/forgotPassword 404 10.750 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:50:47 GMT - error-message: No such user with the Email address on our records
- POST /api/v1/users/forgotPassword 404 2.358 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:50:56 GMT - error-message: No such user with the Email address on our records
- GET /api/v1/users 200 4.395 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:51:13 GMT
- POST /api/v1/users/forgotPassword 200 7677.991 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:51:57 GMT
- GET /api/v1/tours/ 401 4.190 ms vscode-restclient Fri, 08 Mar 2024 18:07:23 GMT - error-message: You are not login. Please login to get authorized
- GET /api/v1/users/ 200 156.276 ms vscode-restclient Fri, 08 Mar 2024 18:07:41 GMT
- GET /api/v1/tours/ 401 1.658 ms vscode-restclient Fri, 08 Mar 2024 18:07:57 GMT - error-message: You are not login. Please login to get authorized
- GET /api/v1/tours/ 401 0.830 ms vscode-restclient Fri, 08 Mar 2024 18:07:59 GMT - error-message: You are not login. Please login to get authorized
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 401 24.723 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:09:27 GMT - error-message: Your Token has expired - Please login again
- POST /api/v1/users/login 401 105.186 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:09:47 GMT - error-message: Incorrect email or password
- POST /api/v1/users/login 200 755.583 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:10:17 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 151.251 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:10:21 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 46.648 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:30:41 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 21.888 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:30:48 GMT
- POST //api/v1/tours/ 404 2.042 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:31:18 GMT - error-message: The requested url //api/v1/tours/ is Not Found
- POST /api/v1/tours/ 201 263.971 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:31:29 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 147.871 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:31:37 GMT
- DELETE /api/v1/tours/65eb5981c9c42f4f88f344c1 403 24.370 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:32:01 GMT - error-message: You do not have permission to perform this activity
- POST /api/v1/users/login 200 724.511 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:32:38 GMT
- DELETE /api/v1/tours/65eb5981c9c42f4f88f344c1 204 67.271 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:32:43 GMT
- DELETE /api/v1/tours/65eb5981c9c42f4f88f344c1 404 7.855 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:33:18 GMT - error-message: No document Found to Delete
- DELETE /api/v1/tours/65eb5981c9c42f4f88f344c1 404 34.792 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:35:10 GMT - error-message: No document Found to Delete
- DELETE /api/v1/reviews 404 4.142 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:49:22 GMT - error-message: The requested url /api/v1/reviews is Not Found
- GET /api/v1/reviews 200 42.125 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:49:31 GMT
- POST /api/v1/reviews 401 1.743 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:49:46 GMT - error-message: You are not login. Please login to get authorized
- POST /api/v1/users/login 200 755.130 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:50:11 GMT
- POST /api/v1/users/login 200 633.171 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:50:26 GMT
- GET /api/v1/reviews 200 9.642 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:50:35 GMT
- POST /api/v1/reviews 401 0.986 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:50:42 GMT - error-message: You are not login. Please login to get authorized
- POST /api/v1/reviews 401 4.325 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:51:18 GMT - error-message: Your Token has expired - Please login again
- POST /api/v1/users/login 200 722.860 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:51:36 GMT
- POST /api/v1/reviews 401 5.238 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:51:43 GMT - error-message: Your Token has expired - Please login again
- POST /api/v1/reviews 401 22.670 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:52:10 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 200 640.520 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:52:21 GMT
- POST /api/v1/reviews 403 6.624 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:53:18 GMT - error-message: You do not have permission to perform this activity
- POST /api/v1/reviews 403 6.985 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:53:33 GMT - error-message: You do not have permission to perform this activity
- POST /api/v1/users/login 200 664.241 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:54:05 GMT
- POST /api/v1/reviews 400 14.362 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:54:09 GMT - error-message: Review must belong to a tour
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 21.209 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:54:44 GMT
- POST /api/v1/reviews/5c88fa8cf4afda39709c2951 404 0.877 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:55:28 GMT - error-message: The requested url /api/v1/reviews/5c88fa8cf4afda39709c2951 is Not Found
- POST /api/v1/reviews 400 7.707 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 18:57:13 GMT - error-message: Review must belong to a tour
- POST /api/v1/reviews 201 13.699 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:00:21 GMT
- GET /api/v1/reviews 200 6.983 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:00:39 GMT
- POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 201 8.708 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:00:50 GMT
- GET /api/v1/reviews 200 6.779 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:01:06 GMT
- DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 401 0.590 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:01:31 GMT - error-message: You are not login. Please login to get authorized
- DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 500 7.886 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 19:01:43 GMT - error-message: modelService.deleteTour is not a function
- GET /api/v1/reviews 200 157.220 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:52:31 GMT
- DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 401 23.202 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:53:00 GMT - error-message: Invalid token. Please login again
- POST /api/v1/users/login 401 516.180 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:54:00 GMT - error-message: Incorrect email or password
- GET /api/v1/users 200 4.990 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:54:27 GMT
- POST /api/v1/users/login 200 2500.614 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:54:53 GMT
- DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 404 259.438 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:55:05 GMT - error-message: No resources Found to Delete
- DELETE /api/v1/tours/65eb5981c9c42f4f88f344c1 403 9.652 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:55:24 GMT - error-message: You do not have permission to perform this activity
- GET /api/v1/users 200 7.245 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:55:43 GMT
- POST /api/v1/users/login 200 706.603 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:56:04 GMT
- DELETE /api/v1/tours/65eb5981c9c42f4f88f344c1 404 9.302 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:56:10 GMT - error-message: No resources Found to Delete
- POST /api/v1/users/login 200 882.650 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:56:28 GMT
- DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 404 15.400 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:57:16 GMT - error-message: No resources Found to Delete
- GET /api/v1/tours/65da5c407039b90804650043/reviews 200 39.019 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:57:35 GMT
- GET /api/v1/tours/65da5c407039b908046500fff43/reviews 400 6.829 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:57:45 GMT - error-message: Invalid tour : 65da5c407039b908046500fff43 provided
- GET /api/v1/tours/65eb5981c9c42f4f88f344c1 404 32.572 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:58:01 GMT - error-message: No Tour Found
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 8.472 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 21:58:34 GMT
- GET /api/v1/users 200 18.485 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:08:47 GMT
- GET /api/v1/users 200 44.568 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:10:09 GMT
- DELETE /api/v1/users/deleteUser 403 12.014 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:13:19 GMT - error-message: You do not have permission to perform this activity
- POST /api/v1/users/login 200 354.003 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:13:51 GMT
- DELETE /api/v1/users/deleteUser 404 107.456 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:13:58 GMT - error-message: No resources Found to Delete
- DELETE /api/v1/users/deleteUser 400 47.450 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:18:07 GMT - error-message: Invalid _id : deleteUser provided
- POST /api/v1/users/signup 404 2.934 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:19:05 GMT - error-message: The requested url /api/v1/users/signup is Not Found
- POST /api/v1/users 400 1107.036 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:19:17 GMT - error-message: Duplicate Field: "testuser@gmail.com" already exists
- POST /api/v1/users 400 5.185 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:13 GMT - error-message: `jdjd` is not a valid enum value for path `role`.
- POST /api/v1/users 201 707.235 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:22 GMT
- DELETE /api/v1/users/65eb8f25deb36f22eccfbb02 204 9.923 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:35 GMT
- GET /api/v1/users 200 13.929 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:39 GMT
- POST /api/v1/users 201 759.899 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:43 GMT
- GET /api/v1/users 200 7.099 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:50 GMT
- DELETE /api/v1/users/65eb8f25deb36f22eccfbb02 404 2.926 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:20:55 GMT - error-message: No resources Found to Delete
- DELETE /api/v1/users/65eb8f3adeb36f22eccfbb06 204 5.242 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:21:01 GMT
- PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 500 285.079 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:37:19 GMT - error-message: updatedTour is not defined
- PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 200 103.895 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:37:58 GMT
- GET /api/v1/reviews 200 75.236 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:45:59 GMT
- PATCH /api/v1/reviews/5c88fa8cf4afda39709c2951 401 16.683 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:48:02 GMT - error-message: Oops!: The user no longer exists
- POST /api/v1/reviews 401 8.808 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:48:24 GMT - error-message: Oops!: The user no longer exists
- POST /api/v1/users/login 200 782.998 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:48:35 GMT
- PATCH /api/v1/reviews/5c88fa8cf4afda39709c2951 403 5.866 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:48:47 GMT - error-message: You do not have permission to perform this activity
- POST /api/v1/users/login 200 726.909 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:49:36 GMT
- PATCH /api/v1/reviews/5c88fa8cf4afda39709c2951 404 23.247 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:49:49 GMT - error-message: No resources Found to Update
- GET /api/v1/reviews 200 12.925 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:50:11 GMT
- PATCH /api/v1/reviews/65e4cfb301607d1c142c8aa5 200 44.808 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:50:39 GMT
- GET /api/v1/reviews 200 16.361 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 22:50:46 GMT
- POST /api/v1/tours/ 400 337.055 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:02:05 GMT - error-message: Duplicate Field: "The Test Models" already exists
- POST /api/v1/tours/ 200 15.001 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:02:13 GMT
- POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 83.147 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:11:12 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 23.173 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:11:20 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 13.912 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:11:48 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 36.341 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:16:15 GMT
- POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 46.294 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:17:29 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 14.458 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:17:39 GMT
- DELETE /api/v1/reviews/5c88fa8cf4afda39709c2951 404 11.912 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:18:06 GMT - error-message: No resources Found to Delete
- DELETE /api/v1/reviews/65eb9b0ff472f84d60d115d4 204 12.178 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:18:37 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 14.824 ms PostmanRuntime/7.36.3 Fri, 08 Mar 2024 23:18:42 GMT
- GET /api/v1/reviews 200 294.591 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:18:07 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 437.410 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:18:23 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970 500 40.922 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:38:12 GMT - error-message: Tour is not defined
- GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 63.446 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:38:51 GMT
- PATCH /api/v1/users/resetPassword/3d08588b1219c1ab2f9abea45c13411fb051108e54c6e86559951d8ee8d04d3 400 31.497 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:42:32 GMT - error-message: Token is Invalid or Expired
- POST /api/v1/users/forgotPassword 200 5718.849 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:46:25 GMT
- POST /api/v1/users/forgotPassword 200 5404.660 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:48:39 GMT
- PATCH /api/v1/users/resetPassword/bbf86b7d3cf9e7f66c924fb6fbb8efce6c5b815b0aa6ee5f5a019cfb4a3cd712 200 927.808 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:49:01 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 23.620 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:49:32 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 14.806 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:50:01 GMT
- GET /api/v1/users 200 36.295 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:56:09 GMT
- GET /api/v1/users/65b577f680946e0494f3f8dc 200 7.073 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:57:08 GMT
- GET /api/v1/users/65b577f680946e0494f3f8dcg 400 3.339 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:57:13 GMT - error-message: Invalid _id : 65b577f680946e0494f3f8dcg provided
- GET /api/v1/users/65b577f680946e0494f3f8dd 404 2.928 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:57:21 GMT - error-message: No resources Found
- GET /api/v1/users/65b577f680946e0494f3f8dc 200 3.847 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 21:57:26 GMT
- GET /api/v1/reviews 200 36.137 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:00:03 GMT
- GET /api/v1/reviews 200 35.026 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:00:25 GMT
- GET /api/v1/reviews/65e4cfb301607d1c142c8aa5 200 6.588 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:00:48 GMT
- GET /api/v1/reviews/65e4cfb301607d1c142c8aa5 200 6.583 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:01:04 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 500 10.972 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:09:58 GMT - error-message: userService.getuserByID is not a function
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 500 8.644 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:13:05 GMT - error-message: userService.getuserByID is not a function
- GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 65.070 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:13:11 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 500 4.396 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:13:16 GMT - error-message: userService.getuserByID is not a function
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 500 11.717 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:13:34 GMT - error-message: userService.getuserByID is not a function
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 500 100.449 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:21:10 GMT - error-message: Tour is not defined
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides - - ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:22:39 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides - - ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:22:46 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides - - ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:23:49 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 29.328 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:23:54 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 500 91.121 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:26:48 GMT - error-message: tours is not defined
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 500 82.858 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:27:06 GMT - error-message: tours is not defined
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 500 25.740 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:27:10 GMT - error-message: tours is not defined
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 63.596 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:27:46 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 26.898 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:27:51 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 20.444 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:27:54 GMT
- GET /api/v1/tours?page=2&fields=name,duration,difficulty,price,ratingsAverage,guides 200 45.258 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:28:13 GMT
- GET /api/v1/tours?page=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 29.186 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:28:49 GMT
- GET /api/v1/tours?page=1&fields=name,duration,difficulty,price,ratingsAverage,guides 200 22.588 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:28:56 GMT
- GET /api/v1/tours?page=1&limit=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 57.317 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:29:12 GMT
- GET /api/v1/tours?page=2&limit=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 15.701 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:29:25 GMT
- GET /api/v1/tours?page=2&limit=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 43.743 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:32:28 GMT
- GET /api/v1/reviews 200 121.067 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:41:13 GMT
- GET /api/v1/reviews/65e4cfb301607d1c142c8aa5 200 15.268 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:41:21 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 29.969 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:41:27 GMT
- GET /api/v1/reviews?rating=4 200 9.033 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:42:44 GMT
- GET /api/v1/reviews?ratings=4 200 5.490 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:42:51 GMT
- GET /api/v1/reviews?rating=4 200 7.003 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:42:57 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 11.773 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:43:04 GMT
- GET /api/v1/reviews/65e4cfb301607d1c142c8aa5 200 7.154 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:43:17 GMT
- GET /api/v1/reviews?rating=5 200 9.901 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:43:28 GMT
- GET /api/v1/users 200 39.635 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:44:43 GMT
- GET /api/v1/users?role=user 200 6.673 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:44:56 GMT
- GET /api/v1/users?role=admin 200 4.959 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:45:08 GMT
- GET /api/v1/users?role=guide 200 4.609 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:45:15 GMT
- GET /api/v1/users 200 8.075 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:45:21 GMT
- GET /api/v1/users?role=guide,user 200 2.898 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:45:32 GMT
- GET /api/v1/tours?page=2&limit=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 34.585 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:45:53 GMT
- GET /api/v1/tours?page=2&limit=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 83.860 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:48:20 GMT
- GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 33.333 ms PostmanRuntime/7.36.3 Tue, 12 Mar 2024 22:48:25 GMT
+ GET /api/v1/users 200 20.881 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:39:08 GMT
+ GET /api/v1/users 200 11.173 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:39:14 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 89.049 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:39:38 GMT
+ POST /api/v1/users/login 200 409.236 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:40:45 GMT
+ POST /api/v1/tours/ 400 402.873 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:40:59 GMT - error-message: Duplicate Field: "The Tested Models" already exists
+ POST /api/v1/tours/ 401 51.739 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:41:46 GMT - error-message: Oops!: The user no longer exists
+ POST /api/v1/users/login 200 374.179 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:42:03 GMT
+ GET /api/v1/users 200 9.015 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:42:10 GMT
+ POST /api/v1/tours/ 401 9.393 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:42:30 GMT - error-message: Oops!: The user no longer exists
+ POST /api/v1/tours/ 403 6.398 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:43:54 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/tours/ 403 5.940 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:43:59 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/tours/ 401 0.797 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:44:08 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/tours/ 403 6.203 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:44:20 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/tours/ 403 21.970 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:46:11 GMT - error-message: You do not have permission to perform this activity
+ PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 401 13.654 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:46:24 GMT - error-message: Oops!: The user no longer exists
+ PATCH /api/v1/tours/5c88fa8cf4afda39709c2970 403 9.572 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:46:35 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/tours/monthly-plan/2021 401 33.912 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:47:38 GMT - error-message: Oops!: The user no longer exists
+ GET /api/v1/tours/monthly-plan/2021 403 16.294 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:47:47 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/users/me 200 32.020 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:52:06 GMT
+ GET /api/v1/users/me 401 2.814 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:52:10 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/users/me 401 2.968 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:52:29 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/users/me 401 1.448 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:52:31 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/users/login 200 345.991 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:52:47 GMT
+ POST /api/v1/users/login 200 741.071 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:52:57 GMT
+ POST /api/v1/users/forgotPassword 200 7170.643 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:54:47 GMT
+ POST /api/v1/users/ 401 38.226 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:57:18 GMT - error-message: Your Token has expired - Please login again
+ POST /api/v1/users/ 401 2.149 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:57:27 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/users 401 4.726 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:58:01 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/users 401 5.852 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:58:12 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 200 854.215 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:58:28 GMT
+ POST /api/v1/users 404 10.405 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:59:21 GMT - error-message: The requested url /api/v1/users is Not Found
+ POST /api/v1/users/ 401 1.549 ms PostmanRuntime/7.36.3 Sat, 16 Mar 2024 23:59:48 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/users/ 401 1.241 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:00:15 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/ 401 1.532 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:00:27 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 200 665.008 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:00:33 GMT
+ POST /api/v1/users/ 404 10.624 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:00:42 GMT - error-message: The requested url /api/v1/users/ is Not Found
+ POST /api/v1/users/signup 401 0.835 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:00:55 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/signup 401 0.552 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:01:28 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/users 401 7.534 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:01:57 GMT - error-message: You are not login. Please login to get authorized
+ POST /api/v1/users/signup 400 821.276 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:02:04 GMT - error-message: Duplicate Field: "delete2user@gmail.com" already exists
+ GET /api/v1/users 401 2.131 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:02:23 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 200 770.694 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:02:40 GMT
+ GET /api/v1/users 200 24.646 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:02:44 GMT
+ POST /api/v1/users/signup 400 643.659 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:03:28 GMT - error-message: Duplicate Field: "delete2user@gmail.com" already exists
+ DELETE /api/v1/users/65f62abcb2cfe423a8fbb924 401 0.605 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:04:13 GMT - error-message: Invalid token. Please login again
+ POST /api/v1/users/login 200 349.126 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:04:25 GMT
+ DELETE /api/v1/users/65f62abcb2cfe423a8fbb924 404 22.702 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:04:29 GMT - error-message: No resources Found to Delete
+ POST /api/v1/users/signup 201 817.867 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:07:20 GMT
+ DELETE /api/v1/users/65f634371f73a32d0cfbf86e 204 30.514 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:07:47 GMT
+ POST /api/v1/users/signup 201 575.649 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:14:04 GMT
+ DELETE /api/v1/users/65f634371f73a32d0cfbf86e 401 4.151 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:14:19 GMT - error-message: You are not login. Please login to get authorized
+ DELETE /api/v1/users/65f635cb8966785368e71a5b 401 2.759 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:14:24 GMT - error-message: You are not login. Please login to get authorized
+ DELETE /api/v1/users/65f635cb8966785368e71a5b 204 36.852 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:14:31 GMT
+ GET /api/v1/users 401 40.836 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:15:13 GMT - error-message: Oops!: The user no longer exists
+ POST /api/v1/users/login 200 728.845 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:15:35 GMT
+ DELETE /api/v1/users/65f635cb8966785368e71a5b 403 12.563 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:15:48 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/reviews 200 99.147 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:18:49 GMT
+ GET /api/v1/reviews 401 1.862 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:18:54 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/reviews 200 15.600 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:18:59 GMT
+ GET /api/v1/reviews 200 88.599 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:21:39 GMT
+ GET /api/v1/reviews 401 3.882 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:21:48 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/reviews 200 22.970 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:21:53 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 401 1.050 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:22:06 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 15.725 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:22:11 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 23.328 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:24:37 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c29l70/reviews 400 109.173 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:25:04 GMT - error-message: Invalid tour : 5c88fa8cf4afda39709c29l70 provided
+ GET /api/v1/tours/5c88fa8cf4afda39709d2970/reviews 200 8.515 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:25:17 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 19.544 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:25:24 GMT
+ GET /api/v1/reviews 200 29.495 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:25:51 GMT
