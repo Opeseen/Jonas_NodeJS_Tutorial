@@ -1,7 +1,7 @@
 const fs = require('fs');
 const mongoose = require('mongoose');
 require('dotenv').config();
-const {Tour} = require('./models');
+const {Tour, User, Review} = require('./models');
 
 mongoose
   .connect(process.env.DB_CONNECTION, {
