@@ -67,3 +67,74 @@
  GET /api/v1/tours/5c88fa8cf4afda39709d2970/reviews 200 8.515 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:25:17 GMT
  GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 19.544 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:25:24 GMT
  GET /api/v1/reviews 200 29.495 ms PostmanRuntime/7.36.3 Sun, 17 Mar 2024 00:25:51 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 226.186 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:11:40 GMT
+ GET /api/v1/tours?limit=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 66.783 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:12:08 GMT
+ GET /api/v1/tours?limit=3&fields=name,duration,difficulty,price,ratingsAverage,guides 200 171.869 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:20:39 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides 200 25.143 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:20:46 GMT
+ GET /api/v1/users 401 97.528 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:21:25 GMT - error-message: Your Token has expired - Please login again
+ GET /api/v1/users 401 3.905 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:21:31 GMT - error-message: Your Token has expired - Please login again
+ POST /api/v1/users/login 401 19.986 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:21:42 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 401 691.931 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:22:00 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 698.024 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:22:05 GMT
+ GET /api/v1/users 403 8.734 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:22:15 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/users/login 200 675.156 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:23:19 GMT
+ GET /api/v1/users 200 36.595 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:23:37 GMT
+ GET /api/v1/reviews 200 20.795 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:23:58 GMT
+ GET /api/v1/reviews 200 18.219 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:25:15 GMT
+ GET /api/v1/reviews 401 0.984 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:26:16 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/reviews 200 16.909 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:26:23 GMT
+ GET /api/v1/reviews 200 81.499 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0 Wed, 20 Mar 2024 17:30:16 GMT
+ GET /api/v1/reviews?limit=30 200 26.517 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:33:10 GMT
+ GET /api/v1/reviews?limit=30 200 32.441 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0 Wed, 20 Mar 2024 17:33:27 GMT
+ GET /api/v1/reviews?limit=60 200 79.659 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0 Wed, 20 Mar 2024 17:33:36 GMT
+ GET /api/v1/reviews?limit=78 200 64.750 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0 Wed, 20 Mar 2024 17:34:02 GMT
+ GET /api/v1/reviews?limit=30&page=2 200 90.122 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:34:27 GMT
+ GET /api/v1/reviews?limit=30&page=3 200 4.423 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:34:33 GMT
+ GET /api/v1/reviews?page=3 200 13.422 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:34:40 GMT
+ GET /api/v1/reviews?page=2 200 9.430 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:34:51 GMT
+ GET /api/v1/reviews?page=3 200 16.067 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:34:56 GMT
+ GET /api/v1/reviews?page=2 200 11.612 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:35:01 GMT
+ GET /api/v1/reviews?page=3 200 8.860 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:35:05 GMT
+ GET /api/v1/reviews?limit=78 401 4.286 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0 Wed, 20 Mar 2024 17:35:29 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/reviews?limit=78 401 1.853 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0 Wed, 20 Mar 2024 17:35:32 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/reviews?page=3 200 62.662 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:35:40 GMT
+ GET /api/v1/reviews?page=3 200 106.154 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:37:24 GMT
+ GET /api/v1/reviews?rating=5 200 51.307 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:38:16 GMT
+ GET /api/v1/reviews?rating%3E5 200 8.625 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:41:19 GMT
+ GET /api/v1/reviews?rating=5 200 9.146 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:41:39 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides&price=1000 200 21.099 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:42:48 GMT
+ GET /api/v1/reviews?rating=5 200 9.634 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:43:50 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides&price=1497 200 5.252 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:44:38 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides&price=1497 200 117.312 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:45:57 GMT
+ GET /api/v1/reviews?rating=5 200 37.313 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:47:24 GMT
+ GET /api/v1/reviews?rating=5 200 11.585 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:47:29 GMT
+ GET /api/v1/reviews?rating=5 200 47.032 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:48:30 GMT
+ GET /api/v1/reviews?rating=5 200 9.625 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:48:53 GMT
+ GET /api/v1/reviews?rating=4 200 9.124 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:50:16 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides&price=1497&ratingsAverage[gte]=4.5 200 221.201 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:52:41 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides&price=1497&ratingsAverage[gte]=4.5 200 7.250 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:53:46 GMT
+ GET /api/v1/tours?price=1497&ratingsAverage[gte]=4.5 200 4.927 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:54:50 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=4.5 200 24.809 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:56:14 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=5.5 200 4.207 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:56:40 GMT
+ GET /api/v1/tours?price=497 200 4.303 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:56:54 GMT
+ GET /api/v1/tours?price=497 200 3.279 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:57:42 GMT
+ GET /api/v1/tours?price=497 200 3.711 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:57:44 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=4.5 200 4.268 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:58:18 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=4.5 200 84.946 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:59:16 GMT
+ GET /api/v1/tours?price=497 200 10.925 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:59:27 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=4.5 200 20.288 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:59:38 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=4.54 200 9.405 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:59:44 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=4.54 200 9.740 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:59:50 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=63.54 200 5.267 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 17:59:59 GMT
+ GET /api/v1/tours?price=497&ratingsAverage[gte]=4.5 200 11.263 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:00:12 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides&price=497&ratingsAverage[gte]=4.5 200 8.840 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:00:17 GMT
+ GET /api/v1/reviews?rating=4 200 25.582 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:00:30 GMT
+ GET /api/v1/reviews?rating[gte]=4 200 18.180 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:00:50 GMT
+ GET /api/v1/reviews?rating[gte]=45 200 6.703 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:00:54 GMT
+ GET /api/v1/reviews?rating[gte]=4 200 18.215 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:00:58 GMT
+ GET /api/v1/reviews?page=3&rating[gte]=4 200 33.249 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:01:09 GMT
+ GET /api/v1/reviews?page=3&rating=4 200 6.590 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:01:20 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,guides&price=497&ratingsAverage[gte]=4.5 200 46.414 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:02:11 GMT
+ GET /api/v1/reviews?page=3&rating=4 200 33.868 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:03:05 GMT
+ GET /api/v1/reviews?page=2&rating=4 200 28.649 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:03:10 GMT
+ GET /api/v1/reviews?rating=4 200 30.652 ms PostmanRuntime/7.37.0 Wed, 20 Mar 2024 18:03:20 GMT

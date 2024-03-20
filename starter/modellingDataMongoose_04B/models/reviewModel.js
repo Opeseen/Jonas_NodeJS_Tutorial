@@ -37,6 +37,7 @@ const reviewSchema = new mongoose.Schema(
 );
 
 reviewSchema.plugin(toJson);
+reviewSchema.index({rating: -1});
 
 // QUERY MIDDLEWARE TO POPULATE REVIEWS DATA
 reviewSchema.pre(/^find/, function(next) {
