@@ -122,6 +122,7 @@ tourSchema.virtual('durationWeeks')
     return this.duration / 7;
 });
 
+// POPULATE HANDLER
 tourSchema.virtual('reviews', {
   ref: 'Review',
   foreignField: 'tour',
