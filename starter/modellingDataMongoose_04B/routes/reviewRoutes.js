@@ -5,7 +5,7 @@ const {loginAuth, userRoleAuth} = require('../middlewares/auth');
 
 const router = express.Router({mergeParams: true});
 
-router.use(loginAuth) // User needs to be authenticated n=before accessing the below routes.
+router.use(loginAuth) // User needs to be authenticated before accessing the below routes.
 
 router
   .route('/')

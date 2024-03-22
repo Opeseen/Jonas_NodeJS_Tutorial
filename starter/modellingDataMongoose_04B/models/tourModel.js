@@ -122,11 +122,11 @@ tourSchema.virtual('durationWeeks')
     return this.duration / 7;
 });
 
-// POPULATE HANDLER
+// VIRTUAL POPULATE HANDLER
 tourSchema.virtual('reviews', {
-  ref: 'Review',
-  foreignField: 'tour',
-  localField: '_id'
+  ref: 'Review', // Name of model to reference
+  foreignField: 'tour', // Name of the field in the review model to connect
+  localField: '_id' // Loacal field in the model
 });
 
 // DOCUMENT MIDDLEWARE

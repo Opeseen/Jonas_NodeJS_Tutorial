@@ -72,11 +72,16 @@ reviewSchema.statics.calcAverageRatings = async function(tourID){
 };
 
 reviewSchema.post('save', function(){
-  // This points to the current review
+  // This points to the current review been saved
   const review = this;
   review.constructor.calcAverageRatings(this.tour);
 });
 
+// Set middleware on all "findOneAnd"
+reviewSchema.pre(/^findOneAnd/, async function(next){
+  const review = await this.findOne();
+  console.log(review);
+});
 
 const Review = mongoose.model('Review', reviewSchema);
 

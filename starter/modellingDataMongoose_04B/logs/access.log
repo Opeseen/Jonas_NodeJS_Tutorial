@@ -166,3 +166,39 @@
  GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 22.979 ms PostmanRuntime/7.37.0 Thu, 21 Mar 2024 15:20:04 GMT
  GET /api/v1/tours/65fc497b6848c2041c728164 200 7.254 ms PostmanRuntime/7.37.0 Thu, 21 Mar 2024 15:20:57 GMT
  GET /api/v1/tours/65fc497b6848c2041c728164 200 87.964 ms PostmanRuntime/7.37.0 Thu, 21 Mar 2024 15:49:22 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 401 253.446 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 04:58:18 GMT - error-message: Oops!: The user no longer exists
+ POST /api/v1/users/login 200 999.385 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 04:58:38 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 227.866 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 04:58:51 GMT
+ GET /api/v1/reviews?rating=4 200 175.603 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:03:26 GMT
+ GET /api/v1/reviews?page=2 200 32.420 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:03:42 GMT
+ GET /api/v1/reviews/65e4cfb301607d1c142c8aa5 404 8.498 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:07:29 GMT - error-message: No resources Found
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 15.246 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:09:57 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 76.419 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:11:02 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 45.709 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:11:56 GMT
+ GET /api/v1/reviews/65e4cfb301607d1c142c8aa5 404 17.264 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:12:45 GMT - error-message: No resources Found
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 28.924 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:12:49 GMT
+ GET /api/v1/reviews/5c8a36a014eb5c17645c910e 200 15.765 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:13:03 GMT
+ POST /api/v1/tours/65fc497b6848c2041c728164/reviews 200 93.135 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:20:27 GMT
+ GET /api/v1/tours/65fc497b6848c2041c728164 500 12.667 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:21:41 GMT - error-message: Cannot read properties of null (reading 'populate')
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 73.638 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:21:55 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 13.401 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:22:29 GMT
+ GET /api/v1/tours/65fc497b6848c2041c728164/reviews 200 16.147 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:23:34 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 17.041 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:23:57 GMT
+ GET /api/v1/tours/65fc497b6848c2041c728164 500 5.773 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:24:05 GMT - error-message: Cannot read properties of null (reading 'populate')
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 89.810 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:27:41 GMT
+ GET /api/v1/reviews/5c8a36a014eb5c17645c910e 200 24.149 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:29:46 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 36.477 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:32:17 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 11.804 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:32:32 GMT
+ GET /api/v1/reviews/5c8a36a014eb5c17645c910e 200 27.536 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:32:56 GMT
+ GET /api/v1/reviews/5c88fa8cf4afda39709c2970 404 9.819 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:33:04 GMT - error-message: No resources Found
+ GET /api/v1/reviews/5c8a36a014eb5c17645c910e 200 12.268 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:33:12 GMT
+ GET /api/v1/reviews?page=2 200 25.514 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:33:17 GMT
+ GET /api/v1/reviews/65fd17e10a894426ac2d3656 200 20.276 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:33:55 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 12.094 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:40:40 GMT
+ GET /api/v1/reviews/65fd17e10a894426ac2d3656 200 77.137 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:49:02 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 35.125 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:49:25 GMT
+ GET /api/v1/tours/65fc497b6848c2041c728164/reviews 200 23.492 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:49:31 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 33.846 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:49:42 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 12.688 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:50:22 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970?fields=name,duration,difficulty,price 200 14.704 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:51:15 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 7.415 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:51:35 GMT

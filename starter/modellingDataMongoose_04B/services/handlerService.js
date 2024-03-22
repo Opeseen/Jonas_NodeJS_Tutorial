@@ -37,7 +37,7 @@ const createOneHandler = Model => catchAsyncError(async(req, res, next) => {
 const getOneHandler = (Model, PopulateOptions) => catchAsyncError(async(req, res,next) => {
   const tourID = req.params.id;
   let query = await Model.findById(tourID);
-  if(PopulateOptions) {query = query.populate(PopulateOptions)};
+  if(PopulateOptions) { query = query.populate(PopulateOptions) };
   const resources = await query;
 
   if(!resources) { return next(new ApiError("No resources Found", httpStatus.NOT_FOUND)) };
@@ -48,7 +48,7 @@ const getOneHandler = (Model, PopulateOptions) => catchAsyncError(async(req, res
 // CREATING A HANDLER FPR GET ALL ITEMS
 const getAllHandler = Model => catchAsyncError(async(req, res, next) => {
   let filter = {}; //To allow for nested get revews on tour
-  if(req.params.tourId) filter = {tour: req.params.tourId};
+  if(req.params.tourId) filter = {tour: req.params.tourId}; // Get the "tourId" from params if provided
   const requestQuery = req.query;
 
   // EXECUTE QUERY...
@@ -62,7 +62,7 @@ const getAllHandler = Model => catchAsyncError(async(req, res, next) => {
   res.status(httpStatus.OK).json({
     status: 'Success',
     results: resources.length,
-    data: {resources}
+    resources
   });
 });
 
