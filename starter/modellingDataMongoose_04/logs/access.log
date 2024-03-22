@@ -125,3 +125,6 @@
  POST /api/v1/users/forgotPassword 404 2.358 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:50:56 GMT - error-message: No such user with the Email address on our records
  GET /api/v1/users 200 4.395 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:51:13 GMT
  POST /api/v1/users/forgotPassword 200 7677.991 ms PostmanRuntime/7.36.3 Sun, 03 Mar 2024 20:51:57 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 115.575 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:55:20 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 86.698 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:57:12 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 78.995 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:01:03 GMT
