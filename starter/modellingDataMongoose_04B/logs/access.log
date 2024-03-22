@@ -202,3 +202,17 @@
  GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 12.688 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:50:22 GMT
  GET /api/v1/tours/5c88fa8cf4afda39709c2970?fields=name,duration,difficulty,price 200 14.704 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:51:15 GMT
  GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 7.415 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 05:51:35 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 34.739 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:03:09 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 72.213 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:04:01 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 16.188 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:04:04 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 68.837 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:07:12 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 227.140 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:09:12 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 65.371 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:09:37 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 111.361 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:10:34 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 125.905 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:11:05 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 560.187 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:12:47 GMT
+ DELETE /api/v1/reviews/65eb9b0ff472f84d60d115d4 404 27.744 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:13:09 GMT - error-message: No resources Found to Delete
+ DELETE /api/v1/reviews/5c88fa8cf4afda39709c2970 404 15.670 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:13:19 GMT - error-message: No resources Found to Delete
+ DELETE /api/v1/reviews/65fd215fbc6335465860c8c2 204 32.007 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:13:38 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 12.622 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:13:55 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 38.454 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:14:09 GMT

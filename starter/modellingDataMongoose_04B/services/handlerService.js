@@ -36,7 +36,7 @@ const createOneHandler = Model => catchAsyncError(async(req, res, next) => {
 // CREATING HANDLER FOR GET ONE ITEMS
 const getOneHandler = (Model, PopulateOptions) => catchAsyncError(async(req, res,next) => {
   const tourID = req.params.id;
-  let query = await Model.findById(tourID);
+  let query = Model.findById(tourID);
   if(PopulateOptions) { query = query.populate(PopulateOptions) };
   const resources = await query;
 

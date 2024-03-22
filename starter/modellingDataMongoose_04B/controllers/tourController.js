@@ -7,7 +7,7 @@ const { Tour } = require('../models');
 const getAllTours = handlerService.getAllHandler(Tour);
 const getTour = handlerService.getOneHandler(Tour, {path: 'reviews'});
 const createTour = handlerService.createOneHandler(Tour);
-const  updateTour = handlerService.updateOneHandler(Tour);
+const updateTour = handlerService.updateOneHandler(Tour);
 const deleteTour = handlerService.deleteOneHandler(Tour);
 
 const aliasTopTours = (req, res, next) => {
