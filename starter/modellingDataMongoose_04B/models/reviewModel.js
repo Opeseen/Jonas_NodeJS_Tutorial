@@ -74,13 +74,19 @@ reviewSchema.statics.calcAverageRatings = async function(tourID){
 reviewSchema.post('save', function(){
   // This points to the current review been saved
   const review = this;
-  review.constructor.calcAverageRatings(this.tour);
+  review.constructor.calcAverageRatings(review.tour);
 });
 
 // Set middleware on all "findOneAnd"
 reviewSchema.pre(/^findOneAnd/, async function(next){
-  const review = await this.findOne();
-  console.log(review);
+  this.reviewFetched = await this.findOne();
+  console.log(this.reviewFetched);
+  next();
+});
+
+reviewSchema.post(/^findOneAnd/, async function(){
+  // await this.findOne(); does not work here, because the query has already exccuted
+  await this.reviewFetched.constructor.calcAverageRatings(this.reviewFetched.tour);
 });
 
 const Review = mongoose.model('Review', reviewSchema);

@@ -216,3 +216,34 @@
  DELETE /api/v1/reviews/65fd215fbc6335465860c8c2 204 32.007 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:13:38 GMT
  POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 12.622 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:13:55 GMT
  POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 38.454 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 06:14:09 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 253.078 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:33:08 GMT
+ GET /api/v1/tours?duration[gte]=5&difficulty=medium&fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 105.062 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:34:09 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 105.389 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:39:57 GMT
+ GET /api/v1/tours?duration[gte]=5&difficulty=medium&fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 18.740 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:40:51 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 21.817 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:40:56 GMT
+ POST /api/v1/tours/5c88fa8cf4afda39709c2970/reviews 200 94.939 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:41:47 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 63.419 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:42:00 GMT
+ PATCH /api/v1/reviews/65e4cfb301607d1c142c8aa5 404 23.121 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:42:54 GMT - error-message: No resources Found to Update
+ PATCH /api/v1/reviews/5c88fa8cf4afda39709c2970 404 18.491 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:43:11 GMT - error-message: No resources Found to Update
+ GET /api/v1/reviews?page=2 200 20.762 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:44:37 GMT
+ PATCH /api/v1/reviews/65fded0b83c7170990dac0f0 200 19.814 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:45:09 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 12.391 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:45:17 GMT
+ PATCH /api/v1/reviews/65fded0b83c7170990dac0f0 200 19.437 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:50:00 GMT
+ GET /api/v1/reviews/65fd17e10a894426ac2d3656 404 23.553 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:50:17 GMT - error-message: No resources Found
+ GET /api/v1/reviews/65fded0b83c7170990dac0f0 200 11.798 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:50:26 GMT
+ PATCH /api/v1/reviews/65fded0b83c7170990dac0f0 500 252.163 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:57:27 GMT - error-message: Cannot read properties of undefined (reading 'calcAverageRatings')
+ PATCH /api/v1/reviews/65fded0b83c7170990dac0f0 500 126.001 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 20:58:53 GMT - error-message: this.reviewFetched.calcAverageRatings is not a function
+ PATCH /api/v1/reviews/65fded0b83c7170990dac0f0 500 99.817 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:00:19 GMT - error-message: this.reviewFetched.calcAverageRatings is not a function
+ PATCH /api/v1/reviews/65fded0b83c7170990dac0f0 500 36.898 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:01:18 GMT - error-message: this.reviewFetched.calcAverageRatings is not a function
+ PATCH /api/v1/reviews/65fded0b83c7170990dac0f0 200 146.828 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:02:15 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 74.852 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:02:37 GMT
+ GET /api/v1/reviews/65fded0b83c7170990dac0f0 200 20.133 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:03:25 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 41.849 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:03:51 GMT
+ POST /api/v1/tours/ 403 9.343 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:04:36 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/users/login 200 1016.760 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:05:33 GMT
+ POST /api/v1/tours/ 200 88.843 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:05:47 GMT
+ POST /api/v1/tours/65fdf2ab7de9681b44bd90e9/reviews 403 8.132 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:06:12 GMT - error-message: You do not have permission to perform this activity
+ POST /api/v1/users/login 200 757.402 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:06:38 GMT
+ POST /api/v1/tours/65fdf2ab7de9681b44bd90e9/reviews 200 15.975 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:06:43 GMT
+ GET /api/v1/tours/65fdf2ab7de9681b44bd90e9 200 18.954 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:07:06 GMT
+ PATCH /api/v1/reviews/65fdf2ab7de9681b44bd90e9 500 15.146 ms PostmanRuntime/7.37.0 Fri, 22 Mar 2024 21:07:36 GMT - error-message: Cannot read properties of null (reading 'constructor')
