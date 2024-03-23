@@ -39,6 +39,7 @@ const reviewSchema = new mongoose.Schema(
 
 reviewSchema.plugin(toJson);
 reviewSchema.index({rating: -1});
+reviewSchema.index({tour: 1, user: 1}, {unique: true}); // this will disallow dulicate review via the same user and same tour
 
 // QUERY MIDDLEWARE TO POPULATE REVIEWS DATA
 reviewSchema.pre(/^find/, function(next) {
@@ -64,11 +65,18 @@ reviewSchema.statics.calcAverageRatings = async function(tourID){
       }
     }
   ]);
-  await Tour.findByIdAndUpdate(tourID, {
-    ratingsAverage: stats[0].avgRating,
-    ratingsQuantity: stats[0].nRating
-  });
-
+  if(stats.length > 0){
+    await Tour.findByIdAndUpdate(tourID, {
+      ratingsAverage: stats[0].avgRating,
+      ratingsQuantity: stats[0].nRating
+    });
+  }else{
+    await Tour.findByIdAndUpdate(tourID, {
+      ratingsAverage: 0,
+      ratingsQuantity: 4.5
+    });
+  }
+  
 };
 
 reviewSchema.post('save', function(){
@@ -80,13 +88,14 @@ reviewSchema.post('save', function(){
 // Set middleware on all "findOneAnd"
 reviewSchema.pre(/^findOneAnd/, async function(next){
   this.reviewFetched = await this.findOne();
-  console.log(this.reviewFetched);
   next();
 });
 
 reviewSchema.post(/^findOneAnd/, async function(){
   // await this.findOne(); does not work here, because the query has already exccuted
-  await this.reviewFetched.constructor.calcAverageRatings(this.reviewFetched.tour);
+  if(this.reviewFetched !== null){ // this will not run if the specified reviews is not found on the database
+    await this.reviewFetched.constructor.calcAverageRatings(this.reviewFetched.tour);
+  };
 });
 
 const Review = mongoose.model('Review', reviewSchema);

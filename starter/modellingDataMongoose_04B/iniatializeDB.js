@@ -20,8 +20,8 @@ const reviews = JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data/reviews.j
 // IMPORT DATA INTO DB
 const importData = async () => {
   try {
-    await Tour.create(tours);
-    await User.create(users, {validateBeforeSave: false} );
+    // await Tour.create(tours);
+    // await User.create(users, {validateBeforeSave: false} );
     await Review.create(reviews);
 
     console.log('Data successfully loaded!');
@@ -34,8 +34,8 @@ const importData = async () => {
 // DELETE ALL DATA FROM DB
 const deleteData = async () => {
   try {
-    await Tour.deleteMany();
-    await User.deleteMany();
+    // await Tour.deleteMany();
+    // await User.deleteMany();
     await Review.deleteMany();
 
     console.log('Data successfully deleted!');
