@@ -60,9 +60,39 @@ const getMonthlyPlan = async (year) => {
   return plan;
 }
 
+const getTourWithin = async(lat,lng,radius) => {
+  const tour = await Tour.find({
+    startLocation: { $geoWithin: {$centerSphere:[ [lng, lat], radius ] }}
+  });
+  return tour;
+};
+
+const getDistances = async(lat,lng,multiplier) => {
+  const distances = await Tour.aggregate([
+    {
+      $geoNear: {
+        near:{
+          type: 'Point',
+          coordinates: [lng * 1, lat * 1]
+        },
+        distanceField: 'distance',
+        distanceMultiplier: multiplier
+      }
+    },
+    {
+      $project: {
+        distance: 1,
+        name: 1
+      }
+    }
+  ]);
+  return distances;
+};
 
 
 module.exports = {
   getTourStats,
-  getMonthlyPlan
+  getMonthlyPlan,
+  getTourWithin,
+  getDistances
 };
