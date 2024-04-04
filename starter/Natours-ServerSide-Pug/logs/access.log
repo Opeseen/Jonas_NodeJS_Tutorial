@@ -1,0 +1,32 @@
+ GET /api/v1/tours/tours-within/400/center/34.111745,-118.113491/unit/mi 200 15.491 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 14:56:36 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 500 109.491 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:10:37 GMT - error-message: $geoNear is only valid as the first stage in an optimized pipeline
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 500 11.263 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:15:04 GMT - error-message: $geoNear is only valid as the first stage in an optimized pipeline
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 500 14.490 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:15:20 GMT - error-message: $geoNear is only valid as the first stage in an optimized pipeline
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 500 9.234 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:16:38 GMT - error-message: $geoNear is only valid as the first stage in an optimized pipeline
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 500 10.825 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:17:22 GMT - error-message: $geoNear is only valid as the first stage in an optimized pipeline
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 176.336 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:18:24 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 500 12.986 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:21:04 GMT - error-message: $geoNear is only valid as the first stage in an optimized pipeline
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 500 16.174 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:22:09 GMT - error-message: $geoNear is only valid as the first stage in an optimized pipeline
+ GET /api/v1/tours/monthly-plan/2021 403 308.100 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:23:20 GMT - error-message: You do not have permission to perform this activity
+ GET /api/v1/tours/tour-stats 200 585.779 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:23:30 GMT
+ GET /api/v1/tours/tour-stats 200 61.819 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:23:53 GMT
+ GET /api/v1/tours/tour-stats 500 6.964 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:34:30 GMT - error-message: Cannot convert undefined or null to object
+ GET /api/v1/tours/tour-stats 500 6.890 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:34:55 GMT - error-message: Cannot convert undefined or null to object
+ GET /api/v1/tours/tour-stats 200 10.419 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:39:50 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 8.165 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:39:55 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 13.330 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:44:28 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 500 137.822 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:44:47 GMT - error-message: $geoNear requires a 'distanceField' option as a String
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 13.780 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:45:28 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 49.357 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:47:00 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 5.534 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:48:47 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 9.788 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:50:53 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 6.049 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:51:02 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 4.915 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:51:36 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 5.464 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:56:00 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 3.072 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 15:56:03 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 28.801 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:10:56 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 4.215 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:11:04 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/km 200 3.456 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:11:41 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 3.621 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:11:48 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 64.116 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:12:07 GMT
+ GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 7.555 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:12:13 GMT
