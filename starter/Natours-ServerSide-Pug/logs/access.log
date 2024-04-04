@@ -30,3 +30,17 @@
  GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 3.621 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:11:48 GMT
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 64.116 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:12:07 GMT
  GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 7.555 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:12:13 GMT
+ GET / 500 6.567 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:09:22 GMT - error-message: Cannot find module 'pug'
+Require stack:
+- C:\Users\User\Documents\Opeseen\Dev\Dev_github_repo\FIRST GITHUB REPO\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\node_modules\express\lib\view.js
+- C:\Users\User\Documents\Opeseen\Dev\Dev_github_repo\FIRST GITHUB REPO\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\node_modules\express\lib\application.js
+- C:\Users\User\Documents\Opeseen\Dev\Dev_github_repo\FIRST GITHUB REPO\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\node_modules\express\lib\express.js
+- C:\Users\User\Documents\Opeseen\Dev\Dev_github_repo\FIRST GITHUB REPO\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\node_modules\express\index.js
+- C:\Users\User\Documents\Opeseen\Dev\Dev_github_repo\FIRST GITHUB REPO\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\app.js
+- C:\Users\User\Documents\Opeseen\Dev\Dev_github_repo\FIRST GITHUB REPO\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\server.js
+ GET / 200 4554.941 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:10:59 GMT
+ GET /favicon.ico 404 2.271 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:10:59 GMT - error-message: The requested url /favicon.ico is Not Found
+ GET / 304 14.018 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:11:00 GMT
+ GET / 304 8.644 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:11:01 GMT
+ GET / 304 5.694 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:11:13 GMT
+ GET / 200 6.025 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:11:24 GMT
