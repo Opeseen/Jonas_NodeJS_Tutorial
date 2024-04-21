@@ -44,3 +44,246 @@ Require stack:
  GET / 304 8.644 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:11:01 GMT
  GET / 304 5.694 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:11:13 GMT
  GET / 200 6.025 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Thu, 04 Apr 2024 18:11:24 GMT
+ GET / 500 27387.551 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:21:08 GMT - error-message: C:\Users\Horpeyemi\Desktop\Tutorial\CodePractice\FIRST GITHUB FILES\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\views\base.pug:33:12
+    31|     footer.footer
+    32|       .footer__logo
+  > 33|         img.(src='img/logo-green.png' alt='Natour logo')
+-------------------^
+    34|       ul.footer__nav
+    35|         li: a(href='#') About us
+    36|         li: a(href='#') About us
+
+"(src='img/logo-green" is not a valid class name.  Class names can only contain "_", "-", a-z and 0-9, and must contain at least one of "_", or a-z
+ GET / 500 12.889 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:24:17 GMT - error-message: C:\Users\Horpeyemi\Desktop\Tutorial\CodePractice\FIRST GITHUB FILES\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\views\base.pug:33:12
+    31|     footer.footer
+    32|       .footer__logo
+  > 33|         img.(src='img/logo-green.png' alt='Natour logo')
+-------------------^
+    34|       ul.footer__nav
+    35|         li: a(href='#') About us
+    36|         li: a(href='#') About us
+
+"(src='img/logo-green" is not a valid class name.  Class names can only contain "_", "-", a-z and 0-9, and must contain at least one of "_", or a-z
+ GET / 200 76.059 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:25:14 GMT
+ GET /cdd/style.css 404 0.555 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:25:14 GMT - error-message: The requested url /cdd/style.css is Not Found
+ GET /cdd/style.css 404 0.657 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:25:15 GMT - error-message: The requested url /cdd/style.css is Not Found
+ GET / 200 48.123 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:28:05 GMT
+ GET / 304 70.580 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:28:29 GMT
+ GET / 304 52.608 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:28:31 GMT
+ GET / 304 33.986 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:28:48 GMT
+ GET / 200 60.205 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:28:57 GMT
+ GET / 200 35.157 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:30:48 GMT
+ GET / 200 62.056 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:31:36 GMT
+ GET / 304 25.418 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:32:14 GMT
+ GET / 304 39.685 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:32:20 GMT
+ GET / 304 26.756 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:35:10 GMT
+ GET / 304 34.032 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:39:29 GMT
+ GET / 304 16.099 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:39:30 GMT
+ GET / 200 4250.853 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:47:44 GMT
+ GET / 304 47.240 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:47:50 GMT
+ GET / 200 62.822 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:48:27 GMT
+ GET / 200 279.808 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:49:39 GMT
+ GET / 200 51.547 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:50:18 GMT
+ GET / 304 51.379 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:50:57 GMT
+ GET / 304 47.233 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 17:51:37 GMT
+ GET / 200 12580.765 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:41:04 GMT
+ GET / 304 167.133 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:41:22 GMT
+ GET /overview 200 106.352 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:43:47 GMT
+ GET /tour 200 35.432 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:43:53 GMT
+ GET / 304 31.999 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:43:58 GMT
+ GET /overview 304 30.763 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:44:28 GMT
+ GET /overview 200 34.299 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:45:10 GMT
+ GET /overview 200 242.200 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:45:47 GMT
+ GET / 200 32.575 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:46:10 GMT
+ GET / 304 26.894 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:46:23 GMT
+ GET / 304 29.555 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:46:52 GMT
+ GET /tour 200 26.627 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:47:15 GMT
+ GET / 304 22.850 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:47:26 GMT
+ GET / 304 9485.553 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:57:08 GMT
+ GET /overview 304 48.026 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 19:57:17 GMT
+ GET /overview 500 5.433 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:08:48 GMT - error-message: httpStatus is not defined
+ GET /overview 200 5449.911 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:10:20 GMT
+ GET /overview 304 68.327 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:10:23 GMT
+ GET /overview 404 2.889 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:15:10 GMT - error-message: The requested url /overview is Not Found
+ GET / 200 351.616 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:15:18 GMT
+ GET /tours 404 1.486 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:15:26 GMT - error-message: The requested url /tours is Not Found
+ GET /tour 304 42.813 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:15:30 GMT
+ GET / 304 88.559 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:15:40 GMT
+ GET / 304 37.592 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:15:59 GMT
+ GET / 304 31.109 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:17:37 GMT
+ GET /tour 304 38.627 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:17:44 GMT
+ GET /overview 404 0.651 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:17:56 GMT - error-message: The requested url /overview is Not Found
+ GET / 304 21.105 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:18:02 GMT
+ GET /api/vi/tour 404 0.567 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:18:13 GMT - error-message: The requested url /api/vi/tour is Not Found
+ GET /api/vi/tours 404 0.358 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:18:17 GMT - error-message: The requested url /api/vi/tours is Not Found
+ GET /api/v1/tours 200 1580.541 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:18:55 GMT
+ GET /api/v1/users 401 2.368 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:19:12 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/reviews 401 1.185 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:19:22 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/review 404 0.543 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:19:27 GMT - error-message: The requested url /api/v1/review is Not Found
+ GET /api/v1/reviews 401 1.090 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:19:31 GMT - error-message: You are not login. Please login to get authorized
+ GET /api/v1/tours 304 189.166 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:19:35 GMT
+ GET / 304 28.202 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:19:43 GMT
+ GET / 304 236.701 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:20:23 GMT
+ GET / 304 258.940 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:30:29 GMT
+ GET / 200 373.989 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:30:52 GMT
+ GET / 200 273.166 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:31:05 GMT
+ GET / 200 92.100 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:38:23 GMT
+ GET /img/tour-1-cover.jpg 404 1.840 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:38:23 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 87.522 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:38:28 GMT
+ GET /img/tour-1-cover.jpg 404 1.061 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:38:28 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 83.882 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:40:05 GMT
+ GET /img/tour-1-cover.jpg 404 0.520 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:40:05 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 73.618 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:41:26 GMT
+ GET /img/tour-1-cover.jpg 404 0.639 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:41:26 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 196.960 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:41:33 GMT
+ GET /img/tour-1-cover.jpg 404 0.466 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:41:33 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 67.179 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:43:53 GMT
+ GET / 200 53.139 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:44:11 GMT
+ GET /img/tour-1-cover.jpg 404 0.513 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 20:44:11 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 509.006 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:14:00 GMT
+ GET /img/tour-1-cover.jpg 404 1.493 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:14:00 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 97.920 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:24:32 GMT
+ GET /img/tour-1-cover.jpg 404 1.079 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:24:32 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 147.948 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:25:17 GMT
+ GET /img/tour-1-cover.jpg 404 0.568 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:25:17 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 78.548 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:27:35 GMT
+ GET /img/tour-1-cover.jpg 404 0.827 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:27:35 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 68.326 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:27:41 GMT
+ GET /img/tour-1-cover.jpg 404 0.744 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:27:41 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 113.085 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:32:46 GMT
+ GET /img/tour-1-cover.jpg 404 0.483 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:32:46 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 90.336 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:32:57 GMT
+ GET /img/tour-1-cover.jpg 404 0.589 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:32:57 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 76.773 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:34:08 GMT
+ GET /img/tour-1-cover.jpg 404 0.629 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:34:08 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 147.748 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:35:06 GMT
+ GET /img/tour-1-cover.jpg 404 1.100 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:35:06 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 62.103 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:35:23 GMT
+ GET /img/tour-1-cover.jpg 404 0.591 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:35:23 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 75.920 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:35:38 GMT
+ GET /img/tour-1-cover.jpg 404 0.516 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:35:38 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 60.911 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:36:52 GMT
+ GET /img/tour-1-cover.jpg 404 0.569 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:36:52 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 66.863 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:38:13 GMT
+ GET /img/tour-1-cover.jpg 404 0.574 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:38:13 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 51.333 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:38:26 GMT
+ GET /img/tour-1-cover.jpg 404 0.898 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:38:26 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 55.356 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:38:51 GMT
+ GET /img/tour-1-cover.jpg 404 0.892 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:38:51 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 68.570 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:41:09 GMT
+ GET /img/tour-1-cover.jpg 404 0.403 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:41:09 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 64.802 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:41:11 GMT
+ GET /img/tour-1-cover.jpg 404 0.491 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:41:11 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 41.896 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:41:12 GMT
+ GET /img/tour-1-cover.jpg 404 0.708 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:41:12 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 52.567 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:41:25 GMT
+ GET /img/tour-1-cover.jpg 404 0.810 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:41:25 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 52.589 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:42:29 GMT
+ GET /img/tour-1-cover.jpg 404 0.922 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:42:29 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 73.410 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:44:24 GMT
+ GET /img/tour-1-cover.jpg 404 0.965 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:44:24 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 57.577 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:44:47 GMT
+ GET /img/tour-1-cover.jpg 404 0.373 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:44:47 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 46.157 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:45:04 GMT
+ GET /img/tour-1-cover.jpg 404 0.632 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:45:04 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 304 60.677 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:45:21 GMT
+ GET /img/tour-1-cover.jpg 404 0.639 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:45:21 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 55.104 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:45:45 GMT
+ GET / 200 63.690 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:46:07 GMT
+ GET /img/tour-1-cover.jpg 404 0.452 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:46:07 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 63.986 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:47:50 GMT
+ GET /img/tour-1-cover.jpg 404 0.603 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:47:50 GMT - error-message: The requested url /img/tour-1-cover.jpg is Not Found
+ GET / 200 53.890 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT
+ GET /tour-5-cover.jpg 404 0.756 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-5-cover.jpg is Not Found
+ GET /tour-4-cover.jpg 404 0.313 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-4-cover.jpg is Not Found
+ GET /tour-3-cover.jpg 404 0.402 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-3-cover.jpg is Not Found
+ GET /tour-1-cover.jpg 404 0.441 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-1-cover.jpg is Not Found
+ GET /tour-8-cover.jpg 404 0.756 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-8-cover.jpg is Not Found
+ GET /tour-2-cover.jpg 404 0.961 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-2-cover.jpg is Not Found
+ GET /tour-9-cover.jpg 404 0.610 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-9-cover.jpg is Not Found
+ GET /tour-6-cover.jpg 404 0.714 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-6-cover.jpg is Not Found
+ GET /tour-7-cover.jpg 404 1.153 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:49:43 GMT - error-message: The requested url /tour-7-cover.jpg is Not Found
+ GET / 200 61.843 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:50:21 GMT
+ GET / 304 54.815 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:50:28 GMT
+ GET / 304 65.846 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:50:40 GMT
+ GET / 200 55.842 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:51:48 GMT
+ GET / 200 49.728 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:52:33 GMT
+ GET / 200 55.263 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:52:50 GMT
+ GET / 200 53.175 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:53:54 GMT
+ GET / 200 53.656 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:54:31 GMT
+ GET / 200 50.340 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:56:58 GMT
+ GET / 200 77.877 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:57:07 GMT
+ GET / 200 190.056 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:58:04 GMT
+ GET / 200 50.167 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 21:59:38 GMT
+ GET / 500 38.449 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:01:49 GMT - error-message: C:\Users\Horpeyemi\Desktop\Tutorial\CodePractice\FIRST GITHUB FILES\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\views\overview.pug:34:24
+    32|               svg.card__icon
+    33|                 use(xlink:href='img/icons.svg#icon-user')
+  > 34|               span= `${}`
+-------------------------------^
+    35| 
+    36|           .card__footer
+    37|             p
+
+Syntax Error: Unexpected token
+ GET / 500 20.686 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:01:52 GMT - error-message: C:\Users\Horpeyemi\Desktop\Tutorial\CodePractice\FIRST GITHUB FILES\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\views\overview.pug:34:24
+    32|               svg.card__icon
+    33|                 use(xlink:href='img/icons.svg#icon-user')
+  > 34|               span= `${}`
+-------------------------------^
+    35| 
+    36|           .card__footer
+    37|             p
+
+Syntax Error: Unexpected token
+ GET / 500 20.556 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:01:53 GMT - error-message: C:\Users\Horpeyemi\Desktop\Tutorial\CodePractice\FIRST GITHUB FILES\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\views\overview.pug:34:24
+    32|               svg.card__icon
+    33|                 use(xlink:href='img/icons.svg#icon-user')
+  > 34|               span= `${}`
+-------------------------------^
+    35| 
+    36|           .card__footer
+    37|             p
+
+Syntax Error: Unexpected token
+ GET / 500 18.619 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:01:57 GMT - error-message: C:\Users\Horpeyemi\Desktop\Tutorial\CodePractice\FIRST GITHUB FILES\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\views\overview.pug:34:24
+    32|               svg.card__icon
+    33|                 use(xlink:href='img/icons.svg#icon-user')
+  > 34|               span= `${}`
+-------------------------------^
+    35| 
+    36|           .card__footer
+    37|             p
+
+Syntax Error: Unexpected token
+ GET / 200 53.821 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:02:20 GMT
+ GET / 200 55.288 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:02:46 GMT
+ GET / 200 49.426 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:02:55 GMT
+ GET / 200 60.653 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:03:48 GMT
+ GET / 200 1106.909 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:05:29 GMT
+ GET / 200 62.877 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:07:22 GMT
+ GET / 304 73.846 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:07:29 GMT
+ GET / 304 50.908 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:07:30 GMT
+ GET / 500 22.011 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:08:15 GMT - error-message: C:\Users\Horpeyemi\Desktop\Tutorial\CodePractice\FIRST GITHUB FILES\Jonas_NodeJS_Tutorial\starter\Natours-ServerSide-Pug\views\overview.pug:38:57
+    36|           .card__footer
+    37|             p
+  > 38|               span.card__footer-value= `$${tour.price}` 75
+----------------------------------------------------------------^
+    39|               span.card__footer-text per person
+    40|             p.card__ratings
+    41|               span.card__footer-value 4.9
+
+Syntax Error: Unexpected token
+ GET / 200 53.547 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:08:29 GMT
+ GET / 200 69.146 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:10:25 GMT
+ GET / 200 55.030 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:11:23 GMT
+ GET / 304 98.409 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:11:28 GMT
+ GET / 200 54.466 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:13:23 GMT
+ GET / 200 63.813 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:14:51 GMT
+ GET /tours/the-forest-hiker 404 0.782 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:15:00 GMT - error-message: The requested url /tours/the-forest-hiker is Not Found
+ GET /tours/the-sea-explorer 404 0.845 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:15:07 GMT - error-message: The requested url /tours/the-sea-explorer is Not Found
+ GET /tours/the-star-gazer 404 1.328 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:15:15 GMT - error-message: The requested url /tours/the-star-gazer is Not Found
+ GET /tours/the-sports-lover 404 0.607 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:15:20 GMT - error-message: The requested url /tours/the-sports-lover is Not Found
+ GET / 200 4037.063 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:23:15 GMT
+ GET / 200 111.527 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:23:57 GMT
+ GET / 200 86.985 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:24:25 GMT
+ GET / 200 81.910 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0 Sun, 21 Apr 2024 22:25:33 GMT

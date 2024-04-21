@@ -10,7 +10,8 @@ const path = require('path');
 
 const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
-const reviewRouter = require('./routes/reviewRoutes')
+const reviewRouter = require('./routes/reviewRoutes');
+const viewRouter = require('./routes/viewsRoutes');
 
 const app = express();
 
@@ -48,16 +49,10 @@ app.use(successLogHandler);
 app.use(errorLogHandler);
 
 // 3) ROUTES
-
-// ROUTES FOR THE BASE TEMPLATE
-app.get('/', (req, res) => {
-  res.status(200).render('base');
-});
-
+app.use('/', viewRouter);
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
-
 
 // 4) ERROR HANDLER
 app.use(pathNotFoundErrorHandler); // ERROR HANDLER FOR PATH NOT FOUND
