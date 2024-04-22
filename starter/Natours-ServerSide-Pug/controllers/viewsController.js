@@ -13,11 +13,18 @@ const getOverview = catchAsyncError(async(req, res, next) => {
   });
 });
 
-const getTour = (req, res) => {
-  res.status(httpStatus.OK).render('tour', {
-    title: 'The Forest Hiker Tour'
+const getTour = catchAsyncError(async(req, res) => {
+  // Get the data for the request
+  const tour = await Tour.findOne({slug: req.params.slug}).populate({
+    path: 'reviews',
+    fields: 'review rating user'
   });
-};
+  res.status(httpStatus.OK).render('tour', {
+    title: 'The Forest Hiker Tour',
+    tour
+  });
+
+});
 
 
 
