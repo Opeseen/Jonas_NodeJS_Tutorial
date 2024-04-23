@@ -20,7 +20,7 @@ const getTour = catchAsyncError(async(req, res) => {
     fields: 'review rating user'
   });
   res.status(httpStatus.OK).render('tour', {
-    title: 'The Forest Hiker Tour',
+    title: tour.name,
     tour
   });
 
