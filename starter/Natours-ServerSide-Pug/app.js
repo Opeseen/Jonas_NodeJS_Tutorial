@@ -25,7 +25,7 @@ app.set('views',path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // SET SECURITY HTTP HEADERS
-app.use(helmet());
+app.use(helmet.crossOriginResourcePolicy({ policy: 'cross-origin' }));
 
 app.use(express.json( { limit: '10kb' } ));
 // app.use(express.static(`${__dirname}/public`));
