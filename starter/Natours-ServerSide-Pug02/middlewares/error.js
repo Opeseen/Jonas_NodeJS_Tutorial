@@ -32,7 +32,7 @@ const errorHandler = (err, req, res, next) => {
   let {message, statusCode} = err;
   const response = {
     error: true,
-    status: `${statusCode}`.startsWith('4') ? 'FAILED' : 'ERROR',
+    status: `${statusCode}`.startsWith('4') ? 'Failed' : 'Error',
     code: statusCode || httpStatus.INTERNAL_SERVER_ERROR,
     message,
     ...(process.env.NODE_ENV === 'development' && {stack: err.stack})

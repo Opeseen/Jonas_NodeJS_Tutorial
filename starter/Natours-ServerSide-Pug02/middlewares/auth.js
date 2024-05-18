@@ -32,26 +32,29 @@ const  loginAuth = catchAsyncError(async(req, res, next) => {
 
 });
 
-const  IsloginAuth = catchAsyncError(async(req, res, next) => {
+const  IsloginAuth = async(req, res, next) => {
   const token = req.cookies.jwt;
   if(token){
-    // VERIFY TOKEN
-    const verifiedToken = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+    try {
+      // VERIFY TOKEN
+      const verifiedToken = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
-    // CHECK IF THE USERR STILL EXISTS USING THE JWT SUBJECT
-    const currentUser = await User.findById(verifiedToken.sub);
-    if(!currentUser) {return next()};
-  
-    // CHECK IF USER CHANGE PASSWORD AFTER THE TOKEN WAS ISSUED
-    if(currentUser.changedPasswordAfter(verifiedToken.iat)) {return next()};
-  
-    // THERE IS A LOGIN USER
-    res.locals.user = currentUser;
-    return next();
+      // CHECK IF THE USER STILL EXISTS USING THE JWT SUBJECT
+      const currentUser = await User.findById(verifiedToken.sub);
+      if(!currentUser) {return next()};
+    
+      // CHECK IF USER CHANGE PASSWORD AFTER THE TOKEN WAS ISSUED
+      if(currentUser.changedPasswordAfter(verifiedToken.iat)) {return next()};
+    
+      // THERE IS A LOGIN USER
+      res.locals.user = currentUser;
+      return next();
+    } catch (error) {
+      return next();
+    };
   };
-  next();
- 
-});
+  next(); 
+};
 
 const userRoleAuth = (...roles) => {
   return (req, res, next) => {

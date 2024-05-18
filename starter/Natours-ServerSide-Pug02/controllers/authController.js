@@ -33,7 +33,6 @@ const signUpUser = catchAsyncError(async (req, res) => {
   sendUserDetailsAndToken(newUser, httpStatus.CREATED, res);
 });
 
-
 const loginUser = catchAsyncError(async(req, res, next) => {
   const {email, password} = req.body;
 
@@ -46,14 +45,21 @@ const loginUser = catchAsyncError(async(req, res, next) => {
   sendUserDetailsAndToken(user, httpStatus.OK, res);
 });
 
+const logoutUser = (req, res) => {
+  res.cookie('jwt', 'loggedOut', {
+    expires: new Date(Date.now() + 10 * 1000),
+    httpOnly: true
+  });
+  res.status(httpStatus.OK).json({status: 'Success'})
+};
 
 // HANDLER TO SEND PASSWORD RESET TOKEN TO USER EMAIL ADDRESS
 const forgotPassword = catchAsyncError(async(req, res, next) =>{
-  // GET USER BASED ON POSTED EMAIL
+  // GET USER BASED ON THEIR EMAIL
   const user = await userService.getUserByEmail(req.body.email);
   if(!user) {return next(new ApiError("No such user with the Email address on our records", httpStatus.NOT_FOUND))};
 
-  // GENERATE RANDOM RESET TOKEN
+  // GENERATE RANDOM RESET TOKEN AND SAVE A COPY IN THE DATABASE
   const resetToken = user.createPasswordresetToken();
   await user.save({validateBeforeSave: false});
 
@@ -77,7 +83,7 @@ const forgotPassword = catchAsyncError(async(req, res, next) =>{
   } catch (error) {
     user.passwordResetToken = undefined;
     user.passwordResetTokenExpires = undefined;
-    // IF ERROR - THEN MAKE THE TOKEN UNDEFINED AND DISABLE VALIDATION
+    // IF ERROR - THEN MAKE THE TOKEN UNDEFINED IN THE DATABASE AND DISABLE VALIDATION
     await user.save({validateBeforeSave: false});
 
     return next(new ApiError("There was an error sending the email to the user. Please try again later",httpStatus.INTERNAL_SERVER_ERROR));
@@ -123,6 +129,7 @@ const updateMyPassword = catchAsyncError (async(req, res, next) => {
 module.exports = {
   signUpUser,
   loginUser,
+  logoutUser,
   forgotPassword,
   resetPassword,
   updateMyPassword
