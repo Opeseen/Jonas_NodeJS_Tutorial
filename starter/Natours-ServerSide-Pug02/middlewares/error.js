@@ -9,6 +9,7 @@ const errorConverter = (err, req, res, next) => {
   let message;
 
   if(!(error instanceof ApiError)){
+    // ERROR HANDLER WHERE IT IS NOT FROM API ERROR AND FROM OTHER INSTANCES ERROR
     let statusCode = error.statusCode || error instanceof mongoose.Error ? httpStatus.BAD_REQUEST : httpStatus.INTERNAL_SERVER_ERROR;
 
     if(error.name === 'CastError') { message = `Invalid ${error.path} : ${error.value} provided` };
@@ -30,16 +31,24 @@ const pathNotFoundErrorHandler = (req, res, next) => {
 
 const errorHandler = (err, req, res, next) => {
   let {message, statusCode} = err;
-  const response = {
-    error: true,
-    status: `${statusCode}`.startsWith('4') ? 'Failed' : 'Error',
-    code: statusCode || httpStatus.INTERNAL_SERVER_ERROR,
-    message,
-    ...(process.env.NODE_ENV === 'development' && {stack: err.stack})
+  res.locals.errorMessage = message;
+  if(req.originalUrl.startsWith('/api')){
+    const response = {
+      error: true,
+      status: `${statusCode}`.startsWith('4') ? 'Failed' : 'Error',
+      code: statusCode || httpStatus.INTERNAL_SERVER_ERROR,
+      message,
+      ...(process.env.NODE_ENV === 'development' && {stack: err.stack})
+    };
+    return res.status(statusCode).send(response);
   };
   
-  res.locals.errorMessage = message;
-  res.status(statusCode).send(response);
+  return res.status(statusCode).render('error', {
+    title: 'Something went wrong',
+    message
+  });
+  
+  
 };
 
 
