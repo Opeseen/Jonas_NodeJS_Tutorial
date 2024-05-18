@@ -31,7 +31,6 @@ export const logout = async() => {
     });
     if(result.data.status === 'Success') location.reload(true) // This will reload from the server not from the browser cache
   } catch (error) {
-    console.log(error.response.data.message)
     showAlert('error', 'Error logging out!')
   }
 };

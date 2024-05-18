@@ -1,38 +1,16 @@
- GET / 304 78.907 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 14:51:32 GMT
- GET /tour/the-forest-hiker 200 247.986 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0 Sat, 18 May 2024 14:52:44 GMT
- GET / 304 6764.884 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 14:54:50 GMT
- GET /tour/the-forest-hiker 200 212.580 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 14:54:53 GMT
- GET /login 304 64.463 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 14:54:59 GMT
- POST /api/v1/users/login 401 23.029 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 14:55:06 GMT - error-message: Incorrect email or password
- GET / 304 416.599 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 14:56:32 GMT
- GET /jfjf 404 5.370 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 14:56:38 GMT - error-message: The requested url /jfjf is Not Found
- GET /api/v1/users 401 4.006 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 14:57:30 GMT - error-message: You are not login. Please login to get authorized
- GET / 304 398.704 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:25:11 GMT
- GET /tour/the-forest-hiker 304 318.851 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:25:14 GMT
- GET /tour/the-forest-hikerr 500 4.855 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:25:19 GMT - error-message: Cannot read properties of null (reading 'name')
- GET /tour/the-forest-hiker 304 529.678 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:27:00 GMT
- GET /tour/the-forest-hikerr 500 7.373 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:27:18 GMT - error-message: Cannot read properties of null (reading 'name')
- GET /tour/the-forest-hiker 304 498.177 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:30:30 GMT
- GET /tour/the-forest-hikerr 500 8.289 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:30:33 GMT - error-message: Cannot read properties of null (reading 'name')
- GET /login 304 152.102 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:31:31 GMT
- POST /api/v1/users/login 401 13.309 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 15:31:38 GMT - error-message: Incorrect email or password
- GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 307.029 ms PostmanRuntime/7.39.0 Sat, 18 May 2024 15:43:54 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2971 404 11.939 ms PostmanRuntime/7.39.0 Sat, 18 May 2024 15:44:20 GMT - error-message: No resources Found
- GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 102.831 ms PostmanRuntime/7.39.0 Sat, 18 May 2024 15:47:44 GMT
- GET /login 304 5056.264 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:00:08 GMT
- GET / 304 2094.890 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:00:14 GMT
- GET /tour/the-snow-adventurer 304 827.526 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:00:17 GMT
- GET /tour/the-snow-adventurerr 500 17.359 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:00:22 GMT - error-message: Cannot read properties of null (reading 'name')
- GET /favicon.ico 404 13.841 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:00:23 GMT - error-message: The requested url /favicon.ico is Not Found
- GET /tour/the-snow-adventurerr 500 125.596 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:01:57 GMT - error-message: Cannot read properties of null (reading 'name')
- GET /tour/the-snow-adventurerr 500 306.898 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:04:15 GMT - error-message: next is not defined
- GET /tour/the-snow-adventurerr 404 323.183 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:04:33 GMT - error-message: No Tour Found
- GET /tour/the-snow-adventurerr 404 115.215 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:05:21 GMT - error-message: No Tour Found
- GET /tour/the-snow-adventurer 304 456.070 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:05:25 GMT
- GET /tour/the-snow-adventurer66 404 56.623 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:05:28 GMT - error-message: No Tour Found
- GET /tour/the-snow-adventurer 304 196.378 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:05:32 GMT
- GET /tour/the-snow-adventurerr 404 317.415 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:05:50 GMT - error-message: No Tour Found!
- GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 70.167 ms PostmanRuntime/7.39.0 Sat, 18 May 2024 16:07:44 GMT
- GET /api/v1/tours/5c88fa8cf4afda39709c2971 404 15.086 ms PostmanRuntime/7.39.0 Sat, 18 May 2024 16:07:49 GMT - error-message: -
- GET /api/v1/tours/5c88fa8cf4afda39709c2971 404 32.874 ms PostmanRuntime/7.39.0 Sat, 18 May 2024 16:08:57 GMT - error-message: No resources Found
- GET /tour/the-snow-adventurerr 404 343.647 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 16:09:29 GMT - error-message: No Tour Found!
+ GET / 200 4513.592 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:37:43 GMT
+ GET /tour/the-sports-lover 200 279.234 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:37:52 GMT
+ GET /login 200 73.455 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:37:58 GMT
+ POST /api/v1/users/login 401 4.577 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:38:09 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 401 471.760 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:38:18 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 401 383.979 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:38:26 GMT - error-message: Incorrect email or password
+ POST /api/v1/users/login 200 758.699 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:38:34 GMT
+ GET / 200 109.375 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:38:36 GMT
+ GET / 304 182.055 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:39:05 GMT
+ GET /tour/the-wine-taster 200 204.373 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:39:35 GMT
+ GET /tour/the-wine-taster3 404 55.988 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:39:49 GMT - error-message: No Tour Found!
+ GET /tour/the-wine-tasterf 404 74.454 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:40:04 GMT - error-message: No Tour Found!
+ GET / 304 111.366 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:40:26 GMT
+ GET /api/v1/users/logout 200 6.672 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:40:32 GMT
+ GET / 200 120.710 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:40:32 GMT
+ GET / 304 85.996 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0 Sat, 18 May 2024 19:40:36 GMT
