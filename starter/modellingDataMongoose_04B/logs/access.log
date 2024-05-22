@@ -30,3 +30,5 @@
  GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 3.621 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:11:48 GMT
  GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 64.116 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:12:07 GMT
  GET /api/v1/tours/distances/34.111745,-118.113491/unit/mi 200 7.555 ms PostmanRuntime/7.37.0 Mon, 01 Apr 2024 16:12:13 GMT
+ GET /api/v1/tours?fields=name,duration,difficulty,price,ratingsAverage,ratingsQuantity 200 1343.070 ms PostmanRuntime/7.39.0 Wed, 22 May 2024 17:19:33 GMT
+ GET /api/v1/tours/5c88fa8cf4afda39709c2970 200 331.408 ms PostmanRuntime/7.39.0 Wed, 22 May 2024 17:20:12 GMT
