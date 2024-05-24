@@ -29,17 +29,21 @@ const getTour = catchAsyncError(async(req, res, next) => {
 
 });
 
-
 const getLoginForm = (req, res) => {
   res.status(httpStatus.OK).render('login', {
     title: 'Login to your account'
-  })
+  });
 };
 
-
+const getAccount = (req, res) =>{
+  res.status(httpStatus.OK).render('account', {
+    title: 'Your account'
+  });
+};
 
 module.exports = {
   getOverview,
   getTour,
-  getLoginForm
+  getLoginForm,
+  getAccount
 };

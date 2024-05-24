@@ -28,6 +28,7 @@ const  loginAuth = catchAsyncError(async(req, res, next) => {
   if(currentUser.changedPasswordAfter(verifiedToken.iat)) {return next(new ApiError('Oops!: User recently changed his password - Please login again', httpStatus.UNAUTHORIZED))};
 
   req.user = currentUser;
+  res.locals.user = currentUser;
   next();
 
 });
