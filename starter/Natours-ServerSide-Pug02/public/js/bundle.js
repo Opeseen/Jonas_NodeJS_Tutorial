@@ -12010,7 +12010,7 @@ var login = exports.login = /*#__PURE__*/function () {
             (0, _alert.showAlert)('success', 'LoggedIn Successfully');
             window.setTimeout(function () {
               location.assign('/');
-            }, 2000);
+            }, 1000);
           }
           ;
           _context.next = 11;
@@ -12044,14 +12044,13 @@ var logout = exports.logout = /*#__PURE__*/function () {
         case 3:
           result = _context2.sent;
           if (result.data.status === 'Success') location.reload(true); // This will reload from the server not from the browser cache
-          _context2.next = 11;
+          _context2.next = 10;
           break;
         case 7:
           _context2.prev = 7;
           _context2.t0 = _context2["catch"](0);
-          console.log(_context2.t0.response.data.message);
           (0, _alert.showAlert)('error', 'Error logging out!');
-        case 11:
+        case 10:
         case "end":
           return _context2.stop();
       }
@@ -12241,7 +12240,7 @@ var _login = require("./login");
 var _mapbox = require("./mapbox");
 // DOM ELEMENT
 var mapBox = document.getElementById('map');
-var loginForm = document.querySelector('.form');
+var loginForm = document.querySelector('.form--login');
 var logOutButton = document.querySelector('.nav__el--logout');
 
 // DELEGATION
@@ -12287,7 +12286,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54838" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61269" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
