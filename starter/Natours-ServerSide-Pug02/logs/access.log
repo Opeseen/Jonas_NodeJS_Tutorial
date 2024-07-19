@@ -1,7 +1,0 @@
- GET / 200 37189.271 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0 Mon, 15 Jul 2024 08:38:42 GMT
- GET /login 200 71.023 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0 Mon, 15 Jul 2024 08:39:07 GMT
- GET / 304 174.482 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0 Mon, 15 Jul 2024 08:39:16 GMT
- GET /login 304 42.619 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0 Mon, 15 Jul 2024 08:39:20 GMT
- GET / 304 142.225 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0 Mon, 15 Jul 2024 08:39:21 GMT
- GET /tour/the-park-camper 200 377.999 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0 Mon, 15 Jul 2024 08:39:24 GMT
- GET / 304 135.617 ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0 Mon, 15 Jul 2024 08:39:46 GMT

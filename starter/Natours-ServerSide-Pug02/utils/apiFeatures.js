@@ -13,7 +13,6 @@ class APIFeatures{
     // 1B) ADVANCE FILTERING..
     let queryString = JSON.stringify(requestQuery);
     queryString = queryString.replace(/\b(gte|gt|lte|lt)\b/g, match => `$${match}`);
-
     this.query = this.query.find(JSON.parse(queryString));
     return this;
   }
